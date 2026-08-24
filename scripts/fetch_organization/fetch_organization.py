@@ -174,7 +174,7 @@ if __name__ == "__main__":
                 json.dumps(key_list, indent=2, ensure_ascii=False)
             )
         else:
-            previous_key = key_list[-2]
+            previous_key = key_list[-2] if len(key_list) >= 2 else key_list[0]
     fetch_organization_data(current_key)
     if previous_key != current_key:
         analyze_organization_data(previous_key, current_key)
