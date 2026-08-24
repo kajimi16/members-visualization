@@ -176,7 +176,5 @@ if __name__ == "__main__":
         else:
             previous_key = key_list[-2] if len(key_list) >= 2 else key_list[0]
     fetch_organization_data(current_key)
-    if previous_key != current_key:
-        analyze_organization_data(previous_key, current_key)
-    else:
-        print("⚠️  首次运行无历史数据，跳过对比分析（下月运行将自动生成）")
+    # 首次运行（previous_key == current_key）时对比项为空，但数据文件已生成，仍可产出 datasource
+    analyze_organization_data(previous_key, current_key)
