@@ -1,5 +1,5 @@
 {
-  "update_time": "2026-08-24T16:52:56.790589",
+  "update_time": "2026-08-24T22:17:02.823034",
   "days_range": 7,
   "total_commits": 223,
   "total_repos": 12,
@@ -7,16 +7,16 @@
     "komariChikaA": {
       "total_commits": 192,
       "repos": [
+        "jbgs-submission",
+        "jbgs-proposal",
+        "community-fraud-guard",
+        "elderly-fraud-risk-system",
+        "fraud-guard-shared",
+        "fraud-guard-clients",
         ".github",
         "mobile-fraud-guard",
         "silver-fraud-guard",
-        "jbgs-proposal",
-        "fraud-guard-shared",
-        "elderly-fraud-risk-system",
-        "home-visit-fraud-guard",
-        "jbgs-submission",
-        "fraud-guard-clients",
-        "community-fraud-guard"
+        "home-visit-fraud-guard"
       ],
       "repo_commits": {
         "jbgs-proposal": 33,
@@ -187,13 +187,13 @@
     "KuonjiPloy": {
       "total_commits": 14,
       "repos": [
+        "jbgs-proposal",
+        "community-fraud-guard",
+        "elderly-fraud-risk-system",
+        "fraud-guard-clients",
         "mobile-fraud-guard",
         "silver-fraud-guard",
-        "jbgs-proposal",
-        "elderly-fraud-risk-system",
-        "home-visit-fraud-guard",
-        "fraud-guard-clients",
-        "community-fraud-guard"
+        "home-visit-fraud-guard"
       ],
       "repo_commits": {
         "jbgs-proposal": 1,
@@ -331,11 +331,11 @@
     "kajimi16": {
       "total_commits": 16,
       "repos": [
-        "mobile-fraud-guard",
         "fraud-guard-perf",
+        "fraud-guard-clients",
+        "mobile-fraud-guard",
         "silver-fraud-guard",
-        "home-visit-fraud-guard",
-        "fraud-guard-clients"
+        "home-visit-fraud-guard"
       ],
       "repo_commits": {
         "mobile-fraud-guard": 1,
@@ -506,7 +506,7 @@
       "user_repos": 5,
       "total": 35
     },
-    "execution_time": "11.2s",
+    "execution_time": "14.3s",
     "optimization_enabled": true
   }
 }
