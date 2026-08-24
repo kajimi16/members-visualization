@@ -60,7 +60,8 @@ def fetch_organization_data(key):
         CONFIG['REPO_DATA_LIST_FILE_NAME']
     repo_data_list_file_path_with_key = CONFIG['ORGANIZATION_DATA_DIR'] / \
         key / CONFIG['REPO_DATA_LIST_FILE_NAME']
-    origin_repo_data_list = json.loads(read_file(repo_data_list_file_path))
+    origin_repo_data = read_file(repo_data_list_file_path)
+    origin_repo_data_list = json.loads(origin_repo_data) if origin_repo_data else []
     for repo_detail in origin_repo_data_list:
         repo_name = repo_detail['name'].split('/')[1]
         repo_detail_path = CONFIG['REPO_DATA_DIR'] / \
@@ -153,15 +154,29 @@ if __name__ == "__main__":
         exit(0)
 
     current_key = f"{year}-{month}"
-    key_list = json.loads(read_file(CONFIG['FETCH_TIME_KEY_FILE_NAME']))
-    previous_key = key_list[-3]
-    if current_key not in key_list:
-        key_list.append(current_key)
+    key_data = read_file(CONFIG['FETCH_TIME_KEY_FILE_NAME'])
+    if not key_data:
+        # 首次运行：初始化月份时间轴，无历史数据可对比
+        print("⚠️  首次运行，初始化月份时间轴")
+        key_list = [current_key]
+        previous_key = current_key
         ensure_dir_and_write_file(
             CONFIG['FETCH_TIME_KEY_FILE_NAME'],
             json.dumps(key_list, indent=2, ensure_ascii=False)
         )
     else:
-        previous_key = key_list[-2]
+        key_list = json.loads(key_data)
+        previous_key = key_list[-3] if len(key_list) >= 3 else key_list[0]
+        if current_key not in key_list:
+            key_list.append(current_key)
+            ensure_dir_and_write_file(
+                CONFIG['FETCH_TIME_KEY_FILE_NAME'],
+                json.dumps(key_list, indent=2, ensure_ascii=False)
+            )
+        else:
+            previous_key = key_list[-2]
     fetch_organization_data(current_key)
-    analyze_organization_data(previous_key, current_key)
+    if previous_key != current_key:
+        analyze_organization_data(previous_key, current_key)
+    else:
+        print("⚠️  首次运行无历史数据，跳过对比分析（下月运行将自动生成）")
