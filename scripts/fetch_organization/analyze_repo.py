@@ -1,5 +1,6 @@
 # 合并仓库详情
 import json
+import os
 from utils import get_object_by_month_key
 
 
@@ -7,7 +8,7 @@ def join_repo_detail_by_name(repo_list, repo_detail_dir, month_count=12):
     result = []
 
     for item in repo_list:
-        filename = item['name'].replace('datawhalechina/', '')
+        filename = item['name'].replace(os.getenv('GITHUB_ORG', 'Silver-yiyangyiyang') + '/', '')
         repo_detail_path = repo_detail_dir / f'{filename}.json'
 
         # 读取和解析仓库详情数据

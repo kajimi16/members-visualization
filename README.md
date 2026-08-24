@@ -2,24 +2,23 @@
 
 ![banner](banner.png)
 
-# 🌟 Datawhale 贡献者可视化平台
+# 🌟 Silver-yiyangyiyang 贡献者可视化平台
 
 _智能化的开源社区贡献者分析与展示系统_
 
-[![GitHub stars](https://img.shields.io/github/stars/datawhalechina/members-visualization?style=for-the-badge&logo=github)](https://github.com/datawhalechina/members-visualization/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/datawhalechina/members-visualization?style=for-the-badge&logo=github)](https://github.com/datawhalechina/members-visualization/network)
-[![GitHub issues](https://img.shields.io/github/issues/datawhalechina/members-visualization?style=for-the-badge&logo=github)](https://github.com/datawhalechina/members-visualization/issues)
-[![GitHub license](https://img.shields.io/github/license/datawhalechina/members-visualization?style=for-the-badge)](https://github.com/datawhalechina/members-visualization/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/kajimi16/members-visualization?style=for-the-badge&logo=github)](https://github.com/kajimi16/members-visualization/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/kajimi16/members-visualization?style=for-the-badge&logo=github)](https://github.com/kajimi16/members-visualization/network)
+[![GitHub issues](https://img.shields.io/github/issues/kajimi16/members-visualization?style=for-the-badge&logo=github)](https://github.com/kajimi16/members-visualization/issues)
+[![GitHub license](https://img.shields.io/github/license/kajimi16/members-visualization?style=for-the-badge)](https://github.com/kajimi16/members-visualization/blob/main/LICENSE)
 
 [![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white)](https://vuejs.org/)
 [![VitePress](https://img.shields.io/badge/VitePress-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitepress.dev/)
 [![ECharts](https://img.shields.io/badge/ECharts-AA344D?style=for-the-badge&logo=apache-echarts&logoColor=white)](https://echarts.apache.org/)
 [![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)](https://github.com/features/actions)
 
-### [🚀 在线体验](https://datawhalechina.github.io/members-visualization/) | [📖 使用文档](#-快速开始) | [🤝 参与贡献](#-贡献指南)
+### [🚀 在线体验](https://kajimi16.github.io/members-visualization/) | [📖 使用文档](#-快速开始) | [🤝 参与贡献](#-贡献指南)
 
-- Github访问链接：[https://datawhalechina.github.io/members-visualization/](https://datawhalechina.github.io/members-visualization/)
-- Datawhale专属链接：[https://mv.datawhale.cc/](https://mv.datawhale.cc/)
+- Github访问链接：[https://kajimi16.github.io/members-visualization/](https://kajimi16.github.io/members-visualization/)
 
 </div>
 
@@ -27,7 +26,7 @@ _智能化的开源社区贡献者分析与展示系统_
 
 ## 📖 项目简介
 
-**Datawhale 贡献者可视化平台** 是一个现代化的开源社区贡献者分析与展示系统，专为开源组织和技术社区设计。通过智能化的数据收集和精美的可视化展示，帮助社区管理者和成员更好地了解社区生态和发展趋势。
+**Silver-yiyangyiyang 贡献者可视化平台** 是一个现代化的开源社区贡献者分析与展示系统，专为开源组织和技术社区设计。通过智能化的数据收集和精美的可视化展示，帮助社区管理者和成员更好地了解社区生态和发展趋势。
 
 ### 🎯 核心价值
 
@@ -165,7 +164,7 @@ _智能化的开源社区贡献者分析与展示系统_
 │   │   ├── data/                  # 数据文件
 │   │   │   ├── members.json       # 贡献者基础数据
 │   │   │   ├── commits_weekly.json # 提交活跃度数据
-│   │   │   └── datawhalechina/    # 组织专属数据
+│   │   │   └── <org>/    # 组织专属数据
 │   │   │       └── monthly_contributors_*.json # 月份范围贡献者数据
 │   │   └── avatars/               # 成员头像缓存
 │   ├── index.md                   # 首页
@@ -277,6 +276,7 @@ _智能化的开源社区贡献者分析与展示系统_
     "year": 2025,
     "start_month": 10,
     "end_month": 12,
+    "org_name": "Silver-yiyangyiyang",
     "period_label": "2025年10-12月",
     "period_type": "monthly_range",
     "generated_at": "2026-02-06T07:30:00",
@@ -284,6 +284,9 @@ _智能化的开源社区贡献者分析与展示系统_
     "outstanding_count": 6,
     "excellent_count": 13,
     "active_count": 86,
+    "total_additions": 102345,
+    "total_deletions": 23456,
+    "total_changes": 125801,
     "thresholds": {
       "outstanding": 50,
       "excellent": 10,
@@ -294,6 +297,15 @@ _智能化的开源社区贡献者分析与展示系统_
     "outstanding": [...],
     "excellent": [...],
     "active": [...]
+  },
+  "ranking": {
+    "by_commits": [...],
+    "by_code": [...]
+  },
+  "repo_matrix": {
+    "repo_name": {
+      "username": { "commits": 3, "additions": 120, "deletions": 30 }
+    }
   }
 }
 ```
@@ -303,11 +315,18 @@ _智能化的开源社区贡献者分析与展示系统_
 | `meta.year` | Number | 统计年份 |
 | `meta.start_month` | Number | 统计开始月份 (1-12) |
 | `meta.end_month` | Number | 统计结束月份 (1-12) |
+| `meta.org_name` | String | 被统计的 GitHub 组织名 |
 | `meta.period_label` | String | 统计周期展示文案 |
+| `meta.total_additions` | Number | 全部贡献者新增行数合计 |
+| `meta.total_deletions` | Number | 全部贡献者删除行数合计 |
+| `meta.total_changes` | Number | 全部贡献者变更行数合计 |
 | `meta.thresholds` | Object | 分级阈值配置 |
 | `contributors.outstanding` | Array | 卓越贡献者 (有效commit >= 50) |
 | `contributors.excellent` | Array | 优秀贡献者 (有效commit >= 10) |
 | `contributors.active` | Array | 活跃贡献者 (有效commit < 10) |
+| `ranking.by_commits` | Array | 按有效commit数降序排行（含 `commit_rank`） |
+| `ranking.by_code` | Array | 按新增行数降序排行（含 `code_rank`） |
+| `repo_matrix` | Object | user×repo 矩阵：每个仓库下各贡献者的 commit/新增/删除行数 |
 
 每个贡献者对象包含：
 
@@ -316,9 +335,13 @@ _智能化的开源社区贡献者分析与展示系统_
 | `username` | String | GitHub 用户名 |
 | `verified` | Boolean | 用户名是否经过 GitHub API 验证 |
 | `valid_commits` | Number | 有效 commit 次数 |
+| `total_commits` | Number | 总 commit 次数（有效commit口径） |
+| `additions` | Number | 新增行数合计 |
+| `deletions` | Number | 删除行数合计 |
+| `changes` | Number | 变更行数合计（新增+删除） |
 | `repos_count` | Number | 参与的仓库数量 |
 | `repos` | Array | 参与的仓库列表 |
-| `recent_commits` | Array | 最近的 commit 详情（最多10条） |
+| `recent_commits` | Array | 最近的 commit 详情（最多10条，含 `total_additions`/`total_deletions`） |
 
 ## 🚀 快速开始
 
@@ -337,7 +360,7 @@ _智能化的开源社区贡献者分析与展示系统_
 
 ```bash
 # 克隆项目
-git clone https://github.com/datawhalechina/members-visualization.git
+git clone https://github.com/kajimi16/members-visualization.git
 cd members-visualization
 
 # 安装前端依赖
@@ -363,8 +386,10 @@ vim .env
 # GitHub API Token（推荐配置，避免速率限制）
 GITHUB_TOKEN=ghp_your_personal_access_token_here
 
-# 目标组织名称（默认：datawhalechina）
+# 目标组织名称（默认：Silver-yiyangyiyang）
 GITHUB_ORG=your_organization_name
+# 前端页面组织名（与 GITHUB_ORG 保持一致；仅构建时需要）
+VITE_ORG_NAME=your_organization_name
 
 # 数据收集配置
 MIN_CONTRIBUTIONS=10        # 最小贡献阈值
@@ -386,6 +411,28 @@ npm run docs:dev
 🌐 **访问地址**：http://localhost:5173
 
 </details>
+
+### 🔄 切换组织
+
+本平台支持适配任意 GitHub 组织，数据目录、前端页面与脚本均按组织名隔离：
+
+```bash
+# 1. 本地：设置组织名后拉取数据（三个脚本共用 GITHUB_ORG）
+export GITHUB_ORG=your_organization_name
+export GITHUB_TOKEN=ghp_your_token
+
+python scripts/fetch_members/fetch_members.py
+python scripts/fetch_organization/fetch_organization.py
+python scripts/quarterly_contributors/quarterly_contributors.py --org $GITHUB_ORG 2026 1 6
+
+# 2. 前端构建：注入组织名（不设置时默认 Silver-yiyangyiyang）
+VITE_ORG_NAME=$GITHUB_ORG npm run docs:build
+```
+
+- 数据输出至 `docs/public/data/<org>/`（成员 `members.json`、组织 `organization_datasource.json`、月度贡献者 `monthly_contributors_*.json` 等）
+- 前端自动从 `<org>` 目录读取数据，仓库链接指向 `github.com/<org>`
+- **GitHub Actions 自动化**：在仓库 Settings → Secrets and variables → Actions → Variables 新建变量 `GITHUB_ORG`（值为目标组织名），三个工作流即自动按该组织运行（未设置时回退 `Silver-yiyangyiyang`）
+- 成员/组织数据的采集脚本运行前请确认已配置 `GITHUB_TOKEN`
 
 ### 📊 数据管理
 
@@ -431,7 +478,7 @@ python scripts/quarterly_contributors/quarterly_contributors.py 2026 1 4
 - 🤖 **机器人过滤**：使用 `bot_filter.py` 共享模块自动过滤机器人账户
 - 💾 **本地缓存**：commit 详情缓存在 `docs/public/data/cache/` 目录，避免重复 API 调用
 - 📧 **用户名解析**：多级回退策略（GitHub API -> noreply 邮箱解析 -> 邮箱搜索 -> 作者名）
-- 📁 **输出文件**：`docs/public/data/datawhalechina/monthly_contributors_YYYY_MM_MM.json`
+- 📁 **输出文件**：`docs/public/data/<org>/monthly_contributors_YYYY_MM_MM.json`
 
 </details>
 
@@ -624,8 +671,8 @@ const fetchData = async () => {
 
 <div align="center">
 
-<a href="https://github.com/datawhalechina/members-visualization/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=datawhalechina/members-visualization" alt="贡献者" />
+<a href="https://github.com/kajimi16/members-visualization/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=kajimi16/members-visualization" alt="贡献者" />
 </a>
 
 </div>
@@ -634,10 +681,10 @@ const fetchData = async () => {
 
 <div align="center">
 
-![GitHub repo size](https://img.shields.io/github/repo-size/datawhalechina/members-visualization?style=for-the-badge)
-![GitHub code size](https://img.shields.io/github/languages/code-size/datawhalechina/members-visualization?style=for-the-badge)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/datawhalechina/members-visualization?style=for-the-badge)
-![GitHub last commit](https://img.shields.io/github/last-commit/datawhalechina/members-visualization?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/kajimi16/members-visualization?style=for-the-badge)
+![GitHub code size](https://img.shields.io/github/languages/code-size/kajimi16/members-visualization?style=for-the-badge)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/kajimi16/members-visualization?style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/kajimi16/members-visualization?style=for-the-badge)
 
 </div>
 
@@ -645,7 +692,7 @@ const fetchData = async () => {
 
 <div align="center">
 
-[![members-visualization stats](https://datawhalechina.github.io/members-visualization/badges/members-visualization.png)](https://datawhalechina.github.io/members-visualization/repo-badge?repo=members-visualization)
+[![members-visualization stats](https://kajimi16.github.io/members-visualization/badges/members-visualization.png)](https://kajimi16.github.io/members-visualization/repo-badge?repo=members-visualization)
 
 </div>
 
@@ -655,6 +702,6 @@ const fetchData = async () => {
 
 **🌟 如果这个项目对您有帮助，请给我们一个 Star！**
 
-_由 [Datawhale](https://github.com/datawhalechina) 开源社区用 ❤️ 维护_
+_由 [Silver-yiyangyiyang](https://github.com/Silver-yiyangyiyang) 开源社区用 ❤️ 维护_
 
 </div>

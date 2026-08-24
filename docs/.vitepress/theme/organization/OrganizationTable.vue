@@ -1,4 +1,5 @@
 <script setup>
+import { ORG_NAME, ORG_GITHUB_URL, orgDataUrl } from '../utils/org.js'
 import { ref, computed, watch } from 'vue'
 
 // 接收organizationData作为props
@@ -38,16 +39,16 @@ watch(() => props.organizationData, (newData) => {
       <tr 
         v-for="item in tableData" 
         :key="item.name"
-        :class="{ 'highlight-row': item.name === 'datawhalechina' }"
+        :class="{ 'highlight-row': item.name === ORG_NAME }"
       >
         <td>
           <span class="rank-number">{{ item.rank }}</span>
         </td>
         <td class="name-cell">
-          <!-- 只有datawhalechina添加链接 -->
-          <template v-if="item.name === 'datawhalechina'">
+          <!-- 只有当前组织添加链接 -->
+          <template v-if="item.name === ORG_NAME">
             <a 
-              href="https://github.com/datawhalechina" 
+              :href="ORG_GITHUB_URL" 
               target="_blank" 
               rel="noopener noreferrer"
               class="datawhale-link"

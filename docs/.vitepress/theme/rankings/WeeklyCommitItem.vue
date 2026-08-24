@@ -116,7 +116,7 @@
               <a
                 v-for="repo in member.repos.slice(0, 5)"
                 :key="repo"
-                :href="`https://github.com/datawhalechina/${repo}`"
+                :href="`https://github.com/${ORG_NAME}/${repo}`"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="repo-tag repo-link-tag"
@@ -185,6 +185,7 @@
 </template>
 
 <script setup>
+import { ORG_NAME, ORG_GITHUB_URL, orgDataUrl } from '../utils/org.js'
 import { ref, computed, nextTick, watch } from 'vue'
 
 // Props

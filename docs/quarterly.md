@@ -1,7 +1,7 @@
 ---
 layout: doc
 title: 季度贡献者
-description: Datawhale 季度贡献者统计与展示
+description: Silver-yiyangyiyang 季度贡献者统计与展示
 ---
 
 <script setup>

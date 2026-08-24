@@ -1,4 +1,5 @@
 <script setup>
+import { ORG_NAME, ORG_GITHUB_URL, orgDataUrl } from '../utils/org.js'
 import { ref, computed, onMounted, onUnmounted, nextTick } from 'vue'
 import * as echarts from 'echarts'
 import { loadMembers } from '../utils/dataLoader.js'
@@ -42,7 +43,7 @@ const topContributors = computed(() => {
 })
 
 const steps = [
-  { icon: '🔍', title: '了解组织', desc: 'Datawhale 是一个专注于 AI 领域的开源学习社区，汇聚了众多热爱开源的贡献者。' },
+  { icon: '🔍', title: '了解组织', desc: 'Silver-yiyangyiyang 是一个开源社区，汇聚了众多热爱开源的贡献者。' },
   { icon: '🧭', title: '选择方向', desc: '探索社区成员的研究方向分布，找到你感兴趣的领域。' },
   { icon: '📂', title: '找到项目', desc: '浏览热门项目，选择一个开始你的贡献之旅。' },
   { icon: '🚀', title: '开始贡献', desc: 'Fork 仓库、阅读文档、提交 PR，成为社区的一份子。' },
@@ -128,7 +129,7 @@ onUnmounted(() => {
       <div class="welcome-card">
         <div class="welcome-icon">👋</div>
         <div class="welcome-text">
-          <h3>欢迎加入 Datawhale 开源社区</h3>
+          <h3>欢迎加入 Silver-yiyangyiyang 开源社区</h3>
           <p>目前已有 <strong>{{ memberCount }}</strong> 位贡献者，点击下方步骤了解如何开始你的开源之旅</p>
         </div>
       </div>
@@ -167,8 +168,8 @@ onUnmounted(() => {
                   <div class="mini-stat"><span class="mini-num">{{ popularRepos.length }}+</span><span class="mini-label">活跃项目</span></div>
                 </div>
                 <div class="detail-links">
-                  <a href="https://www.datawhale.cn/" target="_blank" class="link-btn">🌐 Datawhale 官网</a>
-                  <a href="https://github.com/datawhalechina" target="_blank" class="link-btn">🐙 GitHub 组织</a>
+                  <a :href="ORG_GITHUB_URL" target="_blank" class="link-btn">🌐 组织主页</a>
+                  <a :href="ORG_GITHUB_URL" target="_blank" class="link-btn">🐙 GitHub 组织</a>
                 </div>
               </template>
 
@@ -182,7 +183,7 @@ onUnmounted(() => {
                 <div class="repo-list">
                   <a
                     v-for="repo in popularRepos" :key="repo.name"
-                    :href="`https://github.com/datawhalechina/${repo.name}`"
+                    :href="`https://github.com/${ORG_NAME}/${repo.name}`"
                     target="_blank" class="repo-item"
                   >
                     <span class="repo-name">📁 {{ repo.name }}</span>
@@ -199,7 +200,7 @@ onUnmounted(() => {
                   <div class="contrib-step"><span class="contrib-num">3</span> 在本地修改代码并测试</div>
                   <div class="contrib-step"><span class="contrib-num">4</span> 提交 Pull Request 并等待 Review</div>
                 </div>
-                <a href="https://github.com/datawhalechina" target="_blank" class="link-btn" style="margin-top: 12px;">🚀 前往 GitHub 开始贡献</a>
+                <a :href="ORG_GITHUB_URL" target="_blank" class="link-btn" style="margin-top: 12px;">🚀 前往 GitHub 开始贡献</a>
               </template>
 
               <!-- 步骤5: 持续成长 -->

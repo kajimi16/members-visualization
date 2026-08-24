@@ -19,7 +19,7 @@
     "vitepress",
     "echarts"
   ],
-  "author": "Datawhale",
+  "author": "kajimi16",
   "license": "MIT",
   "dependencies": {
     "echarts": "^5.5.0",
@@ -29,7 +29,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/datawhalechina/members-visualization.git"
+    "url": "https://github.com/kajimi16/members-visualization.git"
   },
   "devDependencies": {
     "cross-env": "10.0.0",

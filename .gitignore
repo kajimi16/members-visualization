@@ -32,3 +32,5 @@ Thumbs.db
 *.swp
 *.swo
 *~
+# 统计脚本缓存（每次运行变化，不提交）
+docs/public/data/cache/

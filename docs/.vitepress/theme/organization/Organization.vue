@@ -1,4 +1,5 @@
 <script setup>
+import { ORG_NAME, ORG_GITHUB_URL, orgDataUrl } from '../utils/org.js'
 import { ref, onMounted } from 'vue'
 import OrganizationTable from './OrganizationTable.vue'
 
@@ -8,7 +9,7 @@ const error = ref(null)
 
 const loadData = async () => {
     const basePath = import.meta.env.BASE_URL || '/'
-    const commitsPath = `${basePath}data/datawhalechina/organization_datasource.json`.replace(/\/+/g, '/')
+    const commitsPath = orgDataUrl('organization_datasource.json')
     const response = await fetch(commitsPath)
     if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`)

@@ -1,0 +1,807 @@
+{
+  "meta": {
+    "year": 2026,
+    "start_month": 1,
+    "end_month": 9,
+    "org_name": "Silver-yiyangyiyang",
+    "period_label": "2026年1-9月",
+    "period_type": "monthly_range",
+    "generated_at": "2026-08-24T23:32:17.263568",
+    "total_contributors": 5,
+    "outstanding_count": 1,
+    "excellent_count": 3,
+    "active_count": 1,
+    "total_additions": 384644,
+    "total_deletions": 13170,
+    "total_changes": 397814,
+    "thresholds": {
+      "outstanding": 50,
+      "excellent": 10,
+      "valid_commit_threshold": 10
+    }
+  },
+  "contributors": {
+    "outstanding": [
+      {
+        "username": "komariChikaA",
+        "verified": true,
+        "valid_commits": 196,
+        "total_commits": 196,
+        "additions": 343874,
+        "deletions": 7952,
+        "changes": 351826,
+        "repos_count": 10,
+        "repos": [
+          ".github",
+          "community-fraud-guard",
+          "elderly-fraud-risk-system",
+          "fraud-guard-clients",
+          "fraud-guard-shared",
+          "home-visit-fraud-guard",
+          "jbgs-proposal",
+          "jbgs-submission",
+          "mobile-fraud-guard",
+          "silver-fraud-guard"
+        ],
+        "recent_commits": [
+          {
+            "repo": "jbgs-proposal",
+            "sha": "d2fd4b91",
+            "message": "docs: add privacy & security evidence checklist",
+            "date": "2026-08-24T13:39:48Z",
+            "files_count": 1,
+            "total_additions": 171,
+            "total_deletions": 0,
+            "total_changes": 171
+          },
+          {
+            "repo": "jbgs-submission",
+            "sha": "256fb960",
+            "message": "docs: refresh pinned commits and test totals after PR merge (395 passed)",
+            "date": "2026-08-24T12:44:00Z",
+            "files_count": 4,
+            "total_additions": 25,
+            "total_deletions": 25,
+            "total_changes": 50
+          },
+          {
+            "repo": "mobile-fraud-guard",
+            "sha": "61f9a321",
+            "message": "Merge pull request #27 from Silver-yiyangyiyang/agent/shared8-transformer-eval",
+            "date": "2026-08-24T03:19:09Z",
+            "files_count": 3,
+            "total_additions": 150,
+            "total_deletions": 65,
+            "total_changes": 215
+          },
+          {
+            "repo": "mobile-fraud-guard",
+            "sha": "aa998e63",
+            "message": "feat(fraud): GPU domain fine-tune evaluation (BERT negative on t2023)",
+            "date": "2026-08-24T03:18:50Z",
+            "files_count": 3,
+            "total_additions": 150,
+            "total_deletions": 65,
+            "total_changes": 215
+          },
+          {
+            "repo": "jbgs-submission",
+            "sha": "df51ca9e",
+            "message": "docs: add online-entry walkthrough and test-account guide",
+            "date": "2026-08-24T02:03:40Z",
+            "files_count": 1,
+            "total_additions": 107,
+            "total_deletions": 0,
+            "total_changes": 107
+          },
+          {
+            "repo": "jbgs-proposal",
+            "sha": "c99e9d15",
+            "message": "docs: add post-merge review checklist and final-package pre-build script",
+            "date": "2026-08-24T02:02:47Z",
+            "files_count": 2,
+            "total_additions": 331,
+            "total_deletions": 0,
+            "total_changes": 331
+          },
+          {
+            "repo": "jbgs-submission",
+            "sha": "d22f5b90",
+            "message": "docs: add demo video one-take script and storyboard",
+            "date": "2026-08-24T01:50:29Z",
+            "files_count": 1,
+            "total_additions": 84,
+            "total_deletions": 0,
+            "total_changes": 84
+          },
+          {
+            "repo": "jbgs-proposal",
+            "sha": "5f7d23df",
+            "message": "docs: refresh defense PPT reference with 2026-08-24 baselines",
+            "date": "2026-08-24T01:50:16Z",
+            "files_count": 1,
+            "total_additions": 254,
+            "total_deletions": 0,
+            "total_changes": 254
+          },
+          {
+            "repo": "jbgs-proposal",
+            "sha": "b27d518a",
+            "message": "Merge pull request #28 from Silver-yiyangyiyang/agent/round8-transformer-docs",
+            "date": "2026-08-24T00:53:31Z",
+            "files_count": 2,
+            "total_additions": 12,
+            "total_deletions": 1,
+            "total_changes": 13
+          },
+          {
+            "repo": "jbgs-proposal",
+            "sha": "4995b206",
+            "message": "docs: record round-8 transformer GPU experiment result",
+            "date": "2026-08-24T00:51:14Z",
+            "files_count": 1,
+            "total_additions": 11,
+            "total_deletions": 0,
+            "total_changes": 11
+          }
+        ]
+      }
+    ],
+    "excellent": [
+      {
+        "username": "KuonjiPloy",
+        "verified": true,
+        "valid_commits": 18,
+        "total_commits": 18,
+        "additions": 28949,
+        "deletions": 4700,
+        "changes": 33649,
+        "repos_count": 7,
+        "repos": [
+          "community-fraud-guard",
+          "elderly-fraud-risk-system",
+          "fraud-guard-clients",
+          "home-visit-fraud-guard",
+          "jbgs-proposal",
+          "mobile-fraud-guard",
+          "silver-fraud-guard"
+        ],
+        "recent_commits": [
+          {
+            "repo": "mobile-fraud-guard",
+            "sha": "2e59db50",
+            "message": "Merge pull request #25 from Silver-yiyangyiyang/feat/perf-multiworker",
+            "date": "2026-08-24T02:43:14Z",
+            "files_count": 1,
+            "total_additions": 78,
+            "total_deletions": 0,
+            "total_changes": 78
+          },
+          {
+            "repo": "mobile-fraud-guard",
+            "sha": "a1042c91",
+            "message": "docs: define safe multi-worker model releases",
+            "date": "2026-08-24T02:41:45Z",
+            "files_count": 1,
+            "total_additions": 57,
+            "total_deletions": 28,
+            "total_changes": 85
+          },
+          {
+            "repo": "home-visit-fraud-guard",
+            "sha": "1d108b9d",
+            "message": "Merge pull request #18 from Silver-yiyangyiyang/feat/repository-concurrency",
+            "date": "2026-08-24T02:37:26Z",
+            "files_count": 2,
+            "total_additions": 58,
+            "total_deletions": 5,
+            "total_changes": 63
+          },
+          {
+            "repo": "home-visit-fraud-guard",
+            "sha": "9dbf116a",
+            "message": "fix: support in-memory repository reads",
+            "date": "2026-08-24T02:33:59Z",
+            "files_count": 2,
+            "total_additions": 23,
+            "total_deletions": 1,
+            "total_changes": 24
+          },
+          {
+            "repo": "elderly-fraud-risk-system",
+            "sha": "e408ef3e",
+            "message": "feat: add governed Silver observation layer (#11)",
+            "date": "2026-08-23T10:54:59Z",
+            "files_count": 7,
+            "total_additions": 743,
+            "total_deletions": 0,
+            "total_changes": 743
+          },
+          {
+            "repo": "mobile-fraud-guard",
+            "sha": "98c0c23c",
+            "message": "feat: add governed mobile model lifecycle (#17)",
+            "date": "2026-08-23T10:54:54Z",
+            "files_count": 12,
+            "total_additions": 1033,
+            "total_deletions": 14,
+            "total_changes": 1047
+          },
+          {
+            "repo": "silver-fraud-guard",
+            "sha": "01f8d6af",
+            "message": "feat: 完成 runtime 持久化、生产 BFF 与学习观察导出 (#32)",
+            "date": "2026-08-23T10:54:50Z",
+            "files_count": 35,
+            "total_additions": 4332,
+            "total_deletions": 119,
+            "total_changes": 4451
+          },
+          {
+            "repo": "fraud-guard-clients",
+            "sha": "f1b4c5ef",
+            "message": "feat: 完成三端会话、核心流程、正式 UI 与生产门禁 (#31)",
+            "date": "2026-08-23T10:54:32Z",
+            "files_count": 96,
+            "total_additions": 4076,
+            "total_deletions": 297,
+            "total_changes": 4373
+          },
+          {
+            "repo": "jbgs-proposal",
+            "sha": "0b9c1aa2",
+            "message": "feat: add portable release evidence runner",
+            "date": "2026-08-23T06:00:45Z",
+            "files_count": 5,
+            "total_additions": 403,
+            "total_deletions": 0,
+            "total_changes": 403
+          },
+          {
+            "repo": "fraud-guard-clients",
+            "sha": "5799cc8c",
+            "message": "feat: harden client review and submission flows (#4)",
+            "date": "2026-08-21T12:40:21Z",
+            "files_count": 19,
+            "total_additions": 402,
+            "total_deletions": 45,
+            "total_changes": 447
+          }
+        ]
+      },
+      {
+        "username": "kajimi16",
+        "verified": true,
+        "valid_commits": 14,
+        "total_commits": 14,
+        "additions": 5104,
+        "deletions": 174,
+        "changes": 5278,
+        "repos_count": 5,
+        "repos": [
+          "fraud-guard-clients",
+          "fraud-guard-perf",
+          "home-visit-fraud-guard",
+          "mobile-fraud-guard",
+          "silver-fraud-guard"
+        ],
+        "recent_commits": [
+          {
+            "repo": "silver-fraud-guard",
+            "sha": "3a90d7fe",
+            "message": "docs: 多 worker 部署性能验证与语义说明 (#38)",
+            "date": "2026-08-24T02:42:42Z",
+            "files_count": 1,
+            "total_additions": 106,
+            "total_deletions": 0,
+            "total_changes": 106
+          },
+          {
+            "repo": "fraud-guard-clients",
+            "sha": "19be08a9",
+            "message": "feat(api-client): cases 列表透明翻页,适配后端 keyset 分页 (#35)",
+            "date": "2026-08-24T02:38:01Z",
+            "files_count": 3,
+            "total_additions": 66,
+            "total_deletions": 16,
+            "total_changes": 82
+          },
+          {
+            "repo": "silver-fraud-guard",
+            "sha": "5461d251",
+            "message": "feat: 性能优化——并发读写路径与共享连接竞态修复 (#37)",
+            "date": "2026-08-24T02:36:35Z",
+            "files_count": 10,
+            "total_additions": 465,
+            "total_deletions": 96,
+            "total_changes": 561
+          },
+          {
+            "repo": "home-visit-fraud-guard",
+            "sha": "8087290b",
+            "message": "feat: Repository 读写隔离与 WAL,消除并发共享连接竞态",
+            "date": "2026-08-23T20:58:32Z",
+            "files_count": 1,
+            "total_additions": 35,
+            "total_deletions": 4,
+            "total_changes": 39
+          },
+          {
+            "repo": "fraud-guard-perf",
+            "sha": "e6776a9e",
+            "message": "Merge pull request #3 from Silver-yiyangyiyang/feat/runner-enhance",
+            "date": "2026-08-23T20:53:53Z",
+            "files_count": 5,
+            "total_additions": 539,
+            "total_deletions": 13,
+            "total_changes": 552
+          },
+          {
+            "repo": "fraud-guard-perf",
+            "sha": "d5f65a16",
+            "message": "Merge pull request #2 from Silver-yiyangyiyang/feat/webui-charts",
+            "date": "2026-08-23T20:53:40Z",
+            "files_count": 2,
+            "total_additions": 87,
+            "total_deletions": 12,
+            "total_changes": 99
+          },
+          {
+            "repo": "mobile-fraud-guard",
+            "sha": "391f492e",
+            "message": "docs: 多 worker 部署性能验证与安全性说明",
+            "date": "2026-08-23T20:48:16Z",
+            "files_count": 1,
+            "total_additions": 49,
+            "total_deletions": 0,
+            "total_changes": 49
+          },
+          {
+            "repo": "fraud-guard-perf",
+            "sha": "2684e11b",
+            "message": "feat(runner): 参考端点归一化,缓解共享机器负载对结果的影响",
+            "date": "2026-08-23T20:32:57Z",
+            "files_count": 5,
+            "total_additions": 469,
+            "total_deletions": 8,
+            "total_changes": 477
+          },
+          {
+            "repo": "fraud-guard-perf",
+            "sha": "cb9edd8e",
+            "message": "feat(runner): 报告内置环境快照与多轮中位数,结果可解释",
+            "date": "2026-08-23T20:29:33Z",
+            "files_count": 1,
+            "total_additions": 68,
+            "total_deletions": 5,
+            "total_changes": 73
+          },
+          {
+            "repo": "fraud-guard-perf",
+            "sha": "d315e24a",
+            "message": "feat(webui): 对比视图自动生成 RPS 与延迟图表",
+            "date": "2026-08-23T19:46:01Z",
+            "files_count": 2,
+            "total_additions": 87,
+            "total_deletions": 12,
+            "total_changes": 99
+          }
+        ]
+      },
+      {
+        "username": "snowling514",
+        "verified": true,
+        "valid_commits": 10,
+        "total_commits": 10,
+        "additions": 6673,
+        "deletions": 344,
+        "changes": 7017,
+        "repos_count": 1,
+        "repos": [
+          "elderly-fraud-risk-system"
+        ],
+        "recent_commits": [
+          {
+            "repo": "elderly-fraud-risk-system",
+            "sha": "0cfc4a25",
+            "message": "feat: complete G2-G4 risk and alert workflow",
+            "date": "2026-07-25T03:24:13Z",
+            "files_count": 37,
+            "total_additions": 3384,
+            "total_deletions": 130,
+            "total_changes": 3514
+          },
+          {
+            "repo": "elderly-fraud-risk-system",
+            "sha": "601cd34a",
+            "message": "Expand questionnaire ability sections",
+            "date": "2026-07-17T16:44:44Z",
+            "files_count": 1,
+            "total_additions": 194,
+            "total_deletions": 20,
+            "total_changes": 214
+          },
+          {
+            "repo": "elderly-fraud-risk-system",
+            "sha": "c0fa55b6",
+            "message": "Refine visual questionnaire layout",
+            "date": "2026-07-15T12:34:41Z",
+            "files_count": 2,
+            "total_additions": 216,
+            "total_deletions": 85,
+            "total_changes": 301
+          },
+          {
+            "repo": "elderly-fraud-risk-system",
+            "sha": "afd077ca",
+            "message": "Add visual questionnaire page",
+            "date": "2026-07-11T09:24:07Z",
+            "files_count": 5,
+            "total_additions": 771,
+            "total_deletions": 0,
+            "total_changes": 771
+          },
+          {
+            "repo": "elderly-fraud-risk-system",
+            "sha": "b052d9d4",
+            "message": "Add questionnaire conversion endpoint",
+            "date": "2026-07-11T09:04:55Z",
+            "files_count": 5,
+            "total_additions": 536,
+            "total_deletions": 35,
+            "total_changes": 571
+          },
+          {
+            "repo": "elderly-fraud-risk-system",
+            "sha": "dd7f4a14",
+            "message": "Add elderly list and detail endpoints",
+            "date": "2026-06-10T23:11:10Z",
+            "files_count": 4,
+            "total_additions": 138,
+            "total_deletions": 7,
+            "total_changes": 145
+          },
+          {
+            "repo": "elderly-fraud-risk-system",
+            "sha": "95a9017a",
+            "message": "Add Render deployment configuration",
+            "date": "2026-06-10T22:57:37Z",
+            "files_count": 5,
+            "total_additions": 101,
+            "total_deletions": 3,
+            "total_changes": 104
+          },
+          {
+            "repo": "elderly-fraud-risk-system",
+            "sha": "8a4bc283",
+            "message": "Add standalone API documentation",
+            "date": "2026-06-10T22:41:36Z",
+            "files_count": 2,
+            "total_additions": 185,
+            "total_deletions": 64,
+            "total_changes": 249
+          },
+          {
+            "repo": "elderly-fraud-risk-system",
+            "sha": "6111a058",
+            "message": "Fix local FastAPI interpreter setup",
+            "date": "2026-06-10T22:28:57Z",
+            "files_count": 4,
+            "total_additions": 62,
+            "total_deletions": 0,
+            "total_changes": 62
+          },
+          {
+            "repo": "elderly-fraud-risk-system",
+            "sha": "dfa7779c",
+            "message": "Initial FastAPI fraud risk assessment system",
+            "date": "2026-06-10T22:25:27Z",
+            "files_count": 10,
+            "total_additions": 1086,
+            "total_deletions": 0,
+            "total_changes": 1086
+          }
+        ]
+      }
+    ],
+    "active": [
+      {
+        "username": "guoquguolai",
+        "verified": true,
+        "valid_commits": 1,
+        "total_commits": 1,
+        "additions": 44,
+        "deletions": 0,
+        "changes": 44,
+        "repos_count": 1,
+        "repos": [
+          "demo-repository"
+        ],
+        "recent_commits": [
+          {
+            "repo": "demo-repository",
+            "sha": "046b368a",
+            "message": "Initial commit",
+            "date": "2026-08-21T03:49:10Z",
+            "files_count": 5,
+            "total_additions": 44,
+            "total_deletions": 0,
+            "total_changes": 44
+          }
+        ]
+      }
+    ]
+  },
+  "ranking": {
+    "by_commits": [
+      {
+        "username": "komariChikaA",
+        "verified": true,
+        "valid_commits": 196,
+        "total_commits": 196,
+        "additions": 343874,
+        "deletions": 7952,
+        "changes": 351826,
+        "repos_count": 10,
+        "commit_rank": 1,
+        "code_rank": 1
+      },
+      {
+        "username": "KuonjiPloy",
+        "verified": true,
+        "valid_commits": 18,
+        "total_commits": 18,
+        "additions": 28949,
+        "deletions": 4700,
+        "changes": 33649,
+        "repos_count": 7,
+        "commit_rank": 2,
+        "code_rank": 2
+      },
+      {
+        "username": "kajimi16",
+        "verified": true,
+        "valid_commits": 14,
+        "total_commits": 14,
+        "additions": 5104,
+        "deletions": 174,
+        "changes": 5278,
+        "repos_count": 5,
+        "commit_rank": 3,
+        "code_rank": 4
+      },
+      {
+        "username": "snowling514",
+        "verified": true,
+        "valid_commits": 10,
+        "total_commits": 10,
+        "additions": 6673,
+        "deletions": 344,
+        "changes": 7017,
+        "repos_count": 1,
+        "commit_rank": 4,
+        "code_rank": 3
+      },
+      {
+        "username": "guoquguolai",
+        "verified": true,
+        "valid_commits": 1,
+        "total_commits": 1,
+        "additions": 44,
+        "deletions": 0,
+        "changes": 44,
+        "repos_count": 1,
+        "commit_rank": 5,
+        "code_rank": 5
+      }
+    ],
+    "by_code": [
+      {
+        "username": "komariChikaA",
+        "verified": true,
+        "valid_commits": 196,
+        "total_commits": 196,
+        "additions": 343874,
+        "deletions": 7952,
+        "changes": 351826,
+        "repos_count": 10,
+        "commit_rank": 1,
+        "code_rank": 1
+      },
+      {
+        "username": "KuonjiPloy",
+        "verified": true,
+        "valid_commits": 18,
+        "total_commits": 18,
+        "additions": 28949,
+        "deletions": 4700,
+        "changes": 33649,
+        "repos_count": 7,
+        "commit_rank": 2,
+        "code_rank": 2
+      },
+      {
+        "username": "snowling514",
+        "verified": true,
+        "valid_commits": 10,
+        "total_commits": 10,
+        "additions": 6673,
+        "deletions": 344,
+        "changes": 7017,
+        "repos_count": 1,
+        "commit_rank": 4,
+        "code_rank": 3
+      },
+      {
+        "username": "kajimi16",
+        "verified": true,
+        "valid_commits": 14,
+        "total_commits": 14,
+        "additions": 5104,
+        "deletions": 174,
+        "changes": 5278,
+        "repos_count": 5,
+        "commit_rank": 3,
+        "code_rank": 4
+      },
+      {
+        "username": "guoquguolai",
+        "verified": true,
+        "valid_commits": 1,
+        "total_commits": 1,
+        "additions": 44,
+        "deletions": 0,
+        "changes": 44,
+        "repos_count": 1,
+        "commit_rank": 5,
+        "code_rank": 5
+      }
+    ]
+  },
+  "repo_matrix": {
+    "jbgs-proposal": {
+      "komariChikaA": {
+        "commits": 41,
+        "additions": 4834,
+        "deletions": 725
+      },
+      "KuonjiPloy": {
+        "commits": 1,
+        "additions": 403,
+        "deletions": 0
+      }
+    },
+    "jbgs-submission": {
+      "komariChikaA": {
+        "commits": 5,
+        "additions": 896,
+        "deletions": 30
+      }
+    },
+    ".github": {
+      "komariChikaA": {
+        "commits": 5,
+        "additions": 311,
+        "deletions": 29
+      }
+    },
+    "mobile-fraud-guard": {
+      "komariChikaA": {
+        "commits": 22,
+        "additions": 19404,
+        "deletions": 763
+      },
+      "KuonjiPloy": {
+        "commits": 3,
+        "additions": 1168,
+        "deletions": 42
+      },
+      "kajimi16": {
+        "commits": 1,
+        "additions": 49,
+        "deletions": 0
+      }
+    },
+    "silver-fraud-guard": {
+      "komariChikaA": {
+        "commits": 23,
+        "additions": 9845,
+        "deletions": 200
+      },
+      "KuonjiPloy": {
+        "commits": 3,
+        "additions": 7136,
+        "deletions": 138
+      },
+      "kajimi16": {
+        "commits": 2,
+        "additions": 571,
+        "deletions": 96
+      }
+    },
+    "fraud-guard-clients": {
+      "komariChikaA": {
+        "commits": 19,
+        "additions": 34991,
+        "deletions": 384
+      },
+      "KuonjiPloy": {
+        "commits": 2,
+        "additions": 4478,
+        "deletions": 342
+      },
+      "kajimi16": {
+        "commits": 1,
+        "additions": 66,
+        "deletions": 16
+      }
+    },
+    "home-visit-fraud-guard": {
+      "komariChikaA": {
+        "commits": 37,
+        "additions": 5242,
+        "deletions": 402
+      },
+      "KuonjiPloy": {
+        "commits": 2,
+        "additions": 81,
+        "deletions": 6
+      },
+      "kajimi16": {
+        "commits": 1,
+        "additions": 35,
+        "deletions": 4
+      }
+    },
+    "community-fraud-guard": {
+      "komariChikaA": {
+        "commits": 7,
+        "additions": 1212,
+        "deletions": 39
+      },
+      "KuonjiPloy": {
+        "commits": 1,
+        "additions": 1149,
+        "deletions": 48
+      }
+    },
+    "fraud-guard-shared": {
+      "komariChikaA": {
+        "commits": 19,
+        "additions": 5050,
+        "deletions": 247
+      }
+    },
+    "elderly-fraud-risk-system": {
+      "komariChikaA": {
+        "commits": 18,
+        "additions": 262089,
+        "deletions": 5133
+      },
+      "KuonjiPloy": {
+        "commits": 6,
+        "additions": 14534,
+        "deletions": 4124
+      },
+      "snowling514": {
+        "commits": 10,
+        "additions": 6673,
+        "deletions": 344
+      }
+    },
+    "fraud-guard-perf": {
+      "kajimi16": {
+        "commits": 9,
+        "additions": 4383,
+        "deletions": 58
+      }
+    },
+    "demo-repository": {
+      "guoquguolai": {
+        "commits": 1,
+        "additions": 44,
+        "deletions": 0
+      }
+    }
+  }
+}

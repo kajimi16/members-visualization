@@ -17,9 +17,11 @@ except ImportError:
     pass
 
 
+ORG_NAME = os.getenv('GITHUB_ORG', 'Silver-yiyangyiyang')
+
 CONFIG = {
     'GITHUB_TOKEN': os.getenv('GITHUB_TOKEN'),
-    'DATAWHALE_ORGANIZATION_NAME': "datawhalechina",
+    'DATAWHALE_ORGANIZATION_NAME': ORG_NAME,
     'TOP_10_KNOWLEDGE_SHARING_ORGANIZATION': [
         "freeCodeCamp",
         "TheAlgorithms",
@@ -27,19 +29,19 @@ CONFIG = {
         "ossu",
         "doocs",
         "h5bp",
-        "datawhalechina",
+        ORG_NAME,
         "dair-ai",
         "jobbole",
         "papers-we-love",
     ],
-    'DATA_DIR': Path(__file__).parent.parent.parent / 'docs' / 'public' / 'data' / 'datawhalechina',
-    'REPO_DATA_DIR': Path(__file__).parent.parent.parent / 'docs' / 'public' / 'data' / 'datawhalechina' / 'repo',
-    'ORGANIZATION_DATA_DIR': Path(__file__).parent.parent.parent / 'docs' / 'public' / 'data' / 'datawhalechina' / 'organization',
+    'DATA_DIR': Path(__file__).parent.parent.parent / 'docs' / 'public' / 'data' / ORG_NAME,
+    'REPO_DATA_DIR': Path(__file__).parent.parent.parent / 'docs' / 'public' / 'data' / ORG_NAME / 'repo',
+    'ORGANIZATION_DATA_DIR': Path(__file__).parent.parent.parent / 'docs' / 'public' / 'data' / ORG_NAME / 'organization',
     'ALL_ORGANIZATION_FILE_NAME': "all_organization.json",
     'TOP_10_KNOWLEDGE_SHARING_ORGANIZATION_FILE_NAME': "top_10_knowledge_sharing_organization.json",
     'REPO_DATA_LIST_FILE_NAME': "repo_list.json",
-    'ANALYZED_DATASOURCE_FILE_NAME': Path(__file__).parent.parent.parent / 'docs' / 'public' / 'data' / 'datawhalechina' / 'organization_datasource.json',
-    'FETCH_TIME_KEY_FILE_NAME': Path(__file__).parent.parent.parent / 'docs' / 'public' / 'data' / 'datawhalechina' / 'fetch_time_key.json',
+    'ANALYZED_DATASOURCE_FILE_NAME': Path(__file__).parent.parent.parent / 'docs' / 'public' / 'data' / ORG_NAME / 'organization_datasource.json',
+    'FETCH_TIME_KEY_FILE_NAME': Path(__file__).parent.parent.parent / 'docs' / 'public' / 'data' / ORG_NAME / 'fetch_time_key.json',
 }
 
 
@@ -84,7 +86,7 @@ def fetch_organization_data(key):
     ensure_dir_and_write_files([top_10_knowledge_sharing_organization_path, top_10_knowledge_sharing_organization_path_with_key], json.dumps(
         star_history_res["top_10_knowledge_sharing_organization"], indent=2, ensure_ascii=False))
 
-    # 2. 获取Datawhale的仓库列表和仓库详情，并进行写入
+    # 2. 获取组织的仓库列表和仓库详情，并进行写入
     repo_detail_res = fetch_organization_repo_detail(
         CONFIG['DATAWHALE_ORGANIZATION_NAME'], github_token, ['.github'], origin_repo_detail_list, key)
     ensure_dir_and_write_files([repo_data_list_file_path, repo_data_list_file_path_with_key], json.dumps(
@@ -136,7 +138,18 @@ def analyze_organization_data(previous_key, current_key):
     )
 
 
-if __name__ == "__main__":
+    import sys
+
+    # --force 参数：跳过"仅每月1日运行"限制，用于手动立即生成数据
+    force = '--force' in sys.argv
+
+    year = datetime.now().year
+    month = datetime.now().month
+    day = datetime.now().day
+
+    # 每月1日运行脚本（--force 可跳过）
+    if day != 1 and not force:
+        exit(0)
     year = datetime.now().year
     month = datetime.now().month
     day = datetime.now().day

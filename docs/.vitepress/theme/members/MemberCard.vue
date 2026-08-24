@@ -1,4 +1,5 @@
 <script setup>
+import { ORG_NAME, ORG_GITHUB_URL, orgDataUrl } from '../utils/org.js'
 import { ref, onMounted } from 'vue'
 
 const props = defineProps({
@@ -120,7 +121,7 @@ onMounted(() => {
           class="repo-item"
         >
           <a
-            :href="`https://github.com/datawhalechina/${repoName}`"
+            :href="`https://github.com/${ORG_NAME}/${repoName}`"
             target="_blank"
             rel="noopener noreferrer"
             class="repo-name"
@@ -128,7 +129,7 @@ onMounted(() => {
             {{ repoName }}
           </a>
           <div class="repo-meta">
-            <span class="repo-org">datawhalechina</span>
+            <span class="repo-org">{{ ORG_NAME }}</span>
           </div>
         </div>
       </div>

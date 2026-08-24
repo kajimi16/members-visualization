@@ -1,4 +1,5 @@
 <script setup>
+import { ORG_NAME, ORG_GITHUB_URL, orgDataUrl } from '../utils/org.js'
 import { ref } from 'vue';
 import ProjectBaseChart from './ProjectBaseChart.vue';
 
@@ -14,7 +15,7 @@ const extraConfg = ref({
 
 const loadChartData = async () => {
     const basePath = import.meta.env.BASE_URL || '/'
-    const commitsPath = `${basePath}data/datawhalechina/organization_datasource.json`.replace(/\/+/g, '/')
+    const commitsPath = orgDataUrl('organization_datasource.json')
     const response = await fetch(commitsPath)
     if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`)

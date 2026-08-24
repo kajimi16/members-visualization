@@ -4,7 +4,7 @@
 import OrgStatsCards from './.vitepress/theme/stats/OrgStatsCards.vue'
 </script>
 
-以下数据来自 [OSS Insight](https://next.ossinsight.io/analyze/datawhalechina)，展示 Datawhale 组织的各项统计指标。点击卡片可跳转查看详细分析。
+以下数据来自 [OSS Insight](https://next.ossinsight.io/analyze/Silver-yiyangyiyang)，展示 Silver-yiyangyiyang 组织的各项统计指标。点击卡片可跳转查看详细分析。
 
 <OrgStatsCards :selector-only="true" />
 

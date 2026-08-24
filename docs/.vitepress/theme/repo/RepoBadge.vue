@@ -1,4 +1,5 @@
 <script setup>
+import { ORG_NAME, ORG_GITHUB_URL, orgDataUrl } from '../utils/org.js'
 import { computed, nextTick, onBeforeUnmount, ref, watch } from 'vue'
 import * as echarts from 'echarts'
 
@@ -29,7 +30,7 @@ let loadToken = 0
 const basePath = computed(() => import.meta.env.BASE_URL || '/')
 
 const normalizePath = (path) => path.replace(/([^:]\/)\/+/g, '$1')
-const normalizeRepoName = (value = '') => value.trim().replace(/^datawhalechina\//i, '').toLowerCase()
+const normalizeRepoName = (value = '') => value.trim().replace(new RegExp(`^${ORG_NAME}/`, 'i'), '').toLowerCase()
 
 const parseMonthKey = (key) => {
   const [yearText, monthText] = key.split('-')
@@ -187,8 +188,8 @@ const resizeChart = () => {
 
 const loadRepoData = async (repoSlug) => {
   const candidates = [
-    normalizePath(`${basePath.value}data/datawhalechina/repo/${repoSlug}.json`),
-    normalizePath(`${basePath.value}data/datawhalechina/repo/${repoSlug.toLowerCase()}.json`)
+    normalizePath(orgDataUrl(`repo/${repoSlug}.json`)),
+    normalizePath(orgDataUrl(`repo/${repoSlug.toLowerCase()}.json`))
   ]
 
   let lastError = null
@@ -222,7 +223,7 @@ const loadMembersData = async () => {
 }
 
 const loadRepoListData = async () => {
-  const response = await fetch(normalizePath(`${basePath.value}data/datawhalechina/organization/repo_list.json`))
+  const response = await fetch(orgDataUrl('organization/repo_list.json'))
   if (!response.ok) return []
   return await response.json()
 }
@@ -474,7 +475,7 @@ onBeforeUnmount(() => {
         </aside>
       </div>
       <div class="badge-footer">
-        <span>powered by github.com/datawhalechina/members-visualization</span>
+        <span>powered by github.com/${ORG_NAME}/members-visualization</span>
       </div>
     </article>
   </div>

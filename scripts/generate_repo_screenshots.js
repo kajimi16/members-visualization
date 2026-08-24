@@ -11,7 +11,7 @@ const { spawn } = require('child_process');
 
 const BASE_URL = 'http://localhost:4173/members-visualization';
 const OUTPUT_DIR = path.join(__dirname, '../docs/public/badges');
-const REPO_DATA_DIR = path.join(__dirname, '../docs/public/data/datawhalechina/repo');
+const REPO_DATA_DIR = path.join(__dirname, `../docs/public/data/${process.env.GITHUB_ORG || 'Silver-yiyangyiyang'}/repo`);
 
 let previewServer = null;
 

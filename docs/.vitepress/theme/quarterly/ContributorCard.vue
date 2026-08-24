@@ -48,7 +48,7 @@
           <a
             v-for="repo in contributor.repos.slice(0, 4)"
             :key="repo"
-            :href="`https://github.com/datawhalechina/${repo}`"
+            :href="`https://github.com/${ORG_NAME}/${repo}`"
             target="_blank"
             class="repo-tag"
           >
@@ -64,6 +64,7 @@
 </template>
 
 <script setup>
+import { ORG_NAME, ORG_GITHUB_URL, orgDataUrl } from '../utils/org.js'
 import { computed } from 'vue'
 
 const props = defineProps({

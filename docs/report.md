@@ -4,7 +4,7 @@
 import AnnualReport from './.vitepress/theme/report/AnnualReport.vue'
 </script>
 
-输入 GitHub 用户名，生成你在 Datawhale 社区的专属开源报告。
+输入 GitHub 用户名，生成你在 Silver-yiyangyiyang 社区的专属开源报告。
 
 <AnnualReport />
 

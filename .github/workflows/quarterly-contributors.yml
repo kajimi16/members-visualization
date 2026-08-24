@@ -25,6 +25,11 @@ on:
         description: '结束月份 1-12 (仅 custom 模式)'
         required: false
         type: string
+      org:
+        description: 'GitHub 组织名'
+        required: false
+        default: 'Silver-yiyangyiyang'
+        type: string
 
 permissions:
   contents: write
@@ -56,11 +61,11 @@ jobs:
       - name: Run monthly contributors script
         run: |
           if [ "${{ inputs.mode }}" == "custom" ]; then
-            python -u scripts/quarterly_contributors/quarterly_contributors.py ${{ inputs.year }} ${{ inputs.start_month }} ${{ inputs.end_month }}
+            python -u scripts/quarterly_contributors/quarterly_contributors.py --org ${{ inputs.org }} ${{ inputs.year }} ${{ inputs.start_month }} ${{ inputs.end_month }}
           elif [ "${{ inputs.mode }}" == "current" ]; then
-            python -u scripts/quarterly_contributors/quarterly_contributors.py --current
+            python -u scripts/quarterly_contributors/quarterly_contributors.py --org ${{ inputs.org }} --current
           else
-            python -u scripts/quarterly_contributors/quarterly_contributors.py --last
+            python -u scripts/quarterly_contributors/quarterly_contributors.py --org ${{ inputs.org }} --last
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -69,7 +74,7 @@ jobs:
       - name: Check for data changes
         id: check-changes
         run: |
-          git add docs/public/data/datawhalechina/monthly_contributors_*.json
+          git add docs/public/data/${{ inputs.org }}/monthly_contributors_*.json
           if git diff --cached --quiet; then
             echo "No changes"
             echo "changes=false" >> $GITHUB_OUTPUT
@@ -83,7 +88,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add docs/public/data/datawhalechina/monthly_contributors_*.json
+          git add docs/public/data/${{ inputs.org }}/monthly_contributors_*.json
           git commit -m "📊 Update monthly contributors data - $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
           git pull --rebase origin main
           git push

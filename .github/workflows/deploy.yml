@@ -66,7 +66,7 @@ jobs:
         run: python scripts/fetch_members/fetch_members.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_ORG: datawhalechina
+          GITHUB_ORG: ${{ vars.GITHUB_ORG || 'Silver-yiyangyiyang' }}
         continue-on-error: true
 
       - name: Clean build cache
@@ -82,6 +82,7 @@ jobs:
           npm run docs:build
         env:
           NODE_ENV: production
+          VITE_ORG_NAME: ${{ vars.GITHUB_ORG || 'Silver-yiyangyiyang' }}
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3

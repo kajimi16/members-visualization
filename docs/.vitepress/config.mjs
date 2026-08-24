@@ -7,8 +7,8 @@ const isEdgeOne = process.env.EDGEONE === '1'
 const baseConfig = isEdgeOne ? '/' : '/members-visualization/'
 
 export default defineConfig({
-  title: "Datawhale 数据可视化",
-  description: "Datawhale 组织数据可视化展示平台",
+  title: "Silver-yiyangyiyang 数据可视化",
+  description: "Silver-yiyangyiyang 组织数据可视化展示平台",
   base: baseConfig,
 
   // 语言设置
@@ -35,16 +35,16 @@ export default defineConfig({
       {
         name: "keywords",
         content:
-          "Datawhale, 数据可视化, 贡献者展示, 项目统计, ECharts, GitHub, 研究方向",
+          "Silver-yiyangyiyang, 数据可视化, 贡献者展示, 项目统计, ECharts, GitHub, 研究方向",
       },
     ],
-    ["meta", { name: "author", content: "Datawhale" }],
-    ["meta", { property: "og:title", content: "Datawhale 数据可视化" }],
+    ["meta", { name: "author", content: "Silver-yiyangyiyang" }],
+    ["meta", { property: "og:title", content: "Silver-yiyangyiyang 数据可视化" }],
     [
       "meta",
       {
         property: "og:description",
-        content: "Datawhale 组织贡献者研究方向可视化展示平台",
+        content: "Silver-yiyangyiyang 组织贡献者研究方向可视化展示平台",
       },
     ],
     ["meta", { property: "og:type", content: "website" }],
@@ -55,7 +55,7 @@ export default defineConfig({
   themeConfig: {
     // 网站标题和 Logo
     logo: "/logo.png",
-    siteTitle: "Datawhale 可视化",
+    siteTitle: "Silver-yiyangyiyang 可视化",
 
     // 导航栏
     nav: [
@@ -66,7 +66,6 @@ export default defineConfig({
           { text: "🏆 贡献者榜单", link: "/rankings" },
           { text: "🎖️ 季度贡献者", link: "/quarterly" },
           { text: "👥 贡献者列表", link: "/members" },
-          { text: "🏅 开源荣誉", link: "/rewards" },
         ],
       },
       {
@@ -90,11 +89,10 @@ export default defineConfig({
       {
         text: "🔗 相关链接",
         items: [
-          { text: "Datawhale 官网", link: "https://www.datawhale.cn/" },
-          { text: "GitHub 组织", link: "https://github.com/datawhalechina" },
+          { text: "GitHub 组织", link: `https://github.com/${process.env.GITHUB_ORG || 'Silver-yiyangyiyang'}` },
           {
             text: "项目仓库",
-            link: "https://github.com/datawhalechina/members-visualization",
+            link: "https://github.com/kajimi16/members-visualization",
           },
         ],
       },
@@ -110,8 +108,7 @@ export default defineConfig({
             { text: "🏆 贡献者榜单", link: "/rankings" },
             { text: "🎖️ 季度贡献者", link: "/quarterly" },
             { text: "👥 贡献者列表", link: "/members" },
-            { text: "🏅 开源荣誉", link: "/rewards" },
-          ],
+            ],
         },
         {
           text: "📊 数据统计",
@@ -143,7 +140,7 @@ export default defineConfig({
     socialLinks: [
       {
         icon: "github",
-        link: "https://github.com/datawhalechina/members-visualization",
+        link: "https://github.com/kajimi16/members-visualization",
       },
     ],
 
@@ -161,7 +158,7 @@ export default defineConfig({
     // 编辑链接
     editLink: {
       pattern:
-        "https://github.com/datawhalechina/members-visualization/edit/main/docs/:path",
+        "https://github.com/kajimi16/members-visualization/edit/main/docs/:path",
       text: "在 GitHub 上编辑此页面",
     },
 

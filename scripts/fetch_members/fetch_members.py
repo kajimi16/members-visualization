@@ -31,7 +31,7 @@ except ImportError:
 
 # 配置
 CONFIG = {
-    'ORG_NAME': os.getenv('GITHUB_ORG', 'datawhalechina'),
+    'ORG_NAME': os.getenv('GITHUB_ORG', 'Silver-yiyangyiyang'),
     'GITHUB_TOKEN': os.getenv('GITHUB_TOKEN'),
     'OUTPUT_FILE': Path(__file__).parent.parent.parent / 'docs' / 'public' / 'data' / 'members.csv',
     'OUTPUT_JSON_FILE': Path(__file__).parent.parent.parent / 'docs' / 'public' / 'data' / 'members.json',
@@ -261,7 +261,7 @@ def get_org_repos(org_name):
     per_page = CONFIG['MAX_REPOS_PER_PAGE']
 
     while True:
-        url = f"{CONFIG['API_BASE']}/orgs/{org_name}/repos?per_page={per_page}&page={page}&type=public&sort=updated"
+        url = f"{CONFIG['API_BASE']}/orgs/{org_name}/repos?per_page={per_page}&page={page}&sort=updated"
         repos = fetch_api(url)
 
         if not repos or len(repos) == 0:

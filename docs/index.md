@@ -2,12 +2,12 @@
 layout: home
 
 hero:
-  name: "Datawhale贡献可视化"
+  name: "Silver-yiyangyiyang贡献可视化"
   text: "开源社区数据洞察平台"
-  tagline: 基于现代化技术栈构建的智能数据可视化平台，实时展示 Datawhale 贡献者信息、研究方向分布及组织统计数据
+  tagline: 基于现代化技术栈构建的智能数据可视化平台，实时展示 Silver-yiyangyiyang 贡献者信息、研究方向分布及组织统计数据
   image:
     src: /logo.png
-    alt: Datawhale Logo
+    alt: Silver-yiyangyiyang Logo
   actions:
     - theme: brand
       text: 🚀 开始探索

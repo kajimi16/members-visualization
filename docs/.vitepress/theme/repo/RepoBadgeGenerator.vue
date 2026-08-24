@@ -1,4 +1,5 @@
 <script setup>
+import { ORG_NAME, ORG_GITHUB_URL, orgDataUrl } from '../utils/org.js'
 import { computed, onMounted, ref } from 'vue'
 import RepoBadge from './RepoBadge.vue'
 
@@ -20,7 +21,7 @@ const fallbackRepos = [
 ]
 
 const normalizePath = (path) => path.replace(/([^:]\/)\/+/g, '$1')
-const normalizeRepo = (value = '') => value.trim().replace(/^datawhalechina\//i, '').toLowerCase()
+const normalizeRepo = (value = '') => value.trim().replace(new RegExp(`^${ORG_NAME}/`, 'i'), '').toLowerCase()
 
 const topRepos = computed(() => repoOptions.value.slice(0, 12))
 
@@ -42,7 +43,7 @@ const updateEmbedCode = (repo) => {
 const loadRepoOptions = async () => {
   try {
     const basePath = import.meta.env.BASE_URL || '/'
-    const source = normalizePath(`${basePath}data/datawhalechina/organization/repo_list.json`)
+    const source = orgDataUrl('organization/repo_list.json')
     const response = await fetch(source)
     if (!response.ok) throw new Error('failed')
     const repoList = await response.json()

@@ -1,4 +1,5 @@
 <script setup>
+import { ORG_NAME, ORG_GITHUB_URL, orgDataUrl } from '../utils/org.js'
 import { ref, computed, onMounted } from 'vue'
 import { domToPng } from 'modern-screenshot'
 import { loadMembers, loadCommitsWeekly } from '../utils/dataLoader.js'
@@ -153,14 +154,14 @@ onMounted(async () => {
           <button class="search-btn" @click="findMember">生成年报</button>
           <button class="search-btn secondary" :disabled="!report || copyStatus === '生成中...'" @click="copyAsPng" title="复制为高清 PNG 图片">{{ copyStatus || '📷 复制图片' }}</button>
         </div>
-        <p class="search-hint">输入你的 GitHub 用户名，查看你在 Datawhale 社区的开源年报</p>
+        <p class="search-hint">输入你的 GitHub 用户名，查看你在 Silver-yiyangyiyang 社区的开源年报</p>
       </div>
 
       <!-- 未找到 -->
       <div v-if="searchSubmitted && !selectedMember && searchQuery.trim()" class="not-found">
         <div class="not-found-icon">🔍</div>
         <p>未找到用户 <strong>{{ searchQuery }}</strong></p>
-        <p class="not-found-hint">该用户可能还不是 Datawhale 的贡献者。<a href="https://github.com/datawhalechina" target="_blank">加入我们</a>，开始你的开源之旅！</p>
+        <p class="not-found-hint">该用户可能还不是 Silver-yiyangyiyang 的贡献者。<a :href="ORG_GITHUB_URL" target="_blank">加入我们</a>，开始你的开源之旅！</p>
       </div>
 
       <!-- 报告卡片 -->
@@ -169,7 +170,7 @@ onMounted(async () => {
           <div class="report-inner">
             <!-- 头部 -->
             <div class="report-header">
-              <div class="report-badge-label">Datawhale 开源年报</div>
+              <div class="report-badge-label">Silver-yiyangyiyang 开源年报</div>
               <img :src="getAvatarUrl(report.member)" :alt="report.member.name || report.member.id" class="report-avatar" />
               <h2 class="report-name">{{ report.member.name || report.member.id }}</h2>
               <p v-if="report.member.name && report.member.name !== report.member.id" class="report-id">@{{ report.member.id }}</p>
@@ -218,7 +219,7 @@ onMounted(async () => {
               <div class="repo-tags">
                 <a
                   v-for="r in report.member.repositories" :key="r"
-                  :href="`https://github.com/datawhalechina/${r}`"
+                  :href="`https://github.com/${ORG_NAME}/${r}`"
                   target="_blank" class="repo-tag"
                 >{{ r }}</a>
               </div>
@@ -244,7 +245,7 @@ onMounted(async () => {
 
             <!-- 底部 -->
             <div class="report-footer">
-              <span>Datawhale Members Visualization</span>
+              <span>Silver-yiyangyiyang Members Visualization</span>
               <span>{{ new Date().getFullYear() }}</span>
             </div>
           </div>

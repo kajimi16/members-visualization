@@ -12,7 +12,8 @@ const endTime = ref('加载中...')
 onMounted(async () => {
   try {
     const basePath = import.meta.env.BASE_URL || '/'
-    const timePath = `${basePath}data/datawhalechina/fetch_time_key.json`.replace(/\/+/g, '/')
+    const orgName = import.meta.env.VITE_ORG_NAME || 'Silver-yiyangyiyang'
+    const timePath = `${basePath}data/${orgName}/fetch_time_key.json`.replace(/\/+/g, '/')
     const response = await fetch(timePath)
     if (response.ok) {
       const res = await response.json()
@@ -27,7 +28,7 @@ onMounted(async () => {
 
 ## 项目 Star 数
 
-Datawhale 所有 Star 数大于 1000 的项目近一年趋势。拖动右侧滚动条可缩放图表。
+Silver-yiyangyiyang 所有 Star 数大于 1000 的项目近一年趋势。拖动右侧滚动条可缩放图表。
 
 <ProjectStar />
 

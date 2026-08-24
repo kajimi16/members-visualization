@@ -12,6 +12,9 @@
 3. 进度显示 - 实时显示处理进度
 4. JSON输出 - 生成前端可用的数据格式
 5. 机器人过滤 - 使用共享的过滤规则
+6. 代码量统计 - 按贡献者聚合新增/删除/变更行数，输出代码量排行（ranking.by_code）
+7. 仓库矩阵 - 输出 user×repo 的 commit/代码量矩阵（repo_matrix）
+8. 组织参数化 - 通过 --org 参数或 GITHUB_ORG 环境变量适配任意组织
 """
 
 import os
@@ -20,6 +23,7 @@ import time
 import sys
 import re
 import shutil
+import argparse
 from datetime import datetime, timedelta
 from pathlib import Path
 from collections import defaultdict
@@ -32,12 +36,10 @@ from bot_filter import is_bot_account
 # 配置
 CONFIG = {
     'GITHUB_TOKEN': os.getenv('GITHUB_TOKEN') or os.getenv('GITHUB_KEY'),
-    'ORG_NAME': 'datawhalechina',
+    'ORG_NAME': os.getenv('GITHUB_ORG', 'Silver-yiyangyiyang'),
     'API_BASE': 'https://api.github.com',
-    # 缓存目录
-    'CACHE_DIR': Path(__file__).parent.parent.parent / 'docs' / 'public' / 'data' / 'cache',
-    # 输出目录
-    'OUTPUT_DIR': Path(__file__).parent.parent.parent / 'docs' / 'public' / 'data' / 'datawhalechina',
+    # 数据根目录：缓存与输出均按组织名分目录（main() 中根据组织名解析 CACHE_DIR/OUTPUT_DIR）
+    'DATA_ROOT': Path(__file__).parent.parent.parent / 'docs' / 'public' / 'data',
     # 有效commit的阈值（单文件新增行数）
     'VALID_COMMIT_THRESHOLD': 10,
     # 贡献者等级阈值
@@ -262,13 +264,13 @@ class CacheManager:
 
 
 def get_org_repos(org_name):
-    """获取组织的所有公开仓库"""
-    print(f"\n📁 获取组织 {org_name} 的仓库列表...")
+    """获取组织的所有可见仓库（含 token 授权的私有仓库）"""
+    print(f"\n📁 获取组织 {org_name} 的仓库列表（含私有仓库）...")
     all_repos = []
     page = 1
 
     while True:
-        url = f"{CONFIG['API_BASE']}/orgs/{org_name}/repos?per_page=100&page={page}&type=public&sort=updated"
+        url = f"{CONFIG['API_BASE']}/orgs/{org_name}/repos?per_page=100&page={page}&sort=updated"
         repos = fetch_api(url)
 
         if not repos or len(repos) == 0:
@@ -374,6 +376,62 @@ def is_valid_commit(commit_details):
     return False
 
 
+def record_commit(stats, username, repo_name, details):
+    """
+    将单个有效commit计入贡献者统计（纯函数，便于测试）
+
+    仅在有效commit时调用（与现有口径一致：valid_commits/total_commits
+    以及代码量均只统计有效commit，即至少一个文件新增行数 >= 阈值）。
+
+    累计字段：
+    - valid_commits / total_commits: 有效commit数
+    - additions / deletions / changes: 新增/删除/变更行数
+    - repo_stats: 该贡献者在每个仓库的 commit/代码量明细
+    """
+    data = stats.setdefault(username, {
+        'username': username,
+        'verified': True,
+        'valid_commits': 0,
+        'total_commits': 0,
+        'additions': 0,
+        'deletions': 0,
+        'changes': 0,
+        'repos': set(),
+        'repo_stats': {},
+        'commits_detail': []
+    })
+
+    data['valid_commits'] += 1
+    data['total_commits'] += 1
+    data['repos'].add(repo_name)
+
+    additions = sum(f['additions'] for f in details['files'])
+    deletions = sum(f['deletions'] for f in details['files'])
+    changes = additions + deletions
+
+    data['additions'] += additions
+    data['deletions'] += deletions
+    data['changes'] += changes
+
+    repo_key = data['repo_stats'].setdefault(
+        repo_name, {'commits': 0, 'additions': 0, 'deletions': 0}
+    )
+    repo_key['commits'] += 1
+    repo_key['additions'] += additions
+    repo_key['deletions'] += deletions
+
+    data['commits_detail'].append({
+        'repo': repo_name,
+        'sha': details['sha'],
+        'message': details['message'],
+        'date': details['date'],
+        'files_count': len(details['files']),
+        'total_additions': additions,
+        'total_deletions': deletions,
+        'total_changes': changes
+    })
+
+
 def process_repository(org_name, repo_name, since, until, cache_manager, stats):
     """
     处理单个仓库的统计
@@ -463,24 +521,18 @@ def process_repository(org_name, repo_name, since, until, cache_manager, stats):
                     'verified': is_verified,
                     'valid_commits': 0,
                     'total_commits': 0,
+                    'additions': 0,
+                    'deletions': 0,
+                    'changes': 0,
                     'repos': set(),
+                    'repo_stats': {},
                     'commits_detail': []
                 }
             # 如果之前是未验证的，现在有验证的commit，更新为已验证
             elif is_verified and not stats[author_login].get('verified'):
                 stats[author_login]['verified'] = True
 
-            stats[author_login]['valid_commits'] += 1
-            stats[author_login]['total_commits'] += 1
-            stats[author_login]['repos'].add(repo_name)
-            stats[author_login]['commits_detail'].append({
-                'repo': repo_name,
-                'sha': details['sha'],
-                'message': details['message'],
-                'date': details['date'],
-                'files_count': len(details['files']),
-                'total_additions': sum(f['additions'] for f in details['files'])
-            })
+            record_commit(stats, author_login, repo_name, details)
 
         # 显示进度
         if (i + 1) % 50 == 0:
@@ -513,6 +565,9 @@ def classify_contributors(stats):
             'verified': data.get('verified', True),
             'valid_commits': valid_commits,
             'total_commits': data['total_commits'],
+            'additions': data['additions'],
+            'deletions': data['deletions'],
+            'changes': data['changes'],
             'repos_count': len(data['repos']),
             'repos': sorted(list(data['repos'])),
             'recent_commits': sorted(
@@ -539,6 +594,74 @@ def classify_contributors(stats):
         'excellent': excellent,
         'active': active
     }
+
+
+def build_ranking(stats):
+    """
+    构建贡献者排行（纯函数，便于测试）
+
+    Returns:
+        {
+            'by_commits': [...],  # 按有效commit数降序（并列时按新增行数）
+            'by_code': [...]      # 按新增行数降序（并列时按有效commit数）
+        }
+        每个条目含 rank 字段（1 起始）
+    """
+    contributors = []
+    for username, data in stats.items():
+        contributors.append({
+            'username': username,
+            'verified': data.get('verified', True),
+            'valid_commits': data['valid_commits'],
+            'total_commits': data['total_commits'],
+            'additions': data['additions'],
+            'deletions': data['deletions'],
+            'changes': data['changes'],
+            'repos_count': len(data['repos']),
+        })
+
+    by_commits = sorted(
+        contributors,
+        key=lambda x: (x['valid_commits'], x['additions']),
+        reverse=True
+    )
+    by_code = sorted(
+        contributors,
+        key=lambda x: (x['additions'], x['valid_commits']),
+        reverse=True
+    )
+
+    for i, entry in enumerate(by_commits):
+        entry['commit_rank'] = i + 1
+    for i, entry in enumerate(by_code):
+        entry['code_rank'] = i + 1
+
+    return {
+        'by_commits': by_commits,
+        'by_code': by_code,
+    }
+
+
+def build_repo_matrix(stats):
+    """
+    构建 user×repo 代码量矩阵（纯函数，便于测试）
+
+    Returns:
+        {
+            'repo_name': {
+                'username': {'commits': n, 'additions': n, 'deletions': n}
+            }
+        }
+    """
+    matrix = {}
+    for username, data in stats.items():
+        for repo_name, rs in data.get('repo_stats', {}).items():
+            matrix.setdefault(repo_name, {})[username] = {
+                'commits': rs['commits'],
+                'additions': rs['additions'],
+                'deletions': rs['deletions'],
+            }
+    return matrix
 
 
 def update_monthly_index(output_dir):
@@ -592,7 +715,7 @@ def update_monthly_index(output_dir):
 
 
 def save_results(year, start_month, end_month, classified, stats, output_dir):
-    """保存统计结果到JSON文件"""
+    """保存统计结果到JSON文件（含代码量排行与user×repo矩阵）"""
     output_dir = Path(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
 
@@ -601,11 +724,15 @@ def save_results(year, start_month, end_month, classified, stats, output_dir):
     output_file = output_dir / filename
 
     # 准备输出数据
+    ranking = build_ranking(stats)
+    repo_matrix = build_repo_matrix(stats)
+
     result = {
         'meta': {
             'year': year,
             'start_month': start_month,
             'end_month': end_month,
+            'org_name': CONFIG['ORG_NAME'],
             'period_label': format_period_label(year, start_month, end_month),
             'period_type': 'monthly_range',
             'generated_at': datetime.now().isoformat(),
@@ -613,15 +740,19 @@ def save_results(year, start_month, end_month, classified, stats, output_dir):
             'outstanding_count': len(classified['outstanding']),
             'excellent_count': len(classified['excellent']),
             'active_count': len(classified['active']),
+            'total_additions': sum(d['additions'] for d in stats.values()),
+            'total_deletions': sum(d['deletions'] for d in stats.values()),
+            'total_changes': sum(d['changes'] for d in stats.values()),
             'thresholds': {
                 'outstanding': CONFIG['OUTSTANDING_THRESHOLD'],
                 'excellent': CONFIG['EXCELLENT_THRESHOLD'],
                 'valid_commit_threshold': CONFIG['VALID_COMMIT_THRESHOLD']
             }
         },
-        'contributors': classified
+        'contributors': classified,
+        'ranking': ranking,
+        'repo_matrix': repo_matrix
     }
-
     # 保存到文件
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
@@ -632,7 +763,7 @@ def save_results(year, start_month, end_month, classified, stats, output_dir):
     return output_file
 
 
-def print_summary(classified):
+def print_summary(classified, stats):
     """打印统计摘要"""
     print("\n" + "="*60)
     print("📊 统计摘要")
@@ -647,12 +778,20 @@ def print_summary(classified):
         print(f"  - {contributor['username']}: {contributor['valid_commits']}次 ({contributor['repos_count']}个仓库)")
 
     print(f"\n👥 活跃贡献者 (<{CONFIG['EXCELLENT_THRESHOLD']}次有效commit): {len(classified['active'])}人")
+    print(f"\n📝 代码量排行 TOP5（按新增行数）:")
+    by_code = sorted(
+        stats.items(),
+        key=lambda kv: kv[1]['additions'],
+        reverse=True
+    )[:5]
+    for contributor, data in by_code:
+        print(f"  - {contributor}: +{data['additions']} / -{data['deletions']} 行 ({data['valid_commits']}次有效commit)")
 
     print("\n" + "="*60)
 
 
 
-def main(year, start_month, end_month):
+def main(year, start_month, end_month, org_name=None):
     """
     主函数：统计指定月份范围的贡献者
 
@@ -660,9 +799,17 @@ def main(year, start_month, end_month):
         year: 年份
         start_month: 开始月份 (1-12)
         end_month: 结束月份 (1-12)
+        org_name: GitHub 组织名（None 时使用 CONFIG['ORG_NAME']）
     """
+    if org_name:
+        CONFIG['ORG_NAME'] = org_name
+
+    # 缓存与输出目录按组织名隔离
+    CONFIG['CACHE_DIR'] = CONFIG['DATA_ROOT'] / 'cache' / CONFIG['ORG_NAME']
+    CONFIG['OUTPUT_DIR'] = CONFIG['DATA_ROOT'] / CONFIG['ORG_NAME']
+
     print("="*60)
-    print(f"🚀 开始统计 {format_period_label(year, start_month, end_month)} 贡献者")
+    print(f"🚀 开始统计 {CONFIG['ORG_NAME']} 组织 {format_period_label(year, start_month, end_month)} 贡献者")
     print("="*60)
 
     # 检查API速率限制
@@ -721,7 +868,7 @@ def main(year, start_month, end_month):
     classified = classify_contributors(stats)
 
     # 打印摘要
-    print_summary(classified)
+    print_summary(classified, stats)
 
     # 保存结果
     output_file = save_results(
@@ -762,49 +909,47 @@ def get_current_month():
 
 
 if __name__ == '__main__':
-    # 解析命令行参数
-    if len(sys.argv) == 1:
-        # 无参数时显示帮助
-        print("用法:")
-        print("  python quarterly_contributors.py --last      # 统计上个月")
-        print("  python quarterly_contributors.py --current   # 统计当前月")
-        print("  python quarterly_contributors.py <年份> <开始月份> <结束月份>  # 统计指定月份范围")
-        print("")
-        print("示例:")
-        print("  python quarterly_contributors.py --last")
-        print("  python quarterly_contributors.py 2025 10 12")
-        print("  python quarterly_contributors.py 2026 1 4")
-        sys.exit(0)
+    parser = argparse.ArgumentParser(
+        description='月份范围贡献者统计：按成员聚合 commit 数与代码量并输出排行'
+    )
+    parser.add_argument(
+        '--org', default=None,
+        help='GitHub 组织名（默认取环境变量 GITHUB_ORG，其次 Silver-yiyangyiyang）'
+    )
+    parser.add_argument('--last', action='store_true', help='统计上个月')
+    parser.add_argument('--current', action='store_true', help='统计当前月')
+    parser.add_argument('year', nargs='?', type=int, help='年份（与开始/结束月份一起使用）')
+    parser.add_argument('start_month', nargs='?', type=int, help='开始月份 1-12')
+    parser.add_argument('end_month', nargs='?', type=int, help='结束月份 1-12')
+    args = parser.parse_args()
 
     try:
-        if sys.argv[1] == '--last':
-            # 统计上个月
-            year, month = get_previous_month()
-            print(f"📅 自动选择上个月: {year}年{month}月")
-            main(year, month, month)
-        elif sys.argv[1] == '--current':
-            # 统计当前月
-            year, month = get_current_month()
-            print(f"📅 自动选择当前月: {year}年{month}月")
-            main(year, month, month)
-        elif len(sys.argv) >= 4:
-            # 指定年份和月份范围
-            year = int(sys.argv[1])
-            start_month = int(sys.argv[2])
-            end_month = int(sys.argv[3])
-
-            if start_month < 1 or start_month > 12 or end_month < 1 or end_month > 12:
-                print("❌ 月份必须是 1-12 之间的数字")
-                sys.exit(1)
-            if start_month > end_month:
-                print("❌ 开始月份不能大于结束月份")
-                sys.exit(1)
-
-            main(year, start_month, end_month)
-        else:
-            print("❌ 参数不足，请使用 --last 或指定年份和月份范围")
+        if args.last and args.current:
+            print("❌ --last 与 --current 不能同时使用")
             sys.exit(1)
 
+        if args.last:
+            year, month = get_previous_month()
+            print(f"📅 自动选择上个月: {year}年{month}月")
+            main(year, month, month, args.org)
+        elif args.current:
+            year, month = get_current_month()
+            print(f"📅 自动选择当前月: {year}年{month}月")
+            main(year, month, month, args.org)
+        elif args.year is not None:
+            if args.start_month is None or args.end_month is None:
+                print("❌ 缺少参数，用法: python quarterly_contributors.py [--org 组织名] <年份> <开始月份> <结束月份>")
+                sys.exit(1)
+            if args.start_month < 1 or args.start_month > 12 or args.end_month < 1 or args.end_month > 12:
+                print("❌ 月份必须是 1-12 之间的数字")
+                sys.exit(1)
+            if args.start_month > args.end_month:
+                print("❌ 开始月份不能大于结束月份")
+                sys.exit(1)
+            main(args.year, args.start_month, args.end_month, args.org)
+        else:
+            parser.print_help()
+            sys.exit(0)
     except ValueError:
         print("❌ 参数格式错误，年份和月份必须是数字")
         sys.exit(1)

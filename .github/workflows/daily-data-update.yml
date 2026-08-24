@@ -16,7 +16,7 @@ permissions:
 
 jobs:
   update-data-and-deploy:
-    if: github.event_name == 'workflow_dispatch' || github.repository == 'datawhalechina/members-visualization'
+    if: github.event_name == 'workflow_dispatch' || github.repository == 'kajimi16/members-visualization'
     runs-on: ubuntu-latest
     
     steps:
@@ -49,7 +49,7 @@ jobs:
         run: python scripts/fetch_members/fetch_members.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_ORG: datawhalechina
+          GITHUB_ORG: ${{ vars.GITHUB_ORG || 'Silver-yiyangyiyang' }}
       
       - name: Fetch latest organization data
         run: python scripts/fetch_organization/fetch_organization.py
@@ -60,6 +60,7 @@ jobs:
         run: npm run docs:build
         env:
           NODE_ENV: production
+          VITE_ORG_NAME: ${{ vars.GITHUB_ORG || 'Silver-yiyangyiyang' }}
 
       - name: Install Chinese fonts
         run: |
@@ -70,11 +71,14 @@ jobs:
 
       - name: Generate repository badge screenshots
         run: node scripts/generate_repo_screenshots.js
+        env:
+          GITHUB_ORG: ${{ vars.GITHUB_ORG || 'Silver-yiyangyiyang' }}
 
       - name: Rebuild to include badges
         run: npm run docs:build
         env:
           NODE_ENV: production
+          VITE_ORG_NAME: ${{ vars.GITHUB_ORG || 'Silver-yiyangyiyang' }}
 
       - name: Check for data changes
         id: check-changes
