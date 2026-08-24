@@ -138,6 +138,7 @@ def analyze_organization_data(previous_key, current_key):
     )
 
 
+if __name__ == "__main__":
     import sys
 
     # --force 参数：跳过"仅每月1日运行"限制，用于手动立即生成数据
@@ -149,13 +150,6 @@ def analyze_organization_data(previous_key, current_key):
 
     # 每月1日运行脚本（--force 可跳过）
     if day != 1 and not force:
-        exit(0)
-    year = datetime.now().year
-    month = datetime.now().month
-    day = datetime.now().day
-
-    # 每月1日运行脚本
-    if day != 1:
         exit(0)
 
     current_key = f"{year}-{month}"
