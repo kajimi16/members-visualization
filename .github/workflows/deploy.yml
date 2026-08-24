@@ -65,7 +65,7 @@ jobs:
         if: steps.check-data.outputs.data-exists == 'false'
         run: python scripts/fetch_members/fetch_members.py
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           GITHUB_ORG: ${{ vars.GITHUB_ORG || 'Silver-yiyangyiyang' }}
         continue-on-error: true
 

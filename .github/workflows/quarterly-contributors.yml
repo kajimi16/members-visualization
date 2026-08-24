@@ -68,7 +68,7 @@ jobs:
             python -u scripts/quarterly_contributors/quarterly_contributors.py --org ${{ inputs.org }} --last
           fi
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           PYTHONUNBUFFERED: "1"
 
       - name: Check for data changes
