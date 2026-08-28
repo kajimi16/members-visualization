@@ -13,6 +13,18 @@
   },
   {
     "year": 2026,
+    "start_month": 8,
+    "end_month": 8,
+    "period_label": "2026年8月",
+    "filename": "monthly_contributors_2026_08_08.json",
+    "generated_at": "2026-08-28T18:03:56.095811",
+    "total_contributors": 4,
+    "outstanding_count": 2,
+    "excellent_count": 1,
+    "active_count": 1
+  },
+  {
+    "year": 2026,
     "start_month": 7,
     "end_month": 7,
     "period_label": "2026年7月",
