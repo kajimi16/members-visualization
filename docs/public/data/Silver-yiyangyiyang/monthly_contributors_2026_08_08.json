@@ -6,14 +6,14 @@
     "org_name": "Silver-yiyangyiyang",
     "period_label": "2026年8月",
     "period_type": "monthly_range",
-    "generated_at": "2026-08-28T18:03:56.095811",
+    "generated_at": "2026-08-29T03:49:45.674324",
     "total_contributors": 4,
     "outstanding_count": 2,
     "excellent_count": 1,
     "active_count": 1,
-    "total_additions": 166525,
-    "total_deletions": 13668,
-    "total_changes": 180193,
+    "total_additions": 166803,
+    "total_deletions": 13718,
+    "total_changes": 180521,
     "thresholds": {
       "outstanding": 50,
       "excellent": 10,
@@ -149,11 +149,11 @@
       {
         "username": "kajimi16",
         "verified": true,
-        "valid_commits": 57,
-        "total_commits": 57,
-        "additions": 10271,
-        "deletions": 1142,
-        "changes": 11413,
+        "valid_commits": 58,
+        "total_commits": 58,
+        "additions": 10549,
+        "deletions": 1192,
+        "changes": 11741,
         "repos_count": 8,
         "repos": [
           "elderly-fraud-risk-system",
@@ -166,6 +166,16 @@
           "silver-fraud-guard"
         ],
         "recent_commits": [
+          {
+            "repo": "jbgs-proposal",
+            "sha": "c749c6e7",
+            "message": "Revert \"docs: 老人端真机深度复测走查清单(clients #46 依赖)\"",
+            "date": "2026-08-28T18:04:27Z",
+            "files_count": 1,
+            "total_additions": 278,
+            "total_deletions": 50,
+            "total_changes": 328
+          },
           {
             "repo": "silver-fraud-guard",
             "sha": "0eb657eb",
@@ -255,16 +265,6 @@
             "total_additions": 55,
             "total_deletions": 8,
             "total_changes": 63
-          },
-          {
-            "repo": "fraud-guard-clients",
-            "sha": "3bc74500",
-            "message": "Merge pull request #81 from Silver-yiyangyiyang/feat/issue52-ui-functional",
-            "date": "2026-08-28T17:39:50Z",
-            "files_count": 1,
-            "total_additions": 103,
-            "total_deletions": 0,
-            "total_changes": 103
           }
         ]
       }
@@ -438,11 +438,11 @@
       {
         "username": "kajimi16",
         "verified": true,
-        "valid_commits": 57,
-        "total_commits": 57,
-        "additions": 10271,
-        "deletions": 1142,
-        "changes": 11413,
+        "valid_commits": 58,
+        "total_commits": 58,
+        "additions": 10549,
+        "deletions": 1192,
+        "changes": 11741,
         "repos_count": 8,
         "commit_rank": 2,
         "code_rank": 3
@@ -500,11 +500,11 @@
       {
         "username": "kajimi16",
         "verified": true,
-        "valid_commits": 57,
-        "total_commits": 57,
-        "additions": 10271,
-        "deletions": 1142,
-        "changes": 11413,
+        "valid_commits": 58,
+        "total_commits": 58,
+        "additions": 10549,
+        "deletions": 1192,
+        "changes": 11741,
         "repos_count": 8,
         "commit_rank": 2,
         "code_rank": 3
@@ -524,28 +524,28 @@
     ]
   },
   "repo_matrix": {
-    "fraud-guard-clients": {
+    "fraud-guard-shared": {
       "kajimi16": {
-        "commits": 18,
-        "additions": 1160,
-        "deletions": 97
+        "commits": 3,
+        "additions": 996,
+        "deletions": 0
       },
       "komariChikaA": {
-        "commits": 27,
-        "additions": 39287,
-        "deletions": 608
+        "commits": 21,
+        "additions": 15947,
+        "deletions": 256
       },
       "KuonjiPloy": {
-        "commits": 2,
-        "additions": 4478,
-        "deletions": 342
+        "commits": 1,
+        "additions": 725,
+        "deletions": 1
       }
     },
     "jbgs-proposal": {
       "kajimi16": {
-        "commits": 2,
-        "additions": 100,
-        "deletions": 556
+        "commits": 3,
+        "additions": 378,
+        "deletions": 606
       },
       "komariChikaA": {
         "commits": 31,
@@ -556,6 +556,23 @@
         "commits": 1,
         "additions": 403,
         "deletions": 0
+      }
+    },
+    "elderly-fraud-risk-system": {
+      "kajimi16": {
+        "commits": 4,
+        "additions": 252,
+        "deletions": 40
+      },
+      "komariChikaA": {
+        "commits": 14,
+        "additions": 20338,
+        "deletions": 4281
+      },
+      "KuonjiPloy": {
+        "commits": 6,
+        "additions": 14534,
+        "deletions": 4124
       }
     },
     "silver-fraud-guard": {
@@ -575,38 +592,21 @@
         "deletions": 138
       }
     },
-    "fraud-guard-shared": {
+    "fraud-guard-clients": {
       "kajimi16": {
-        "commits": 3,
-        "additions": 996,
-        "deletions": 0
+        "commits": 18,
+        "additions": 1160,
+        "deletions": 97
       },
       "komariChikaA": {
-        "commits": 21,
-        "additions": 15947,
-        "deletions": 256
+        "commits": 27,
+        "additions": 39287,
+        "deletions": 608
       },
       "KuonjiPloy": {
-        "commits": 1,
-        "additions": 725,
-        "deletions": 1
-      }
-    },
-    "elderly-fraud-risk-system": {
-      "kajimi16": {
-        "commits": 4,
-        "additions": 252,
-        "deletions": 40
-      },
-      "komariChikaA": {
-        "commits": 14,
-        "additions": 20338,
-        "deletions": 4281
-      },
-      "KuonjiPloy": {
-        "commits": 6,
-        "additions": 14534,
-        "deletions": 4124
+        "commits": 2,
+        "additions": 4478,
+        "deletions": 342
       }
     },
     "home-visit-fraud-guard": {
