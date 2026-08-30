@@ -6,14 +6,14 @@
     "org_name": "Silver-yiyangyiyang",
     "period_label": "2026年8月",
     "period_type": "monthly_range",
-    "generated_at": "2026-08-29T03:49:45.674324",
+    "generated_at": "2026-08-30T00:36:00.000727",
     "total_contributors": 4,
     "outstanding_count": 2,
     "excellent_count": 1,
     "active_count": 1,
-    "total_additions": 166803,
-    "total_deletions": 13718,
-    "total_changes": 180521,
+    "total_additions": 178009,
+    "total_deletions": 14370,
+    "total_changes": 192379,
     "thresholds": {
       "outstanding": 50,
       "excellent": 10,
@@ -25,11 +25,11 @@
       {
         "username": "komariChikaA",
         "verified": true,
-        "valid_commits": 207,
-        "total_commits": 207,
-        "additions": 122466,
-        "deletions": 7529,
-        "changes": 129995,
+        "valid_commits": 210,
+        "total_commits": 210,
+        "additions": 133153,
+        "deletions": 8142,
+        "changes": 141295,
         "repos_count": 10,
         "repos": [
           ".github",
@@ -44,6 +44,36 @@
           "silver-fraud-guard"
         ],
         "recent_commits": [
+          {
+            "repo": "fraud-guard-clients",
+            "sha": "1775f201",
+            "message": "test: 按当前 UI 补 #65 角色映射契约并过滤路过 (#95)",
+            "date": "2026-08-29T19:39:23Z",
+            "files_count": 2,
+            "total_additions": 161,
+            "total_deletions": 6,
+            "total_changes": 167
+          },
+          {
+            "repo": "fraud-guard-clients",
+            "sha": "743b7a2a",
+            "message": "feat: 收口 Web 值班台视觉与 Actor 主路径 (#80) (#94)",
+            "date": "2026-08-29T19:34:12Z",
+            "files_count": 10,
+            "total_additions": 452,
+            "total_deletions": 36,
+            "total_changes": 488
+          },
+          {
+            "repo": "fraud-guard-clients",
+            "sha": "a53c2aa4",
+            "message": "feat: 正式 UI 接上 61-clean 功能，并改口语文案（#71 #72） (#74)",
+            "date": "2026-08-29T19:31:11Z",
+            "files_count": 163,
+            "total_additions": 10074,
+            "total_deletions": 571,
+            "total_changes": 10645
+          },
           {
             "repo": "silver-fraud-guard",
             "sha": "414faffa",
@@ -113,47 +143,17 @@
             "total_additions": 1624,
             "total_deletions": 48,
             "total_changes": 1672
-          },
-          {
-            "repo": "fraud-guard-clients",
-            "sha": "f5da66d6",
-            "message": "feat: 首次打开走微信身份注册，不再误走管理员预置",
-            "date": "2026-08-28T03:28:58Z",
-            "files_count": 9,
-            "total_additions": 138,
-            "total_deletions": 17,
-            "total_changes": 155
-          },
-          {
-            "repo": "fraud-guard-clients",
-            "sha": "c12be816",
-            "message": "feat: 小程序家属绑定门铃页 (#61)",
-            "date": "2026-08-28T02:56:44Z",
-            "files_count": 15,
-            "total_additions": 600,
-            "total_deletions": 2,
-            "total_changes": 602
-          },
-          {
-            "repo": "silver-fraud-guard",
-            "sha": "2eb04bce",
-            "message": "feat: BFF door-devices 门铃绑定门面 (#48)",
-            "date": "2026-08-28T02:56:43Z",
-            "files_count": 3,
-            "total_additions": 484,
-            "total_deletions": 0,
-            "total_changes": 484
           }
         ]
       },
       {
         "username": "kajimi16",
         "verified": true,
-        "valid_commits": 58,
-        "total_commits": 58,
-        "additions": 10549,
-        "deletions": 1192,
-        "changes": 11741,
+        "valid_commits": 63,
+        "total_commits": 63,
+        "additions": 11068,
+        "deletions": 1231,
+        "changes": 12299,
         "repos_count": 8,
         "repos": [
           "elderly-fraud-risk-system",
@@ -166,6 +166,56 @@
           "silver-fraud-guard"
         ],
         "recent_commits": [
+          {
+            "repo": "fraud-guard-clients",
+            "sha": "6d416c60",
+            "message": "test: 提审前置门禁——前端包无凭据泄漏(Issue #45 可自动部分)[重新提交等审核] (#93)",
+            "date": "2026-08-29T19:36:27Z",
+            "files_count": 1,
+            "total_additions": 84,
+            "total_deletions": 0,
+            "total_changes": 84
+          },
+          {
+            "repo": "fraud-guard-clients",
+            "sha": "915eaac0",
+            "message": "test: 正式 UI 功能回归契约(Issue #52)[重新提交等审核] (#92)",
+            "date": "2026-08-29T19:36:24Z",
+            "files_count": 1,
+            "total_additions": 118,
+            "total_deletions": 0,
+            "total_changes": 118
+          },
+          {
+            "repo": "silver-fraud-guard",
+            "sha": "125d029c",
+            "message": "feat: 订阅消息按角色路由,家属通知不再打到老人微信(Issue #51) (#71)",
+            "date": "2026-08-29T19:30:16Z",
+            "files_count": 2,
+            "total_additions": 186,
+            "total_deletions": 19,
+            "total_changes": 205
+          },
+          {
+            "repo": "elderly-fraud-risk-system",
+            "sha": "b653a814",
+            "message": "docs: 即时结果更新超前画像可执行规划(Issue #20)[重新提交等审核] (#26)",
+            "date": "2026-08-29T19:30:12Z",
+            "files_count": 1,
+            "total_additions": 66,
+            "total_deletions": 0,
+            "total_changes": 66
+          },
+          {
+            "repo": "elderly-fraud-risk-system",
+            "sha": "8c8ba51c",
+            "message": "docs: 工程加固——Ruff 回归全绿 + 答辩短文与 checkpoint(Issue #19)[重新提交等审核] (#25)",
+            "date": "2026-08-29T19:30:08Z",
+            "files_count": 13,
+            "total_additions": 65,
+            "total_deletions": 20,
+            "total_changes": 85
+          },
           {
             "repo": "jbgs-proposal",
             "sha": "c749c6e7",
@@ -215,56 +265,6 @@
             "total_additions": 50,
             "total_deletions": 278,
             "total_changes": 328
-          },
-          {
-            "repo": "jbgs-proposal",
-            "sha": "ec8708c1",
-            "message": "docs: 老人端真机深度复测走查清单(clients #46 依赖)",
-            "date": "2026-08-28T17:45:46Z",
-            "files_count": 1,
-            "total_additions": 50,
-            "total_deletions": 278,
-            "total_changes": 328
-          },
-          {
-            "repo": "fraud-guard-clients",
-            "sha": "0fb6ed1a",
-            "message": "Merge pull request #83 from Silver-yiyangyiyang/feat/issue45-release-gate",
-            "date": "2026-08-28T17:44:26Z",
-            "files_count": 1,
-            "total_additions": 63,
-            "total_deletions": 0,
-            "total_changes": 63
-          },
-          {
-            "repo": "fraud-guard-clients",
-            "sha": "86f9e44b",
-            "message": "test: 提审前置门禁——前端包无凭据泄漏(Issue #45 可自动部分)",
-            "date": "2026-08-28T17:44:15Z",
-            "files_count": 1,
-            "total_additions": 63,
-            "total_deletions": 0,
-            "total_changes": 63
-          },
-          {
-            "repo": "fraud-guard-clients",
-            "sha": "fce86ef1",
-            "message": "Merge pull request #82 from Silver-yiyangyiyang/feat/issue80-web-polish",
-            "date": "2026-08-28T17:43:11Z",
-            "files_count": 5,
-            "total_additions": 55,
-            "total_deletions": 8,
-            "total_changes": 63
-          },
-          {
-            "repo": "fraud-guard-clients",
-            "sha": "c3df4a0f",
-            "message": "feat: Web 端补值班联络,去演示人设(Issue #80)",
-            "date": "2026-08-28T17:42:49Z",
-            "files_count": 5,
-            "total_additions": 55,
-            "total_deletions": 8,
-            "total_changes": 63
           }
         ]
       }
@@ -426,11 +426,11 @@
       {
         "username": "komariChikaA",
         "verified": true,
-        "valid_commits": 207,
-        "total_commits": 207,
-        "additions": 122466,
-        "deletions": 7529,
-        "changes": 129995,
+        "valid_commits": 210,
+        "total_commits": 210,
+        "additions": 133153,
+        "deletions": 8142,
+        "changes": 141295,
         "repos_count": 10,
         "commit_rank": 1,
         "code_rank": 1
@@ -438,11 +438,11 @@
       {
         "username": "kajimi16",
         "verified": true,
-        "valid_commits": 58,
-        "total_commits": 58,
-        "additions": 10549,
-        "deletions": 1192,
-        "changes": 11741,
+        "valid_commits": 63,
+        "total_commits": 63,
+        "additions": 11068,
+        "deletions": 1231,
+        "changes": 12299,
         "repos_count": 8,
         "commit_rank": 2,
         "code_rank": 3
@@ -476,11 +476,11 @@
       {
         "username": "komariChikaA",
         "verified": true,
-        "valid_commits": 207,
-        "total_commits": 207,
-        "additions": 122466,
-        "deletions": 7529,
-        "changes": 129995,
+        "valid_commits": 210,
+        "total_commits": 210,
+        "additions": 133153,
+        "deletions": 8142,
+        "changes": 141295,
         "repos_count": 10,
         "commit_rank": 1,
         "code_rank": 1
@@ -500,11 +500,11 @@
       {
         "username": "kajimi16",
         "verified": true,
-        "valid_commits": 58,
-        "total_commits": 58,
-        "additions": 10549,
-        "deletions": 1192,
-        "changes": 11741,
+        "valid_commits": 63,
+        "total_commits": 63,
+        "additions": 11068,
+        "deletions": 1231,
+        "changes": 12299,
         "repos_count": 8,
         "commit_rank": 2,
         "code_rank": 3
@@ -524,16 +524,67 @@
     ]
   },
   "repo_matrix": {
-    "fraud-guard-shared": {
-      "kajimi16": {
-        "commits": 3,
-        "additions": 996,
-        "deletions": 0
+    "fraud-guard-clients": {
+      "komariChikaA": {
+        "commits": 30,
+        "additions": 49974,
+        "deletions": 1221
       },
+      "kajimi16": {
+        "commits": 20,
+        "additions": 1362,
+        "deletions": 97
+      },
+      "KuonjiPloy": {
+        "commits": 2,
+        "additions": 4478,
+        "deletions": 342
+      }
+    },
+    "silver-fraud-guard": {
+      "komariChikaA": {
+        "commits": 31,
+        "additions": 12105,
+        "deletions": 237
+      },
+      "kajimi16": {
+        "commits": 18,
+        "additions": 3219,
+        "deletions": 397
+      },
+      "KuonjiPloy": {
+        "commits": 3,
+        "additions": 7136,
+        "deletions": 138
+      }
+    },
+    "elderly-fraud-risk-system": {
+      "komariChikaA": {
+        "commits": 14,
+        "additions": 20338,
+        "deletions": 4281
+      },
+      "kajimi16": {
+        "commits": 6,
+        "additions": 383,
+        "deletions": 60
+      },
+      "KuonjiPloy": {
+        "commits": 6,
+        "additions": 14534,
+        "deletions": 4124
+      }
+    },
+    "fraud-guard-shared": {
       "komariChikaA": {
         "commits": 21,
         "additions": 15947,
         "deletions": 256
+      },
+      "kajimi16": {
+        "commits": 3,
+        "additions": 996,
+        "deletions": 0
       },
       "KuonjiPloy": {
         "commits": 1,
@@ -542,112 +593,20 @@
       }
     },
     "jbgs-proposal": {
-      "kajimi16": {
-        "commits": 3,
-        "additions": 378,
-        "deletions": 606
-      },
       "komariChikaA": {
         "commits": 31,
         "additions": 3819,
         "deletions": 587
       },
+      "kajimi16": {
+        "commits": 3,
+        "additions": 378,
+        "deletions": 606
+      },
       "KuonjiPloy": {
         "commits": 1,
         "additions": 403,
         "deletions": 0
-      }
-    },
-    "elderly-fraud-risk-system": {
-      "kajimi16": {
-        "commits": 4,
-        "additions": 252,
-        "deletions": 40
-      },
-      "komariChikaA": {
-        "commits": 14,
-        "additions": 20338,
-        "deletions": 4281
-      },
-      "KuonjiPloy": {
-        "commits": 6,
-        "additions": 14534,
-        "deletions": 4124
-      }
-    },
-    "silver-fraud-guard": {
-      "kajimi16": {
-        "commits": 17,
-        "additions": 3033,
-        "deletions": 378
-      },
-      "komariChikaA": {
-        "commits": 31,
-        "additions": 12105,
-        "deletions": 237
-      },
-      "KuonjiPloy": {
-        "commits": 3,
-        "additions": 7136,
-        "deletions": 138
-      }
-    },
-    "fraud-guard-clients": {
-      "kajimi16": {
-        "commits": 18,
-        "additions": 1160,
-        "deletions": 97
-      },
-      "komariChikaA": {
-        "commits": 27,
-        "additions": 39287,
-        "deletions": 608
-      },
-      "KuonjiPloy": {
-        "commits": 2,
-        "additions": 4478,
-        "deletions": 342
-      }
-    },
-    "home-visit-fraud-guard": {
-      "kajimi16": {
-        "commits": 2,
-        "additions": 85,
-        "deletions": 6
-      },
-      "komariChikaA": {
-        "commits": 43,
-        "additions": 8972,
-        "deletions": 596
-      },
-      "KuonjiPloy": {
-        "commits": 3,
-        "additions": 3745,
-        "deletions": 38
-      }
-    },
-    "fraud-guard-perf": {
-      "kajimi16": {
-        "commits": 10,
-        "additions": 4596,
-        "deletions": 65
-      }
-    },
-    "mobile-fraud-guard": {
-      "kajimi16": {
-        "commits": 1,
-        "additions": 49,
-        "deletions": 0
-      },
-      "komariChikaA": {
-        "commits": 23,
-        "additions": 19600,
-        "deletions": 817
-      },
-      "KuonjiPloy": {
-        "commits": 3,
-        "additions": 1168,
-        "deletions": 42
       }
     },
     ".github": {
@@ -657,11 +616,45 @@
         "deletions": 29
       }
     },
+    "home-visit-fraud-guard": {
+      "komariChikaA": {
+        "commits": 43,
+        "additions": 8972,
+        "deletions": 596
+      },
+      "kajimi16": {
+        "commits": 2,
+        "additions": 85,
+        "deletions": 6
+      },
+      "KuonjiPloy": {
+        "commits": 3,
+        "additions": 3745,
+        "deletions": 38
+      }
+    },
     "jbgs-submission": {
       "komariChikaA": {
         "commits": 6,
         "additions": 945,
         "deletions": 79
+      }
+    },
+    "mobile-fraud-guard": {
+      "komariChikaA": {
+        "commits": 23,
+        "additions": 19600,
+        "deletions": 817
+      },
+      "kajimi16": {
+        "commits": 1,
+        "additions": 49,
+        "deletions": 0
+      },
+      "KuonjiPloy": {
+        "commits": 3,
+        "additions": 1168,
+        "deletions": 42
       }
     },
     "community-fraud-guard": {
@@ -674,6 +667,13 @@
         "commits": 2,
         "additions": 1555,
         "deletions": 312
+      }
+    },
+    "fraud-guard-perf": {
+      "kajimi16": {
+        "commits": 10,
+        "additions": 4596,
+        "deletions": 65
       }
     },
     "demo-repository": {
