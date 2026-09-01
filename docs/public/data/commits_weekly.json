@@ -1,29 +1,29 @@
 {
-  "update_time": "2026-09-01T00:55:17.854471",
+  "update_time": "2026-09-01T23:41:28.673174",
   "days_range": 7,
-  "total_commits": 179,
+  "total_commits": 184,
   "total_repos": 12,
   "user_commits": {
     "komariChikaA": {
-      "total_commits": 96,
+      "total_commits": 101,
       "repos": [
-        "fraud-intervention-agent",
-        "jbgs-submission",
-        ".github",
         "home-visit-fraud-guard",
-        "community-fraud-guard",
-        "fraud-guard-clients",
-        "elderly-fraud-risk-system",
-        "fraud-guard-shared",
-        "silver-fraud-guard",
         "jbgs-proposal",
-        "mobile-fraud-guard"
+        "elderly-fraud-risk-system",
+        "jbgs-submission",
+        "fraud-guard-clients",
+        ".github",
+        "community-fraud-guard",
+        "mobile-fraud-guard",
+        "fraud-guard-shared",
+        "fraud-intervention-agent",
+        "silver-fraud-guard"
       ],
       "repo_commits": {
-        "fraud-guard-clients": 32,
-        "home-visit-fraud-guard": 8,
-        "silver-fraud-guard": 27,
-        "fraud-intervention-agent": 3,
+        "fraud-guard-clients": 34,
+        "silver-fraud-guard": 28,
+        "fraud-intervention-agent": 4,
+        "home-visit-fraud-guard": 9,
         "jbgs-proposal": 8,
         ".github": 3,
         "community-fraud-guard": 1,
@@ -34,6 +34,7 @@
       },
       "repo_count": 11,
       "daily_commits": {
+        "2026-09-01": 5,
         "2026-08-31": 12,
         "2026-08-30": 37,
         "2026-08-29": 4,
@@ -42,6 +43,8 @@
         "2026-08-26": 23
       },
       "hourly_distribution": {
+        "4": 1,
+        "2": 12,
         "17": 6,
         "13": 3,
         "22": 9,
@@ -54,7 +57,6 @@
         "10": 2,
         "19": 6,
         "3": 5,
-        "2": 8,
         "1": 3,
         "18": 2,
         "14": 6,
@@ -63,6 +65,8 @@
         "6": 1
       },
       "beijing_hourly_distribution": {
+        "12": 1,
+        "10": 12,
         "1": 6,
         "21": 3,
         "6": 9,
@@ -75,7 +79,6 @@
         "18": 2,
         "3": 6,
         "11": 5,
-        "10": 8,
         "9": 3,
         "2": 2,
         "22": 6,
@@ -84,8 +87,26 @@
         "14": 1
       },
       "night_owl_commits": 53,
-      "night_owl_percentage": 55.2,
+      "night_owl_percentage": 52.5,
       "commit_messages": [
+        {
+          "message": "fix: 完善社区端合成演示验收闭环",
+          "repo": "fraud-guard-clients",
+          "date": "2026-09-01",
+          "time": "2026-09-01T12:21:12+00:00",
+          "beijing_hour": 12,
+          "is_night_owl": false,
+          "url": "https://github.com/Silver-yiyangyiyang/fraud-guard-clients/commit/8e46a93e169b584d23b2c378dbcb97d4aeeeddca"
+        },
+        {
+          "message": "小程序家属守护、记录一键已读与首页刷新节流",
+          "repo": "fraud-guard-clients",
+          "date": "2026-09-01",
+          "time": "2026-09-01T10:43:05+00:00",
+          "beijing_hour": 10,
+          "is_night_owl": false,
+          "url": "https://github.com/Silver-yiyangyiyang/fraud-guard-clients/commit/f9636741766702cc792bdfd8b5fc8a2453957154"
+        },
         {
           "message": "老人端：TTS、导航加大加深、问卷选项、门前抓拍下载 (#119)",
           "repo": "fraud-guard-clients",
@@ -157,48 +178,30 @@
           "beijing_hour": 5,
           "is_night_owl": true,
           "url": "https://github.com/Silver-yiyangyiyang/fraud-guard-clients/commit/3334c7696cd440edcd221de755e3fc06b6c94b8f"
-        },
-        {
-          "message": "fix: speak Chinese for workbench 503s and hide undefined request failures (#107)",
-          "repo": "fraud-guard-clients",
-          "date": "2026-08-30",
-          "time": "2026-08-31T04:20:46+00:00",
-          "beijing_hour": 4,
-          "is_night_owl": true,
-          "url": "https://github.com/Silver-yiyangyiyang/fraud-guard-clients/commit/3b5b12771ffb0c7c85be8d38a563ff20a4e97151"
-        },
-        {
-          "message": "fix: gate the community workbench behind login instead of auto demo (#106)",
-          "repo": "fraud-guard-clients",
-          "date": "2026-08-30",
-          "time": "2026-08-31T04:03:20+00:00",
-          "beijing_hour": 4,
-          "is_night_owl": true,
-          "url": "https://github.com/Silver-yiyangyiyang/fraud-guard-clients/commit/a5bb570226e7a5786261fc900de034d39a29e779"
         }
       ],
       "first_commit_date": "2026-08-26T06:24:33+00:00",
-      "last_commit_date": "2026-08-31T17:01:42+00:00",
-      "active_days": 6,
-      "avg_commits_per_day": 16.0
+      "last_commit_date": "2026-09-01T04:21:12+00:00",
+      "active_days": 7,
+      "avg_commits_per_day": 14.428571428571429
     },
     "kajimi16": {
       "total_commits": 80,
       "repos": [
-        ".github",
-        "fraud-guard-perf",
         "home-visit-fraud-guard",
-        "community-fraud-guard",
-        "fraud-guard-clients",
+        "jbgs-proposal",
         "elderly-fraud-risk-system",
+        "fraud-guard-clients",
+        ".github",
+        "community-fraud-guard",
         "fraud-guard-shared",
-        "silver-fraud-guard",
-        "jbgs-proposal"
+        "fraud-guard-perf",
+        "silver-fraud-guard"
       ],
       "repo_commits": {
         "fraud-guard-clients": 28,
-        "home-visit-fraud-guard": 2,
         "silver-fraud-guard": 27,
+        "home-visit-fraud-guard": 2,
         "jbgs-proposal": 4,
         ".github": 1,
         "community-fraud-guard": 1,
@@ -210,8 +213,8 @@
       "daily_commits": {
         "2026-08-29": 5,
         "2026-08-28": 56,
-        "2026-08-26": 12,
-        "2026-08-30": 7
+        "2026-08-30": 7,
+        "2026-08-26": 12
       },
       "hourly_distribution": {
         "19": 5,
@@ -331,9 +334,9 @@
     "KuonjiPloy": {
       "total_commits": 3,
       "repos": [
-        "community-fraud-guard",
+        "home-visit-fraud-guard",
         "fraud-guard-shared",
-        "home-visit-fraud-guard"
+        "community-fraud-guard"
       ],
       "repo_commits": {
         "home-visit-fraud-guard": 1,
@@ -398,7 +401,7 @@
       "user_repos": 5,
       "total": 37
     },
-    "execution_time": "13.9s",
+    "execution_time": "11.0s",
     "optimization_enabled": true
   }
 }
