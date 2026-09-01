@@ -1,0 +1,33 @@
+{
+  "meta": {
+    "year": 2026,
+    "start_month": 9,
+    "end_month": 9,
+    "org_name": "Silver-yiyangyiyang",
+    "period_label": "2026年9月",
+    "period_type": "monthly_range",
+    "generated_at": "2026-09-01T01:21:39.303980",
+    "total_contributors": 0,
+    "outstanding_count": 0,
+    "excellent_count": 0,
+    "active_count": 0,
+    "total_additions": 0,
+    "total_deletions": 0,
+    "total_changes": 0,
+    "thresholds": {
+      "outstanding": 50,
+      "excellent": 10,
+      "valid_commit_threshold": 10
+    }
+  },
+  "contributors": {
+    "outstanding": [],
+    "excellent": [],
+    "active": []
+  },
+  "ranking": {
+    "by_commits": [],
+    "by_code": []
+  },
+  "repo_matrix": {}
+}
