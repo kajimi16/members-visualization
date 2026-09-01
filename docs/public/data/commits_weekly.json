@@ -1,95 +1,109 @@
 {
-  "update_time": "2026-08-31T00:03:16.723879",
+  "update_time": "2026-09-01T00:55:17.854471",
   "days_range": 7,
-  "total_commits": 193,
+  "total_commits": 179,
   "total_repos": 12,
   "user_commits": {
     "komariChikaA": {
-      "total_commits": 103,
+      "total_commits": 96,
       "repos": [
-        "fraud-guard-shared",
         "fraud-intervention-agent",
-        ".github",
-        "elderly-fraud-risk-system",
-        "jbgs-proposal",
         "jbgs-submission",
-        "mobile-fraud-guard",
+        ".github",
         "home-visit-fraud-guard",
+        "community-fraud-guard",
         "fraud-guard-clients",
+        "elderly-fraud-risk-system",
+        "fraud-guard-shared",
         "silver-fraud-guard",
-        "community-fraud-guard"
+        "jbgs-proposal",
+        "mobile-fraud-guard"
       ],
       "repo_commits": {
-        "fraud-guard-clients": 30,
-        "silver-fraud-guard": 23,
+        "fraud-guard-clients": 32,
+        "home-visit-fraud-guard": 8,
+        "silver-fraud-guard": 27,
+        "fraud-intervention-agent": 3,
+        "jbgs-proposal": 8,
+        ".github": 3,
         "community-fraud-guard": 1,
-        "fraud-intervention-agent": 2,
-        "jbgs-proposal": 13,
-        "home-visit-fraud-guard": 7,
-        ".github": 4,
         "fraud-guard-shared": 3,
         "elderly-fraud-risk-system": 9,
-        "jbgs-submission": 6,
-        "mobile-fraud-guard": 5
+        "jbgs-submission": 1,
+        "mobile-fraud-guard": 1
       },
       "repo_count": 11,
       "daily_commits": {
+        "2026-08-31": 12,
         "2026-08-30": 37,
         "2026-08-29": 4,
         "2026-08-28": 15,
         "2026-08-27": 5,
-        "2026-08-26": 23,
-        "2026-08-24": 19
+        "2026-08-26": 23
       },
       "hourly_distribution": {
+        "17": 6,
+        "13": 3,
         "22": 9,
         "21": 7,
         "20": 3,
         "16": 3,
         "15": 20,
-        "12": 7,
+        "12": 5,
         "11": 4,
         "10": 2,
         "19": 6,
-        "3": 7,
-        "2": 6,
-        "1": 5,
+        "3": 5,
+        "2": 8,
+        "1": 3,
         "18": 2,
-        "17": 2,
         "14": 6,
         "5": 1,
-        "13": 1,
-        "0": 8,
-        "4": 1,
         "8": 2,
         "6": 1
       },
       "beijing_hourly_distribution": {
+        "1": 6,
+        "21": 3,
         "6": 9,
         "5": 7,
         "4": 3,
         "0": 3,
         "23": 20,
-        "20": 7,
+        "20": 5,
         "19": 4,
         "18": 2,
         "3": 6,
-        "11": 7,
-        "10": 6,
-        "9": 5,
+        "11": 5,
+        "10": 8,
+        "9": 3,
         "2": 2,
-        "1": 2,
         "22": 6,
         "13": 1,
-        "21": 1,
-        "8": 8,
-        "12": 1,
         "16": 2,
         "14": 1
       },
-      "night_owl_commits": 49,
-      "night_owl_percentage": 47.6,
+      "night_owl_commits": 53,
+      "night_owl_percentage": 55.2,
       "commit_messages": [
+        {
+          "message": "老人端：TTS、导航加大加深、问卷选项、门前抓拍下载 (#119)",
+          "repo": "fraud-guard-clients",
+          "date": "2026-08-31",
+          "time": "2026-09-01T01:01:27+00:00",
+          "beijing_hour": 1,
+          "is_night_owl": true,
+          "url": "https://github.com/Silver-yiyangyiyang/fraud-guard-clients/commit/fea003a36c9af246ee1065f5e462eb3988ae7155"
+        },
+        {
+          "message": "fix: preselect the confirmed WeChat role on the identity page (#114)",
+          "repo": "fraud-guard-clients",
+          "date": "2026-08-31",
+          "time": "2026-08-31T21:11:27+00:00",
+          "beijing_hour": 21,
+          "is_night_owl": false,
+          "url": "https://github.com/Silver-yiyangyiyang/fraud-guard-clients/commit/a244a519089e2cea83b6cf10a2c8b657d421876e"
+        },
         {
           "message": "fix: keep the resident report form after a successful create (#113)",
           "repo": "fraud-guard-clients",
@@ -161,51 +175,33 @@
           "beijing_hour": 4,
           "is_night_owl": true,
           "url": "https://github.com/Silver-yiyangyiyang/fraud-guard-clients/commit/a5bb570226e7a5786261fc900de034d39a29e779"
-        },
-        {
-          "message": "fix: speak Chinese on home cards and mini-program API errors (#105)",
-          "repo": "fraud-guard-clients",
-          "date": "2026-08-30",
-          "time": "2026-08-31T00:33:07+00:00",
-          "beijing_hour": 0,
-          "is_night_owl": true,
-          "url": "https://github.com/Silver-yiyangyiyang/fraud-guard-clients/commit/6481cfa04681f505514bc84bd02156628853d830"
-        },
-        {
-          "message": "fix: speak Chinese on login cards and community review 403s (#104)",
-          "repo": "fraud-guard-clients",
-          "date": "2026-08-30",
-          "time": "2026-08-30T23:31:47+00:00",
-          "beijing_hour": 23,
-          "is_night_owl": true,
-          "url": "https://github.com/Silver-yiyangyiyang/fraud-guard-clients/commit/052e536996c7c506f8d8397bec3d3b2889321067"
         }
       ],
-      "first_commit_date": "2026-08-24T00:34:33+00:00",
-      "last_commit_date": "2026-08-30T22:52:32+00:00",
+      "first_commit_date": "2026-08-26T06:24:33+00:00",
+      "last_commit_date": "2026-08-31T17:01:42+00:00",
       "active_days": 6,
-      "avg_commits_per_day": 17.166666666666668
+      "avg_commits_per_day": 16.0
     },
     "kajimi16": {
-      "total_commits": 83,
+      "total_commits": 80,
       "repos": [
-        "fraud-guard-shared",
-        "fraud-guard-perf",
         ".github",
-        "elderly-fraud-risk-system",
-        "jbgs-proposal",
+        "fraud-guard-perf",
         "home-visit-fraud-guard",
+        "community-fraud-guard",
         "fraud-guard-clients",
+        "elderly-fraud-risk-system",
+        "fraud-guard-shared",
         "silver-fraud-guard",
-        "community-fraud-guard"
+        "jbgs-proposal"
       ],
       "repo_commits": {
-        "fraud-guard-clients": 29,
-        "silver-fraud-guard": 29,
-        "community-fraud-guard": 1,
-        "jbgs-proposal": 4,
+        "fraud-guard-clients": 28,
         "home-visit-fraud-guard": 2,
+        "silver-fraud-guard": 27,
+        "jbgs-proposal": 4,
         ".github": 1,
+        "community-fraud-guard": 1,
         "fraud-guard-shared": 5,
         "elderly-fraud-risk-system": 11,
         "fraud-guard-perf": 1
@@ -214,16 +210,14 @@
       "daily_commits": {
         "2026-08-29": 5,
         "2026-08-28": 56,
-        "2026-08-24": 3,
-        "2026-08-30": 7,
-        "2026-08-26": 12
+        "2026-08-26": 12,
+        "2026-08-30": 7
       },
       "hourly_distribution": {
         "19": 5,
         "18": 11,
         "17": 40,
         "16": 5,
-        "2": 3,
         "15": 10,
         "14": 9
       },
@@ -232,12 +226,11 @@
         "2": 11,
         "1": 40,
         "0": 5,
-        "10": 3,
         "23": 10,
         "22": 9
       },
       "night_owl_commits": 80,
-      "night_owl_percentage": 96.4,
+      "night_owl_percentage": 100.0,
       "commit_messages": [
         {
           "message": "test: 提审前置门禁——前端包无凭据泄漏(Issue #45 可自动部分)[重新提交等审核] (#93)",
@@ -330,52 +323,38 @@
           "url": "https://github.com/Silver-yiyangyiyang/fraud-guard-clients/commit/2813b42007e4f7c0541cf15d9960c54c9fb9b5fd"
         }
       ],
-      "first_commit_date": "2026-08-24T02:36:35+00:00",
+      "first_commit_date": "2026-08-26T14:30:03+00:00",
       "last_commit_date": "2026-08-30T15:12:15+00:00",
-      "active_days": 5,
-      "avg_commits_per_day": 16.6
+      "active_days": 4,
+      "avg_commits_per_day": 20.0
     },
     "KuonjiPloy": {
-      "total_commits": 7,
+      "total_commits": 3,
       "repos": [
-        "fraud-guard-shared",
         "community-fraud-guard",
-        "home-visit-fraud-guard",
-        "mobile-fraud-guard"
+        "fraud-guard-shared",
+        "home-visit-fraud-guard"
       ],
       "repo_commits": {
+        "home-visit-fraud-guard": 1,
         "community-fraud-guard": 1,
-        "home-visit-fraud-guard": 3,
-        "fraud-guard-shared": 1,
-        "mobile-fraud-guard": 2
+        "fraud-guard-shared": 1
       },
-      "repo_count": 4,
+      "repo_count": 3,
       "daily_commits": {
-        "2026-08-26": 3,
-        "2026-08-24": 4
+        "2026-08-26": 3
       },
       "hourly_distribution": {
-        "15": 1,
         "14": 2,
-        "2": 4
+        "15": 1
       },
       "beijing_hourly_distribution": {
-        "23": 1,
         "22": 2,
-        "10": 4
+        "23": 1
       },
       "night_owl_commits": 3,
-      "night_owl_percentage": 42.9,
+      "night_owl_percentage": 100.0,
       "commit_messages": [
-        {
-          "message": "feat: 接入授权的门前视觉派生观察 (#13)",
-          "repo": "community-fraud-guard",
-          "date": "2026-08-26",
-          "time": "2026-08-26T23:18:12+00:00",
-          "beijing_hour": 23,
-          "is_night_owl": true,
-          "url": "https://github.com/Silver-yiyangyiyang/community-fraud-guard/commit/fc69013f58db157d2ae6015ee391b122b41d836b"
-        },
         {
           "message": "feat: 完成门前人员检测训练与影子工程接入 (#19)",
           "repo": "home-visit-fraud-guard",
@@ -386,22 +365,13 @@
           "url": "https://github.com/Silver-yiyangyiyang/home-visit-fraud-guard/commit/08f339c71a157b0f893d91eb02856eface0561b7"
         },
         {
-          "message": "Merge pull request #18 from Silver-yiyangyiyang/feat/repository-concurrency",
-          "repo": "home-visit-fraud-guard",
-          "date": "2026-08-24",
-          "time": "2026-08-24T10:37:26+00:00",
-          "beijing_hour": 10,
-          "is_night_owl": false,
-          "url": "https://github.com/Silver-yiyangyiyang/home-visit-fraud-guard/commit/1d108b9d3b7e284d17ca8d8c31bc5de3369873cd"
-        },
-        {
-          "message": "fix: support in-memory repository reads",
-          "repo": "home-visit-fraud-guard",
-          "date": "2026-08-24",
-          "time": "2026-08-24T10:33:59+00:00",
-          "beijing_hour": 10,
-          "is_night_owl": false,
-          "url": "https://github.com/Silver-yiyangyiyang/home-visit-fraud-guard/commit/9dbf116a118e7373f3efc21b34a8add5aabacb58"
+          "message": "feat: 接入授权的门前视觉派生观察 (#13)",
+          "repo": "community-fraud-guard",
+          "date": "2026-08-26",
+          "time": "2026-08-26T23:18:12+00:00",
+          "beijing_hour": 23,
+          "is_night_owl": true,
+          "url": "https://github.com/Silver-yiyangyiyang/community-fraud-guard/commit/fc69013f58db157d2ae6015ee391b122b41d836b"
         },
         {
           "message": "feat: 增加隐私安全的门前人员检测共享契约 (#18)",
@@ -411,30 +381,12 @@
           "beijing_hour": 22,
           "is_night_owl": true,
           "url": "https://github.com/Silver-yiyangyiyang/fraud-guard-shared/commit/b10b16ddc2f02e036b764adcdb9c9a198464fce4"
-        },
-        {
-          "message": "Merge pull request #25 from Silver-yiyangyiyang/feat/perf-multiworker",
-          "repo": "mobile-fraud-guard",
-          "date": "2026-08-24",
-          "time": "2026-08-24T10:43:14+00:00",
-          "beijing_hour": 10,
-          "is_night_owl": false,
-          "url": "https://github.com/Silver-yiyangyiyang/mobile-fraud-guard/commit/2e59db500778acf666b18f15ab327ef43ee124c4"
-        },
-        {
-          "message": "docs: define safe multi-worker model releases",
-          "repo": "mobile-fraud-guard",
-          "date": "2026-08-24",
-          "time": "2026-08-24T10:41:45+00:00",
-          "beijing_hour": 10,
-          "is_night_owl": false,
-          "url": "https://github.com/Silver-yiyangyiyang/mobile-fraud-guard/commit/a1042c9129e83cf1b4311e48add73a16bffaf6d4"
         }
       ],
-      "first_commit_date": "2026-08-24T02:33:59+00:00",
+      "first_commit_date": "2026-08-26T14:57:46+00:00",
       "last_commit_date": "2026-08-26T15:18:12+00:00",
-      "active_days": 2,
-      "avg_commits_per_day": 3.5
+      "active_days": 1,
+      "avg_commits_per_day": 3.0
     }
   },
   "optimization_stats": {
@@ -446,7 +398,7 @@
       "user_repos": 5,
       "total": 37
     },
-    "execution_time": "16.3s",
+    "execution_time": "13.9s",
     "optimization_enabled": true
   }
 }
