@@ -6,14 +6,14 @@
     "org_name": "Silver-yiyangyiyang",
     "period_label": "2026年9月",
     "period_type": "monthly_range",
-    "generated_at": "2026-09-01T01:21:39.303980",
-    "total_contributors": 0,
+    "generated_at": "2026-09-02T00:24:20.319155",
+    "total_contributors": 1,
     "outstanding_count": 0,
     "excellent_count": 0,
-    "active_count": 0,
-    "total_additions": 0,
-    "total_deletions": 0,
-    "total_changes": 0,
+    "active_count": 1,
+    "total_additions": 6445,
+    "total_deletions": 363,
+    "total_changes": 6808,
     "thresholds": {
       "outstanding": 50,
       "excellent": 10,
@@ -23,11 +23,135 @@
   "contributors": {
     "outstanding": [],
     "excellent": [],
-    "active": []
+    "active": [
+      {
+        "username": "komariChikaA",
+        "verified": true,
+        "valid_commits": 5,
+        "total_commits": 5,
+        "additions": 6445,
+        "deletions": 363,
+        "changes": 6808,
+        "repos_count": 4,
+        "repos": [
+          "fraud-guard-clients",
+          "fraud-intervention-agent",
+          "home-visit-fraud-guard",
+          "silver-fraud-guard"
+        ],
+        "recent_commits": [
+          {
+            "repo": "fraud-guard-clients",
+            "sha": "8e46a93e",
+            "message": "fix: 完善社区端合成演示验收闭环",
+            "date": "2026-09-01T04:21:12Z",
+            "files_count": 8,
+            "total_additions": 327,
+            "total_deletions": 81,
+            "total_changes": 408
+          },
+          {
+            "repo": "fraud-guard-clients",
+            "sha": "f9636741",
+            "message": "小程序家属守护、记录一键已读与首页刷新节流",
+            "date": "2026-09-01T02:43:05Z",
+            "files_count": 46,
+            "total_additions": 2887,
+            "total_deletions": 182,
+            "total_changes": 3069
+          },
+          {
+            "repo": "silver-fraud-guard",
+            "sha": "0daeab1d",
+            "message": "家属可见上报正文、门口辅助提醒、授权姓名与通知 limit",
+            "date": "2026-09-01T02:43:00Z",
+            "files_count": 23,
+            "total_additions": 2762,
+            "total_deletions": 78,
+            "total_changes": 2840
+          },
+          {
+            "repo": "fraud-intervention-agent",
+            "sha": "f5c530a4",
+            "message": "记录 Token Switch 条款审查并打开本机门禁",
+            "date": "2026-09-01T02:43:00Z",
+            "files_count": 3,
+            "total_additions": 143,
+            "total_deletions": 4,
+            "total_changes": 147
+          },
+          {
+            "repo": "home-visit-fraud-guard",
+            "sha": "6447a9e1",
+            "message": "记录门前 IoT 智能体条款审查并打开生产门禁",
+            "date": "2026-09-01T02:43:00Z",
+            "files_count": 12,
+            "total_additions": 326,
+            "total_deletions": 18,
+            "total_changes": 344
+          }
+        ]
+      }
+    ]
   },
   "ranking": {
-    "by_commits": [],
-    "by_code": []
+    "by_commits": [
+      {
+        "username": "komariChikaA",
+        "verified": true,
+        "valid_commits": 5,
+        "total_commits": 5,
+        "additions": 6445,
+        "deletions": 363,
+        "changes": 6808,
+        "repos_count": 4,
+        "commit_rank": 1,
+        "code_rank": 1
+      }
+    ],
+    "by_code": [
+      {
+        "username": "komariChikaA",
+        "verified": true,
+        "valid_commits": 5,
+        "total_commits": 5,
+        "additions": 6445,
+        "deletions": 363,
+        "changes": 6808,
+        "repos_count": 4,
+        "commit_rank": 1,
+        "code_rank": 1
+      }
+    ]
   },
-  "repo_matrix": {}
+  "repo_matrix": {
+    "fraud-guard-clients": {
+      "komariChikaA": {
+        "commits": 2,
+        "additions": 3214,
+        "deletions": 263
+      }
+    },
+    "silver-fraud-guard": {
+      "komariChikaA": {
+        "commits": 1,
+        "additions": 2762,
+        "deletions": 78
+      }
+    },
+    "fraud-intervention-agent": {
+      "komariChikaA": {
+        "commits": 1,
+        "additions": 143,
+        "deletions": 4
+      }
+    },
+    "home-visit-fraud-guard": {
+      "komariChikaA": {
+        "commits": 1,
+        "additions": 326,
+        "deletions": 18
+      }
+    }
+  }
 }
