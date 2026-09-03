@@ -6,14 +6,14 @@
     "org_name": "Silver-yiyangyiyang",
     "period_label": "2026年9月",
     "period_type": "monthly_range",
-    "generated_at": "2026-09-02T00:24:20.319155",
-    "total_contributors": 1,
-    "outstanding_count": 0,
-    "excellent_count": 0,
-    "active_count": 1,
-    "total_additions": 6445,
-    "total_deletions": 363,
-    "total_changes": 6808,
+    "generated_at": "2026-09-03T00:32:08.101700",
+    "total_contributors": 3,
+    "outstanding_count": 1,
+    "excellent_count": 2,
+    "active_count": 0,
+    "total_additions": 32725,
+    "total_deletions": 2957,
+    "total_changes": 35682,
     "thresholds": {
       "outstanding": 50,
       "excellent": 10,
@@ -21,122 +21,530 @@
     }
   },
   "contributors": {
-    "outstanding": [],
-    "excellent": [],
-    "active": [
+    "outstanding": [
       {
         "username": "komariChikaA",
         "verified": true,
-        "valid_commits": 5,
-        "total_commits": 5,
-        "additions": 6445,
-        "deletions": 363,
-        "changes": 6808,
-        "repos_count": 4,
+        "valid_commits": 62,
+        "total_commits": 62,
+        "additions": 22199,
+        "deletions": 2338,
+        "changes": 24537,
+        "repos_count": 8,
         "repos": [
+          "elderly-fraud-risk-system",
           "fraud-guard-clients",
+          "fraud-guard-shared",
+          "fraud-guard-showcase",
           "fraud-intervention-agent",
           "home-visit-fraud-guard",
+          "jbgs-submission",
           "silver-fraud-guard"
         ],
         "recent_commits": [
           {
             "repo": "fraud-guard-clients",
-            "sha": "8e46a93e",
-            "message": "fix: 完善社区端合成演示验收闭环",
-            "date": "2026-09-01T04:21:12Z",
-            "files_count": 8,
-            "total_additions": 327,
-            "total_deletions": 81,
-            "total_changes": 408
+            "sha": "79a570b4",
+            "message": "feat: show review source content",
+            "date": "2026-09-03T00:05:12Z",
+            "files_count": 4,
+            "total_additions": 99,
+            "total_deletions": 3,
+            "total_changes": 102
+          },
+          {
+            "repo": "fraud-guard-showcase",
+            "sha": "e78d3e9b",
+            "message": "feat(showcase): redesign walkthrough for judge-facing linear UI (#6)",
+            "date": "2026-09-02T23:56:37Z",
+            "files_count": 3,
+            "total_additions": 105,
+            "total_deletions": 82,
+            "total_changes": 187
+          },
+          {
+            "repo": "fraud-guard-showcase",
+            "sha": "88a47641",
+            "message": "feat(showcase): add stepwise system walkthrough visualization (#4)",
+            "date": "2026-09-02T23:39:54Z",
+            "files_count": 5,
+            "total_additions": 378,
+            "total_deletions": 61,
+            "total_changes": 439
+          },
+          {
+            "repo": "fraud-guard-showcase",
+            "sha": "faf91179",
+            "message": "feat(showcase): show instant and profile factor walkthrough (#2)",
+            "date": "2026-09-02T23:20:28Z",
+            "files_count": 6,
+            "total_additions": 617,
+            "total_deletions": 14,
+            "total_changes": 631
+          },
+          {
+            "repo": "jbgs-submission",
+            "sha": "b7cad138",
+            "message": "docs: record controlled production load probe results (#8)",
+            "date": "2026-09-02T23:03:57Z",
+            "files_count": 7,
+            "total_additions": 648,
+            "total_deletions": 0,
+            "total_changes": 648
+          },
+          {
+            "repo": "jbgs-submission",
+            "sha": "ca77aa99",
+            "message": "Add printable signature PDFs and tracking issue #5. (#6)",
+            "date": "2026-09-02T22:54:59Z",
+            "files_count": 16,
+            "total_additions": 485,
+            "total_deletions": 1,
+            "total_changes": 486
           },
           {
             "repo": "fraud-guard-clients",
-            "sha": "f9636741",
-            "message": "小程序家属守护、记录一键已读与首页刷新节流",
-            "date": "2026-09-01T02:43:05Z",
-            "files_count": 46,
-            "total_additions": 2887,
-            "total_deletions": 182,
-            "total_changes": 3069
-          },
-          {
-            "repo": "silver-fraud-guard",
-            "sha": "0daeab1d",
-            "message": "家属可见上报正文、门口辅助提醒、授权姓名与通知 limit",
-            "date": "2026-09-01T02:43:00Z",
-            "files_count": 23,
-            "total_additions": 2762,
-            "total_deletions": 78,
-            "total_changes": 2840
-          },
-          {
-            "repo": "fraud-intervention-agent",
-            "sha": "f5c530a4",
-            "message": "记录 Token Switch 条款审查并打开本机门禁",
-            "date": "2026-09-01T02:43:00Z",
-            "files_count": 3,
-            "total_additions": 143,
-            "total_deletions": 4,
-            "total_changes": 147
+            "sha": "ae6dbbad",
+            "message": "fix: stop stacking door snapshot timers and audio reconnects (#197) (#198)",
+            "date": "2026-09-02T22:54:24Z",
+            "files_count": 4,
+            "total_additions": 395,
+            "total_deletions": 42,
+            "total_changes": 437
           },
           {
             "repo": "home-visit-fraud-guard",
-            "sha": "6447a9e1",
-            "message": "记录门前 IoT 智能体条款审查并打开生产门禁",
-            "date": "2026-09-01T02:43:00Z",
-            "files_count": 12,
-            "total_additions": 326,
-            "total_deletions": 18,
-            "total_changes": 344
+            "sha": "d5402021",
+            "message": "fix: bound door media resource lifecycles (#53)",
+            "date": "2026-09-02T22:50:55Z",
+            "files_count": 7,
+            "total_additions": 543,
+            "total_deletions": 172,
+            "total_changes": 715
+          },
+          {
+            "repo": "silver-fraud-guard",
+            "sha": "18ab68c6",
+            "message": "fix: reclaim and scope door talk sessions (#123)",
+            "date": "2026-09-02T22:44:04Z",
+            "files_count": 4,
+            "total_additions": 459,
+            "total_deletions": 40,
+            "total_changes": 499
+          },
+          {
+            "repo": "home-visit-fraud-guard",
+            "sha": "487463d9",
+            "message": "fix: isolate webhook processing from event loop (#52)",
+            "date": "2026-09-02T22:44:00Z",
+            "files_count": 6,
+            "total_additions": 361,
+            "total_deletions": 26,
+            "total_changes": 387
           }
         ]
       }
-    ]
+    ],
+    "excellent": [
+      {
+        "username": "kajimi16",
+        "verified": true,
+        "valid_commits": 21,
+        "total_commits": 21,
+        "additions": 5653,
+        "deletions": 402,
+        "changes": 6055,
+        "repos_count": 5,
+        "repos": [
+          "elderly-fraud-risk-system",
+          "fraud-guard-clients",
+          "fraud-guard-shared",
+          "home-visit-fraud-guard",
+          "silver-fraud-guard"
+        ],
+        "recent_commits": [
+          {
+            "repo": "silver-fraud-guard",
+            "sha": "ce1838ed",
+            "message": "Merge remote-tracking branch 'origin/main'",
+            "date": "2026-09-02T23:44:28Z",
+            "files_count": 4,
+            "total_additions": 459,
+            "total_deletions": 40,
+            "total_changes": 499
+          },
+          {
+            "repo": "silver-fraud-guard",
+            "sha": "60154b7e",
+            "message": "Merge remote-tracking branch 'origin/feat/backend-showcase'",
+            "date": "2026-09-02T23:42:03Z",
+            "files_count": 26,
+            "total_additions": 3105,
+            "total_deletions": 38,
+            "total_changes": 3143
+          },
+          {
+            "repo": "fraud-guard-shared",
+            "sha": "e898b82e",
+            "message": "fix(asr): 抑制 whisper 把 initial_prompt 回声成转写文本 (#44)",
+            "date": "2026-09-02T23:31:57Z",
+            "files_count": 2,
+            "total_additions": 87,
+            "total_deletions": 1,
+            "total_changes": 88
+          },
+          {
+            "repo": "fraud-guard-clients",
+            "sha": "6616ebb1",
+            "message": "feat(miniprogram): door 页视觉 + 底部导航改名「门口画面」",
+            "date": "2026-09-02T19:16:02Z",
+            "files_count": 10,
+            "total_additions": 56,
+            "total_deletions": 34,
+            "total_changes": 90
+          },
+          {
+            "repo": "fraud-guard-clients",
+            "sha": "b0e07347",
+            "message": "feat(miniprogram): 守护首页入口图标换 p9 系列",
+            "date": "2026-09-02T19:08:03Z",
+            "files_count": 10,
+            "total_additions": 24,
+            "total_deletions": 5,
+            "total_changes": 29
+          },
+          {
+            "repo": "silver-fraud-guard",
+            "sha": "0df329c4",
+            "message": "feat(bff): profile-visual derived 数据源改读档案字段(去问卷表依赖)",
+            "date": "2026-09-02T17:58:20Z",
+            "files_count": 2,
+            "total_additions": 31,
+            "total_deletions": 23,
+            "total_changes": 54
+          },
+          {
+            "repo": "fraud-guard-clients",
+            "sha": "bc4fc7b6",
+            "message": "feat(miniprogram): 问卷画像展示(derived 标注/missing 维度/文案)",
+            "date": "2026-09-02T17:38:32Z",
+            "files_count": 5,
+            "total_additions": 38,
+            "total_deletions": 8,
+            "total_changes": 46
+          },
+          {
+            "repo": "silver-fraud-guard",
+            "sha": "f0b2c291",
+            "message": "feat(bff): profile-visual 无正式画像时降级问卷画像",
+            "date": "2026-09-02T17:38:32Z",
+            "files_count": 2,
+            "total_additions": 245,
+            "total_deletions": 32,
+            "total_changes": 277
+          },
+          {
+            "repo": "fraud-guard-clients",
+            "sha": "2a9df55e",
+            "message": "perf: 网页端 5 处量化性能优化 (#156)",
+            "date": "2026-09-02T15:59:03Z",
+            "files_count": 4,
+            "total_additions": 71,
+            "total_deletions": 28,
+            "total_changes": 99
+          },
+          {
+            "repo": "fraud-guard-clients",
+            "sha": "67d30ef2",
+            "message": "fix(miniprogram): 登录身份页 UI 细节",
+            "date": "2026-09-02T15:46:53Z",
+            "files_count": 5,
+            "total_additions": 474,
+            "total_deletions": 29,
+            "total_changes": 503
+          }
+        ]
+      },
+      {
+        "username": "KuonjiPloy",
+        "verified": true,
+        "valid_commits": 12,
+        "total_commits": 12,
+        "additions": 4873,
+        "deletions": 217,
+        "changes": 5090,
+        "repos_count": 2,
+        "repos": [
+          "fraud-guard-showcase",
+          "silver-fraud-guard"
+        ],
+        "recent_commits": [
+          {
+            "repo": "fraud-guard-showcase",
+            "sha": "ae00f93e",
+            "message": "feat(showcase): visualize multi-source operations",
+            "date": "2026-09-02T20:02:33Z",
+            "files_count": 4,
+            "total_additions": 30,
+            "total_deletions": 15,
+            "total_changes": 45
+          },
+          {
+            "repo": "silver-fraud-guard",
+            "sha": "fb770831",
+            "message": "feat(showcase): add multi-source controlled runs",
+            "date": "2026-09-02T20:02:11Z",
+            "files_count": 3,
+            "total_additions": 105,
+            "total_deletions": 5,
+            "total_changes": 110
+          },
+          {
+            "repo": "fraud-guard-showcase",
+            "sha": "f0ff86b6",
+            "message": "feat(showcase): add authorized demo preview panel",
+            "date": "2026-09-02T17:50:21Z",
+            "files_count": 4,
+            "total_additions": 120,
+            "total_deletions": 8,
+            "total_changes": 128
+          },
+          {
+            "repo": "silver-fraud-guard",
+            "sha": "0e0ea093",
+            "message": "feat(showcase): add authorized local preview runs",
+            "date": "2026-09-02T17:49:58Z",
+            "files_count": 5,
+            "total_additions": 312,
+            "total_deletions": 2,
+            "total_changes": 314
+          },
+          {
+            "repo": "fraud-guard-showcase",
+            "sha": "03b2ab2f",
+            "message": "feat(showcase): align routes and original logs",
+            "date": "2026-09-02T16:01:48Z",
+            "files_count": 2,
+            "total_additions": 71,
+            "total_deletions": 47,
+            "total_changes": 118
+          },
+          {
+            "repo": "silver-fraud-guard",
+            "sha": "a967f4c7",
+            "message": "feat(showcase): expose aligned original audit events",
+            "date": "2026-09-02T16:01:41Z",
+            "files_count": 3,
+            "total_additions": 200,
+            "total_deletions": 1,
+            "total_changes": 201
+          },
+          {
+            "repo": "fraud-guard-showcase",
+            "sha": "42e91886",
+            "message": "feat(showcase): clarify data route and audit logs",
+            "date": "2026-09-02T15:31:21Z",
+            "files_count": 1,
+            "total_additions": 77,
+            "total_deletions": 6,
+            "total_changes": 83
+          },
+          {
+            "repo": "fraud-guard-showcase",
+            "sha": "cc524a05",
+            "message": "fix(showcase): clarify model and stage views",
+            "date": "2026-09-02T14:49:33Z",
+            "files_count": 2,
+            "total_additions": 137,
+            "total_deletions": 33,
+            "total_changes": 170
+          },
+          {
+            "repo": "fraud-guard-showcase",
+            "sha": "cbe3572d",
+            "message": "feat(showcase): upgrade control room walkthrough",
+            "date": "2026-09-02T12:18:47Z",
+            "files_count": 6,
+            "total_additions": 409,
+            "total_deletions": 57,
+            "total_changes": 466
+          },
+          {
+            "repo": "fraud-guard-showcase",
+            "sha": "2170fcfe",
+            "message": "feat: add standalone backend showcase console",
+            "date": "2026-09-02T09:23:58Z",
+            "files_count": 16,
+            "total_additions": 914,
+            "total_deletions": 0,
+            "total_changes": 914
+          }
+        ]
+      }
+    ],
+    "active": []
   },
   "ranking": {
     "by_commits": [
       {
         "username": "komariChikaA",
         "verified": true,
-        "valid_commits": 5,
-        "total_commits": 5,
-        "additions": 6445,
-        "deletions": 363,
-        "changes": 6808,
-        "repos_count": 4,
+        "valid_commits": 62,
+        "total_commits": 62,
+        "additions": 22199,
+        "deletions": 2338,
+        "changes": 24537,
+        "repos_count": 8,
         "commit_rank": 1,
         "code_rank": 1
+      },
+      {
+        "username": "kajimi16",
+        "verified": true,
+        "valid_commits": 21,
+        "total_commits": 21,
+        "additions": 5653,
+        "deletions": 402,
+        "changes": 6055,
+        "repos_count": 5,
+        "commit_rank": 2,
+        "code_rank": 2
+      },
+      {
+        "username": "KuonjiPloy",
+        "verified": true,
+        "valid_commits": 12,
+        "total_commits": 12,
+        "additions": 4873,
+        "deletions": 217,
+        "changes": 5090,
+        "repos_count": 2,
+        "commit_rank": 3,
+        "code_rank": 3
       }
     ],
     "by_code": [
       {
         "username": "komariChikaA",
         "verified": true,
-        "valid_commits": 5,
-        "total_commits": 5,
-        "additions": 6445,
-        "deletions": 363,
-        "changes": 6808,
-        "repos_count": 4,
+        "valid_commits": 62,
+        "total_commits": 62,
+        "additions": 22199,
+        "deletions": 2338,
+        "changes": 24537,
+        "repos_count": 8,
         "commit_rank": 1,
         "code_rank": 1
+      },
+      {
+        "username": "kajimi16",
+        "verified": true,
+        "valid_commits": 21,
+        "total_commits": 21,
+        "additions": 5653,
+        "deletions": 402,
+        "changes": 6055,
+        "repos_count": 5,
+        "commit_rank": 2,
+        "code_rank": 2
+      },
+      {
+        "username": "KuonjiPloy",
+        "verified": true,
+        "valid_commits": 12,
+        "total_commits": 12,
+        "additions": 4873,
+        "deletions": 217,
+        "changes": 5090,
+        "repos_count": 2,
+        "commit_rank": 3,
+        "code_rank": 3
       }
     ]
   },
   "repo_matrix": {
     "fraud-guard-clients": {
       "komariChikaA": {
-        "commits": 2,
-        "additions": 3214,
-        "deletions": 263
+        "commits": 29,
+        "additions": 6738,
+        "deletions": 863
+      },
+      "kajimi16": {
+        "commits": 11,
+        "additions": 1164,
+        "deletions": 215
+      }
+    },
+    "fraud-guard-showcase": {
+      "komariChikaA": {
+        "commits": 3,
+        "additions": 1100,
+        "deletions": 157
+      },
+      "KuonjiPloy": {
+        "commits": 7,
+        "additions": 1758,
+        "deletions": 166
       }
     },
     "silver-fraud-guard": {
       "komariChikaA": {
+        "commits": 12,
+        "additions": 7535,
+        "deletions": 222
+      },
+      "kajimi16": {
+        "commits": 6,
+        "additions": 4025,
+        "deletions": 150
+      },
+      "KuonjiPloy": {
+        "commits": 5,
+        "additions": 3115,
+        "deletions": 51
+      }
+    },
+    "fraud-guard-shared": {
+      "komariChikaA": {
+        "commits": 2,
+        "additions": 472,
+        "deletions": 98
+      },
+      "kajimi16": {
+        "commits": 2,
+        "additions": 233,
+        "deletions": 33
+      }
+    },
+    "jbgs-submission": {
+      "komariChikaA": {
+        "commits": 3,
+        "additions": 2473,
+        "deletions": 476
+      }
+    },
+    "home-visit-fraud-guard": {
+      "komariChikaA": {
+        "commits": 11,
+        "additions": 3402,
+        "deletions": 515
+      },
+      "kajimi16": {
         "commits": 1,
-        "additions": 2762,
-        "deletions": 78
+        "additions": 116,
+        "deletions": 3
+      }
+    },
+    "elderly-fraud-risk-system": {
+      "komariChikaA": {
+        "commits": 1,
+        "additions": 336,
+        "deletions": 3
+      },
+      "kajimi16": {
+        "commits": 1,
+        "additions": 115,
+        "deletions": 1
       }
     },
     "fraud-intervention-agent": {
@@ -144,13 +552,6 @@
         "commits": 1,
         "additions": 143,
         "deletions": 4
-      }
-    },
-    "home-visit-fraud-guard": {
-      "komariChikaA": {
-        "commits": 1,
-        "additions": 326,
-        "deletions": 18
       }
     }
   }
