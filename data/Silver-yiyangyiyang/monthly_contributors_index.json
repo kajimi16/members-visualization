@@ -1,0 +1,62 @@
+[
+  {
+    "year": 2026,
+    "start_month": 9,
+    "end_month": 9,
+    "period_label": "2026年9月",
+    "filename": "monthly_contributors_2026_09_09.json",
+    "generated_at": "2026-09-05T00:18:02.706228",
+    "total_contributors": 4,
+    "outstanding_count": 1,
+    "excellent_count": 2,
+    "active_count": 1
+  },
+  {
+    "year": 2026,
+    "start_month": 1,
+    "end_month": 9,
+    "period_label": "2026年1-9月",
+    "filename": "monthly_contributors_2026_01_09.json",
+    "generated_at": "2026-08-28T18:08:28.259448",
+    "total_contributors": 5,
+    "outstanding_count": 2,
+    "excellent_count": 2,
+    "active_count": 1
+  },
+  {
+    "year": 2026,
+    "start_month": 8,
+    "end_month": 8,
+    "period_label": "2026年8月",
+    "filename": "monthly_contributors_2026_08_08.json",
+    "generated_at": "2026-08-31T00:48:30.922454",
+    "total_contributors": 4,
+    "outstanding_count": 2,
+    "excellent_count": 1,
+    "active_count": 1
+  },
+  {
+    "year": 2026,
+    "start_month": 7,
+    "end_month": 7,
+    "period_label": "2026年7月",
+    "filename": "monthly_contributors_2026_07_07.json",
+    "generated_at": "2026-08-28T17:55:44.639277",
+    "total_contributors": 2,
+    "outstanding_count": 0,
+    "excellent_count": 1,
+    "active_count": 1
+  },
+  {
+    "year": 2026,
+    "start_month": 1,
+    "end_month": 6,
+    "period_label": "2026年1-6月",
+    "filename": "monthly_contributors_2026_01_06.json",
+    "generated_at": "2026-08-24T23:01:10.254739",
+    "total_contributors": 0,
+    "outstanding_count": 0,
+    "excellent_count": 0,
+    "active_count": 0
+  }
+]
