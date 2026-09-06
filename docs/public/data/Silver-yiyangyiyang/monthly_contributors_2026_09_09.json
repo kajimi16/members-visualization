@@ -6,14 +6,14 @@
     "org_name": "Silver-yiyangyiyang",
     "period_label": "2026年9月",
     "period_type": "monthly_range",
-    "generated_at": "2026-09-05T00:18:02.706228",
+    "generated_at": "2026-09-06T00:08:01.929645",
     "total_contributors": 4,
     "outstanding_count": 1,
     "excellent_count": 2,
     "active_count": 1,
-    "total_additions": 44831,
-    "total_deletions": 5111,
-    "total_changes": 49942,
+    "total_additions": 47522,
+    "total_deletions": 5414,
+    "total_changes": 52936,
     "thresholds": {
       "outstanding": 50,
       "excellent": 10,
@@ -25,11 +25,11 @@
       {
         "username": "komariChikaA",
         "verified": true,
-        "valid_commits": 86,
-        "total_commits": 86,
-        "additions": 33527,
-        "deletions": 4474,
-        "changes": 38001,
+        "valid_commits": 96,
+        "total_commits": 96,
+        "additions": 36218,
+        "deletions": 4777,
+        "changes": 40995,
         "repos_count": 11,
         "repos": [
           ".github",
@@ -47,103 +47,103 @@
         "recent_commits": [
           {
             "repo": "jbgs-submission",
-            "sha": "d10b9059",
-            "message": "交付 #18：刷新九仓源码并生成可复现部署包 (#19)",
-            "date": "2026-09-04T19:01:33Z",
-            "files_count": 14,
-            "total_additions": 2263,
-            "total_deletions": 449,
-            "total_changes": 2712
+            "sha": "f738fc46",
+            "message": "Merge pull request #20 from Silver-yiyangyiyang/agent/issue-2-post-merge-doc-fixes",
+            "date": "2026-09-05T01:15:41Z",
+            "files_count": 16,
+            "total_additions": 1315,
+            "total_deletions": 121,
+            "total_changes": 1436
           },
           {
             "repo": "jbgs-submission",
-            "sha": "58b9d3cb",
-            "message": "docs: 完成研究、测试、验证与平台证据终稿 (#17)",
-            "date": "2026-09-04T18:05:35Z",
-            "files_count": 57,
-            "total_additions": 5047,
-            "total_deletions": 536,
-            "total_changes": 5583
+            "sha": "3b5d6335",
+            "message": "docs(01): add bibliography for data sources and privacy norms",
+            "date": "2026-09-05T01:14:02Z",
+            "files_count": 2,
+            "total_additions": 89,
+            "total_deletions": 8,
+            "total_changes": 97
           },
           {
-            "repo": "community-fraud-guard",
-            "sha": "6bff9670",
-            "message": "fix: authenticate Community fusion submissions (#17) (#18)",
-            "date": "2026-09-04T18:05:14Z",
-            "files_count": 5,
-            "total_additions": 53,
-            "total_deletions": 10,
-            "total_changes": 63
+            "repo": "jbgs-submission",
+            "sha": "0c93c816",
+            "message": "docs(04): trim AI-tone flips and dense顿号 lists",
+            "date": "2026-09-05T01:08:48Z",
+            "files_count": 2,
+            "total_additions": 22,
+            "total_deletions": 22,
+            "total_changes": 44
           },
           {
-            "repo": "home-visit-fraud-guard",
-            "sha": "007b5722",
-            "message": "fix: authenticate Home fusion submissions (#63) (#64)",
-            "date": "2026-09-04T18:04:59Z",
-            "files_count": 6,
-            "total_additions": 45,
-            "total_deletions": 16,
-            "total_changes": 61
+            "repo": "jbgs-submission",
+            "sha": "774241e1",
+            "message": "docs(04): soften deployment handbook tone for contest readers",
+            "date": "2026-09-05T01:04:04Z",
+            "files_count": 2,
+            "total_additions": 59,
+            "total_deletions": 59,
+            "total_changes": 118
           },
           {
-            "repo": "silver-fraud-guard",
-            "sha": "abc959c3",
-            "message": "修复 Docker Stack 安全门禁并提供可复现部署包 (#128)",
-            "date": "2026-09-04T18:04:34Z",
-            "files_count": 23,
-            "total_additions": 1231,
-            "total_deletions": 166,
-            "total_changes": 1397
+            "repo": "jbgs-submission",
+            "sha": "04f0ec44",
+            "message": "fix(deployment): make controlled Docker bundle directly runnable",
+            "date": "2026-09-05T00:39:18Z",
+            "files_count": 8,
+            "total_additions": 204,
+            "total_deletions": 42,
+            "total_changes": 246
           },
           {
-            "repo": "fraud-guard-clients",
-            "sha": "16fa86e2",
-            "message": "fix: require server login in joint defense workbench",
-            "date": "2026-09-03T16:11:20Z",
-            "files_count": 5,
-            "total_additions": 122,
-            "total_deletions": 117,
-            "total_changes": 239
-          },
-          {
-            "repo": ".github",
-            "sha": "83913b73",
-            "message": "docs: 功能冻结并进入演示视频阶段（V2.0） (#15)",
-            "date": "2026-09-03T12:19:20Z",
+            "repo": "jbgs-submission",
+            "sha": "7cce60d0",
+            "message": "docs: render deployment guide with XeLaTeX",
+            "date": "2026-09-04T23:44:45Z",
             "files_count": 4,
-            "total_additions": 103,
-            "total_deletions": 109,
-            "total_changes": 212
-          },
-          {
-            "repo": "jbgs-proposal",
-            "sha": "9eaf78bf",
-            "message": "docs: 宣布功能冻结并进入演示视频拍摄（V3.5） (#42)",
-            "date": "2026-09-03T12:19:12Z",
-            "files_count": 5,
-            "total_additions": 85,
-            "total_deletions": 109,
-            "total_changes": 194
+            "total_additions": 696,
+            "total_deletions": 4,
+            "total_changes": 700
           },
           {
             "repo": "jbgs-submission",
-            "sha": "5191a73b",
-            "message": "docs: document advance handoff and controlled learning loop (#15)",
-            "date": "2026-09-03T11:35:53Z",
-            "files_count": 3,
+            "sha": "2367cf7f",
+            "message": "test: cover final package safety gates",
+            "date": "2026-09-04T22:16:02Z",
+            "files_count": 1,
             "total_additions": 68,
-            "total_deletions": 20,
-            "total_changes": 88
+            "total_deletions": 0,
+            "total_changes": 68
           },
           {
-            "repo": "fraud-guard-showcase",
-            "sha": "e9f4a47e",
-            "message": "feat(showcase): show advance handoff and controlled learning loop (#8)",
-            "date": "2026-09-03T11:35:42Z",
+            "repo": "jbgs-submission",
+            "sha": "5fc7152f",
+            "message": "docs: align freeze evidence and add fail-closed guards",
+            "date": "2026-09-04T21:46:51Z",
             "files_count": 6,
-            "total_additions": 225,
-            "total_deletions": 15,
-            "total_changes": 240
+            "total_additions": 159,
+            "total_deletions": 20,
+            "total_changes": 179
+          },
+          {
+            "repo": "jbgs-submission",
+            "sha": "2fc9a3e5",
+            "message": "docs: convert leftover markdown automation table in test report",
+            "date": "2026-09-04T19:13:56Z",
+            "files_count": 1,
+            "total_additions": 28,
+            "total_deletions": 11,
+            "total_changes": 39
+          },
+          {
+            "repo": "jbgs-submission",
+            "sha": "829ac156",
+            "message": "docs: foreground elderly four-dimension profile innovation",
+            "date": "2026-09-04T19:08:36Z",
+            "files_count": 3,
+            "total_additions": 51,
+            "total_deletions": 16,
+            "total_changes": 67
           }
         ]
       }
@@ -418,11 +418,11 @@
       {
         "username": "komariChikaA",
         "verified": true,
-        "valid_commits": 86,
-        "total_commits": 86,
-        "additions": 33527,
-        "deletions": 4474,
-        "changes": 38001,
+        "valid_commits": 96,
+        "total_commits": 96,
+        "additions": 36218,
+        "deletions": 4777,
+        "changes": 40995,
         "repos_count": 11,
         "commit_rank": 1,
         "code_rank": 1
@@ -468,11 +468,11 @@
       {
         "username": "komariChikaA",
         "verified": true,
-        "valid_commits": 86,
-        "total_commits": 86,
-        "additions": 33527,
-        "deletions": 4474,
-        "changes": 38001,
+        "valid_commits": 96,
+        "total_commits": 96,
+        "additions": 36218,
+        "deletions": 4777,
+        "changes": 40995,
         "repos_count": 11,
         "commit_rank": 1,
         "code_rank": 1
@@ -516,6 +516,13 @@
     ]
   },
   "repo_matrix": {
+    "jbgs-submission": {
+      "komariChikaA": {
+        "commits": 21,
+        "additions": 13111,
+        "deletions": 2048
+      }
+    },
     "silver-fraud-guard": {
       "komariChikaA": {
         "commits": 16,
@@ -531,13 +538,6 @@
         "commits": 5,
         "additions": 3115,
         "deletions": 51
-      }
-    },
-    "jbgs-submission": {
-      "komariChikaA": {
-        "commits": 11,
-        "additions": 10420,
-        "deletions": 1745
       }
     },
     "community-fraud-guard": {
