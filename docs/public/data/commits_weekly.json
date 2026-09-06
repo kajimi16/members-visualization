@@ -1,36 +1,36 @@
 {
-  "update_time": "2026-09-05T23:28:20.899187",
+  "update_time": "2026-09-06T23:21:50.832964",
   "days_range": 7,
-  "total_commits": 253,
+  "total_commits": 219,
   "total_repos": 11,
   "user_commits": {
     "komariChikaA": {
-      "total_commits": 168,
+      "total_commits": 141,
       "repos": [
-        "elderly-fraud-risk-system",
-        "fraud-guard-clients",
-        "silver-fraud-guard",
-        "fraud-guard-showcase",
-        "fraud-guard-shared",
-        ".github",
-        "jbgs-proposal",
         "home-visit-fraud-guard",
+        "community-fraud-guard",
+        ".github",
+        "silver-fraud-guard",
+        "jbgs-proposal",
         "jbgs-submission",
+        "fraud-guard-shared",
+        "elderly-fraud-risk-system",
+        "fraud-guard-showcase",
         "fraud-intervention-agent",
-        "community-fraud-guard"
+        "fraud-guard-clients"
       ],
       "repo_commits": {
         "jbgs-submission": 25,
-        "silver-fraud-guard": 35,
-        "community-fraud-guard": 3,
-        "home-visit-fraud-guard": 19,
-        "fraud-guard-clients": 63,
+        "silver-fraud-guard": 24,
+        "community-fraud-guard": 2,
+        "home-visit-fraud-guard": 18,
+        "fraud-guard-clients": 56,
         "fraud-guard-showcase": 4,
-        ".github": 4,
-        "jbgs-proposal": 7,
+        ".github": 2,
+        "jbgs-proposal": 4,
         "elderly-fraud-risk-system": 1,
-        "fraud-guard-shared": 4,
-        "fraud-intervention-agent": 3
+        "fraud-guard-shared": 3,
+        "fraud-intervention-agent": 2
       },
       "repo_count": 11,
       "daily_commits": {
@@ -39,29 +39,28 @@
         "2026-09-03": 25,
         "2026-09-02": 78,
         "2026-09-01": 5,
-        "2026-08-31": 12,
-        "2026-08-30": 27
+        "2026-08-31": 12
       },
       "hourly_distribution": {
         "1": 9,
         "0": 3,
         "23": 5,
-        "22": 20,
-        "21": 4,
-        "19": 10,
+        "22": 11,
+        "21": 1,
+        "19": 9,
         "18": 16,
-        "11": 6,
-        "20": 4,
-        "10": 3,
+        "11": 5,
+        "20": 2,
+        "10": 2,
         "8": 13,
         "2": 16,
         "7": 7,
         "6": 8,
         "5": 17,
         "17": 4,
-        "16": 2,
-        "15": 13,
         "4": 2,
+        "16": 1,
+        "15": 4,
         "13": 4,
         "12": 2
       },
@@ -69,27 +68,27 @@
         "9": 9,
         "8": 3,
         "7": 5,
-        "6": 20,
-        "5": 4,
-        "3": 10,
+        "6": 11,
+        "5": 1,
+        "3": 9,
         "2": 16,
-        "19": 6,
-        "4": 4,
-        "18": 3,
+        "19": 5,
+        "4": 2,
+        "18": 2,
         "16": 13,
         "10": 16,
         "15": 7,
         "14": 8,
         "13": 17,
         "1": 4,
-        "0": 2,
-        "23": 13,
         "12": 2,
+        "0": 1,
+        "23": 4,
         "21": 4,
         "20": 2
       },
-      "night_owl_commits": 53,
-      "night_owl_percentage": 31.5,
+      "night_owl_commits": 37,
+      "night_owl_percentage": 26.2,
       "commit_messages": [
         {
           "message": "Merge pull request #20 from Silver-yiyangyiyang/agent/issue-2-post-merge-doc-fixes",
@@ -182,35 +181,32 @@
           "url": "https://github.com/Silver-yiyangyiyang/jbgs-submission/commit/7d014eb8ce605d027e53067c67c1e6f06424deaf"
         }
       ],
-      "first_commit_date": "2026-08-30T10:47:44+00:00",
+      "first_commit_date": "2026-08-31T02:05:22+00:00",
       "last_commit_date": "2026-09-05T01:15:41+00:00",
-      "active_days": 7,
-      "avg_commits_per_day": 24.0
+      "active_days": 6,
+      "avg_commits_per_day": 23.5
     },
     "kajimi16": {
-      "total_commits": 65,
+      "total_commits": 58,
       "repos": [
-        "elderly-fraud-risk-system",
+        "home-visit-fraud-guard",
         "fraud-guard-clients",
         "silver-fraud-guard",
-        "fraud-guard-shared",
-        "jbgs-proposal",
-        "home-visit-fraud-guard"
+        "elderly-fraud-risk-system",
+        "fraud-guard-shared"
       ],
       "repo_commits": {
-        "silver-fraud-guard": 21,
+        "silver-fraud-guard": 16,
         "home-visit-fraud-guard": 2,
         "fraud-guard-clients": 37,
-        "jbgs-proposal": 1,
         "elderly-fraud-risk-system": 1,
-        "fraud-guard-shared": 3
+        "fraud-guard-shared": 2
       },
-      "repo_count": 6,
+      "repo_count": 5,
       "daily_commits": {
         "2026-09-04": 6,
         "2026-09-03": 2,
-        "2026-09-02": 50,
-        "2026-08-30": 7
+        "2026-09-02": 50
       },
       "hourly_distribution": {
         "19": 14,
@@ -218,7 +214,7 @@
         "14": 2,
         "23": 3,
         "17": 9,
-        "15": 14,
+        "15": 7,
         "6": 5,
         "20": 2,
         "7": 9
@@ -229,13 +225,13 @@
         "22": 2,
         "7": 3,
         "1": 9,
-        "23": 14,
+        "23": 7,
         "14": 5,
         "4": 2,
         "15": 9
       },
-      "night_owl_commits": 41,
-      "night_owl_percentage": 63.1,
+      "night_owl_commits": 34,
+      "night_owl_percentage": 58.6,
       "commit_messages": [
         {
           "message": "fix(docker-stack): home 服务挂 tmpfs /app/hls-live,使只读根加固栈可启动",
@@ -328,16 +324,16 @@
           "url": "https://github.com/Silver-yiyangyiyang/silver-fraud-guard/commit/60154b7e522a52c62db787b5245c95ebde9a77f4"
         }
       ],
-      "first_commit_date": "2026-08-30T15:06:15+00:00",
+      "first_commit_date": "2026-09-02T06:13:35+00:00",
       "last_commit_date": "2026-09-04T19:29:09+00:00",
-      "active_days": 4,
-      "avg_commits_per_day": 16.25
+      "active_days": 3,
+      "avg_commits_per_day": 19.333333333333332
     },
     "KuonjiPloy": {
       "total_commits": 19,
       "repos": [
-        "fraud-guard-showcase",
-        "silver-fraud-guard"
+        "silver-fraud-guard",
+        "fraud-guard-showcase"
       ],
       "repo_commits": {
         "silver-fraud-guard": 6,
@@ -513,7 +509,7 @@
       "user_repos": 5,
       "total": 39
     },
-    "execution_time": "16.7s",
+    "execution_time": "10.4s",
     "optimization_enabled": true
   }
 }
