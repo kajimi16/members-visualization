@@ -1,36 +1,36 @@
 {
-  "update_time": "2026-09-06T23:21:50.832964",
+  "update_time": "2026-09-07T23:52:25.932964",
   "days_range": 7,
-  "total_commits": 219,
+  "total_commits": 207,
   "total_repos": 11,
   "user_commits": {
     "komariChikaA": {
-      "total_commits": 141,
+      "total_commits": 129,
       "repos": [
-        "home-visit-fraud-guard",
-        "community-fraud-guard",
-        ".github",
-        "silver-fraud-guard",
-        "jbgs-proposal",
         "jbgs-submission",
-        "fraud-guard-shared",
+        ".github",
         "elderly-fraud-risk-system",
+        "community-fraud-guard",
         "fraud-guard-showcase",
+        "fraud-guard-shared",
+        "jbgs-proposal",
+        "home-visit-fraud-guard",
+        "fraud-guard-clients",
         "fraud-intervention-agent",
-        "fraud-guard-clients"
+        "silver-fraud-guard"
       ],
       "repo_commits": {
         "jbgs-submission": 25,
-        "silver-fraud-guard": 24,
+        "silver-fraud-guard": 20,
         "community-fraud-guard": 2,
-        "home-visit-fraud-guard": 18,
-        "fraud-guard-clients": 56,
+        "home-visit-fraud-guard": 17,
+        "fraud-guard-clients": 54,
         "fraud-guard-showcase": 4,
-        ".github": 2,
-        "jbgs-proposal": 4,
+        ".github": 1,
+        "jbgs-proposal": 1,
         "elderly-fraud-risk-system": 1,
         "fraud-guard-shared": 3,
-        "fraud-intervention-agent": 2
+        "fraud-intervention-agent": 1
       },
       "repo_count": 11,
       "daily_commits": {
@@ -38,8 +38,7 @@
         "2026-09-04": 15,
         "2026-09-03": 25,
         "2026-09-02": 78,
-        "2026-09-01": 5,
-        "2026-08-31": 12
+        "2026-09-01": 5
       },
       "hourly_distribution": {
         "1": 9,
@@ -53,15 +52,14 @@
         "20": 2,
         "10": 2,
         "8": 13,
-        "2": 16,
+        "2": 11,
         "7": 7,
         "6": 8,
         "5": 17,
-        "17": 4,
         "4": 2,
         "16": 1,
         "15": 4,
-        "13": 4,
+        "13": 1,
         "12": 2
       },
       "beijing_hourly_distribution": {
@@ -76,19 +74,18 @@
         "4": 2,
         "18": 2,
         "16": 13,
-        "10": 16,
+        "10": 11,
         "15": 7,
         "14": 8,
         "13": 17,
-        "1": 4,
         "12": 2,
         "0": 1,
         "23": 4,
-        "21": 4,
+        "21": 1,
         "20": 2
       },
-      "night_owl_commits": 37,
-      "night_owl_percentage": 26.2,
+      "night_owl_commits": 33,
+      "night_owl_percentage": 25.6,
       "commit_messages": [
         {
           "message": "Merge pull request #20 from Silver-yiyangyiyang/agent/issue-2-post-merge-doc-fixes",
@@ -181,19 +178,19 @@
           "url": "https://github.com/Silver-yiyangyiyang/jbgs-submission/commit/7d014eb8ce605d027e53067c67c1e6f06424deaf"
         }
       ],
-      "first_commit_date": "2026-08-31T02:05:22+00:00",
+      "first_commit_date": "2026-09-01T02:43:00+00:00",
       "last_commit_date": "2026-09-05T01:15:41+00:00",
-      "active_days": 6,
-      "avg_commits_per_day": 23.5
+      "active_days": 5,
+      "avg_commits_per_day": 25.8
     },
     "kajimi16": {
       "total_commits": 58,
       "repos": [
+        "elderly-fraud-risk-system",
+        "fraud-guard-shared",
         "home-visit-fraud-guard",
         "fraud-guard-clients",
-        "silver-fraud-guard",
-        "elderly-fraud-risk-system",
-        "fraud-guard-shared"
+        "silver-fraud-guard"
       ],
       "repo_commits": {
         "silver-fraud-guard": 16,
@@ -509,7 +506,7 @@
       "user_repos": 5,
       "total": 39
     },
-    "execution_time": "10.4s",
+    "execution_time": "14.3s",
     "optimization_enabled": true
   }
 }
