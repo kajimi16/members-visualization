@@ -1,88 +1,74 @@
 {
-  "update_time": "2026-09-08T23:46:08.577718",
+  "update_time": "2026-09-09T23:41:32.720292",
   "days_range": 7,
-  "total_commits": 202,
+  "total_commits": 62,
   "total_repos": 10,
   "user_commits": {
     "komariChikaA": {
-      "total_commits": 124,
+      "total_commits": 47,
       "repos": [
-        "fraud-guard-clients",
-        "fraud-guard-showcase",
-        "silver-fraud-guard",
-        "jbgs-proposal",
-        "community-fraud-guard",
-        ".github",
-        "elderly-fraud-risk-system",
         "home-visit-fraud-guard",
         "jbgs-submission",
-        "fraud-guard-shared"
+        ".github",
+        "silver-fraud-guard",
+        "community-fraud-guard",
+        "jbgs-proposal",
+        "fraud-guard-shared",
+        "fraud-guard-clients",
+        "fraud-guard-showcase"
       ],
       "repo_commits": {
-        "jbgs-submission": 25,
-        "silver-fraud-guard": 19,
+        "jbgs-submission": 22,
+        "silver-fraud-guard": 6,
         "community-fraud-guard": 2,
-        "home-visit-fraud-guard": 16,
-        "fraud-guard-clients": 52,
-        "fraud-guard-showcase": 4,
+        "home-visit-fraud-guard": 5,
+        "fraud-guard-clients": 7,
+        "fraud-guard-showcase": 2,
         ".github": 1,
         "jbgs-proposal": 1,
-        "elderly-fraud-risk-system": 1,
-        "fraud-guard-shared": 3
+        "fraud-guard-shared": 1
       },
-      "repo_count": 10,
+      "repo_count": 9,
       "daily_commits": {
         "2026-09-05": 6,
         "2026-09-04": 15,
         "2026-09-03": 25,
-        "2026-09-02": 78
+        "2026-09-02": 1
       },
       "hourly_distribution": {
         "1": 9,
         "0": 3,
-        "23": 5,
-        "22": 11,
+        "23": 2,
+        "22": 5,
         "21": 1,
-        "19": 9,
-        "18": 16,
+        "19": 3,
+        "18": 4,
         "11": 5,
-        "20": 2,
         "10": 2,
-        "8": 13,
+        "8": 2,
         "2": 7,
-        "7": 7,
-        "6": 8,
-        "5": 17,
         "4": 1,
         "16": 1,
-        "15": 4,
-        "13": 1,
         "12": 2
       },
       "beijing_hourly_distribution": {
         "9": 9,
         "8": 3,
-        "7": 5,
-        "6": 11,
+        "7": 2,
+        "6": 5,
         "5": 1,
-        "3": 9,
-        "2": 16,
+        "3": 3,
+        "2": 4,
         "19": 5,
-        "4": 2,
         "18": 2,
-        "16": 13,
+        "16": 2,
         "10": 7,
-        "15": 7,
-        "14": 8,
-        "13": 17,
         "12": 1,
         "0": 1,
-        "23": 4,
-        "21": 1,
         "20": 2
       },
-      "night_owl_commits": 33,
-      "night_owl_percentage": 26.6,
+      "night_owl_commits": 9,
+      "night_owl_percentage": 19.1,
       "commit_messages": [
         {
           "message": "Merge pull request #20 from Silver-yiyangyiyang/agent/issue-2-post-merge-doc-fixes",
@@ -175,57 +161,39 @@
           "url": "https://github.com/Silver-yiyangyiyang/jbgs-submission/commit/7d014eb8ce605d027e53067c67c1e6f06424deaf"
         }
       ],
-      "first_commit_date": "2026-09-02T05:36:48+00:00",
+      "first_commit_date": "2026-09-02T23:56:37+00:00",
       "last_commit_date": "2026-09-05T01:15:41+00:00",
       "active_days": 4,
-      "avg_commits_per_day": 31.0
+      "avg_commits_per_day": 11.75
     },
     "kajimi16": {
-      "total_commits": 58,
+      "total_commits": 10,
       "repos": [
-        "fraud-guard-clients",
-        "silver-fraud-guard",
-        "elderly-fraud-risk-system",
-        "home-visit-fraud-guard",
-        "fraud-guard-shared"
+        "silver-fraud-guard"
       ],
       "repo_commits": {
-        "silver-fraud-guard": 16,
-        "home-visit-fraud-guard": 2,
-        "fraud-guard-clients": 37,
-        "elderly-fraud-risk-system": 1,
-        "fraud-guard-shared": 2
+        "silver-fraud-guard": 10
       },
-      "repo_count": 5,
+      "repo_count": 1,
       "daily_commits": {
         "2026-09-04": 6,
         "2026-09-03": 2,
-        "2026-09-02": 50
+        "2026-09-02": 2
       },
       "hourly_distribution": {
-        "19": 14,
-        "8": 7,
+        "19": 1,
+        "8": 5,
         "14": 2,
-        "23": 3,
-        "17": 9,
-        "15": 7,
-        "6": 5,
-        "20": 2,
-        "7": 9
+        "23": 2
       },
       "beijing_hourly_distribution": {
-        "3": 14,
-        "16": 7,
+        "3": 1,
+        "16": 5,
         "22": 2,
-        "7": 3,
-        "1": 9,
-        "23": 7,
-        "14": 5,
-        "4": 2,
-        "15": 9
+        "7": 2
       },
-      "night_owl_commits": 34,
-      "night_owl_percentage": 58.6,
+      "night_owl_commits": 3,
+      "night_owl_percentage": 30.0,
       "commit_messages": [
         {
           "message": "fix(docker-stack): home 服务挂 tmpfs /app/hls-live,使只读根加固栈可启动",
@@ -318,103 +286,36 @@
           "url": "https://github.com/Silver-yiyangyiyang/silver-fraud-guard/commit/60154b7e522a52c62db787b5245c95ebde9a77f4"
         }
       ],
-      "first_commit_date": "2026-09-02T06:13:35+00:00",
+      "first_commit_date": "2026-09-02T23:42:03+00:00",
       "last_commit_date": "2026-09-04T19:29:09+00:00",
       "active_days": 3,
-      "avg_commits_per_day": 19.333333333333332
+      "avg_commits_per_day": 3.3333333333333335
     },
     "KuonjiPloy": {
-      "total_commits": 19,
+      "total_commits": 4,
       "repos": [
-        "fraud-guard-showcase",
-        "silver-fraud-guard"
+        "fraud-guard-showcase"
       ],
       "repo_commits": {
-        "silver-fraud-guard": 6,
-        "fraud-guard-showcase": 13
+        "fraud-guard-showcase": 4
       },
-      "repo_count": 2,
+      "repo_count": 1,
       "daily_commits": {
-        "2026-09-02": 15,
         "2026-09-03": 4
       },
       "hourly_distribution": {
-        "20": 2,
-        "17": 2,
-        "16": 4,
-        "9": 3,
-        "8": 2,
-        "14": 4,
-        "15": 1,
-        "12": 1
+        "14": 2,
+        "9": 1,
+        "8": 1
       },
       "beijing_hourly_distribution": {
-        "4": 2,
-        "1": 2,
-        "0": 4,
-        "17": 3,
-        "16": 2,
-        "22": 4,
-        "23": 1,
-        "20": 1
+        "22": 2,
+        "17": 1,
+        "16": 1
       },
-      "night_owl_commits": 13,
-      "night_owl_percentage": 68.4,
+      "night_owl_commits": 2,
+      "night_owl_percentage": 50.0,
       "commit_messages": [
-        {
-          "message": "feat(showcase): add multi-source controlled runs",
-          "repo": "silver-fraud-guard",
-          "date": "2026-09-02",
-          "time": "2026-09-03T04:02:11+00:00",
-          "beijing_hour": 4,
-          "is_night_owl": true,
-          "url": "https://github.com/Silver-yiyangyiyang/silver-fraud-guard/commit/fb770831e0e75787e57c91adf2e8af9ce96cef84"
-        },
-        {
-          "message": "feat(showcase): add authorized local preview runs",
-          "repo": "silver-fraud-guard",
-          "date": "2026-09-02",
-          "time": "2026-09-03T01:49:58+00:00",
-          "beijing_hour": 1,
-          "is_night_owl": true,
-          "url": "https://github.com/Silver-yiyangyiyang/silver-fraud-guard/commit/0e0ea093ebe01426ddf1db97bed09d3a1e4ee105"
-        },
-        {
-          "message": "feat(showcase): return complete retained audit logs",
-          "repo": "silver-fraud-guard",
-          "date": "2026-09-02",
-          "time": "2026-09-03T00:16:19+00:00",
-          "beijing_hour": 0,
-          "is_night_owl": true,
-          "url": "https://github.com/Silver-yiyangyiyang/silver-fraud-guard/commit/0f5aab52c6a319f03987be11d8e635c8a4392fdf"
-        },
-        {
-          "message": "feat(showcase): expose aligned original audit events",
-          "repo": "silver-fraud-guard",
-          "date": "2026-09-02",
-          "time": "2026-09-03T00:01:41+00:00",
-          "beijing_hour": 0,
-          "is_night_owl": true,
-          "url": "https://github.com/Silver-yiyangyiyang/silver-fraud-guard/commit/a967f4c7b732bbffde62b8b042451d1ed6aa5c3e"
-        },
-        {
-          "message": "docs(showcase): add portable verification runbook",
-          "repo": "silver-fraud-guard",
-          "date": "2026-09-02",
-          "time": "2026-09-02T17:08:16+00:00",
-          "beijing_hour": 17,
-          "is_night_owl": false,
-          "url": "https://github.com/Silver-yiyangyiyang/silver-fraud-guard/commit/37f5fb580667354c58fb21c8e49b0cfb758cca9b"
-        },
-        {
-          "message": "feat(showcase): add portable backend visualization stack",
-          "repo": "silver-fraud-guard",
-          "date": "2026-09-02",
-          "time": "2026-09-02T16:52:58+00:00",
-          "beijing_hour": 16,
-          "is_night_owl": false,
-          "url": "https://github.com/Silver-yiyangyiyang/silver-fraud-guard/commit/eb642d3b15edcfd69155b16b6e853a964410727c"
-        },
         {
           "message": "Revert \"fix(showcase): keep walkthrough navigation reload-safe\"",
           "repo": "fraud-guard-showcase",
@@ -452,10 +353,10 @@
           "url": "https://github.com/Silver-yiyangyiyang/fraud-guard-showcase/commit/2d1d34a398f8dfb1d9059ed45e99ff76f8381e90"
         }
       ],
-      "first_commit_date": "2026-09-02T08:52:58+00:00",
+      "first_commit_date": "2026-09-03T08:58:10+00:00",
       "last_commit_date": "2026-09-03T14:36:53+00:00",
-      "active_days": 2,
-      "avg_commits_per_day": 9.5
+      "active_days": 1,
+      "avg_commits_per_day": 4.0
     },
     "snowling514": {
       "total_commits": 1,
@@ -503,7 +404,7 @@
       "user_repos": 5,
       "total": 39
     },
-    "execution_time": "17.8s",
+    "execution_time": "14.8s",
     "optimization_enabled": true
   }
 }
