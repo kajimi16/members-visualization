@@ -1,52 +1,34 @@
 {
-  "update_time": "2026-09-10T23:34:34.508358",
+  "update_time": "2026-09-11T23:42:22.244567",
   "days_range": 7,
-  "total_commits": 27,
-  "total_repos": 5,
+  "total_commits": 7,
+  "total_repos": 1,
   "user_commits": {
     "komariChikaA": {
-      "total_commits": 21,
+      "total_commits": 7,
       "repos": [
-        "jbgs-submission",
-        "community-fraud-guard",
-        "home-visit-fraud-guard",
-        "silver-fraud-guard",
-        "fraud-guard-clients"
+        "jbgs-submission"
       ],
       "repo_commits": {
-        "jbgs-submission": 16,
-        "silver-fraud-guard": 2,
-        "community-fraud-guard": 1,
-        "home-visit-fraud-guard": 1,
-        "fraud-guard-clients": 1
+        "jbgs-submission": 7
       },
-      "repo_count": 5,
+      "repo_count": 1,
       "daily_commits": {
         "2026-09-05": 6,
-        "2026-09-04": 15
+        "2026-09-04": 1
       },
       "hourly_distribution": {
         "1": 4,
         "0": 2,
-        "23": 1,
-        "22": 5,
-        "21": 1,
-        "19": 3,
-        "18": 4,
-        "4": 1
+        "23": 1
       },
       "beijing_hourly_distribution": {
         "9": 4,
         "8": 2,
-        "7": 1,
-        "6": 5,
-        "5": 1,
-        "3": 3,
-        "2": 4,
-        "12": 1
+        "7": 1
       },
-      "night_owl_commits": 8,
-      "night_owl_percentage": 38.1,
+      "night_owl_commits": 0,
+      "night_owl_percentage": 0.0,
       "commit_messages": [
         {
           "message": "Merge pull request #20 from Silver-yiyangyiyang/agent/issue-2-post-merge-doc-fixes",
@@ -110,122 +92,12 @@
           "beijing_hour": 7,
           "is_night_owl": false,
           "url": "https://github.com/Silver-yiyangyiyang/jbgs-submission/commit/7cce60d04fc107c3981a891f1e504aaf0f54511a"
-        },
-        {
-          "message": "docs: align final source archive totals",
-          "repo": "jbgs-submission",
-          "date": "2026-09-04",
-          "time": "2026-09-05T06:50:58+00:00",
-          "beijing_hour": 6,
-          "is_night_owl": false,
-          "url": "https://github.com/Silver-yiyangyiyang/jbgs-submission/commit/39231cb2eac136d9b0be50177c6aeb5639d63944"
-        },
-        {
-          "message": "docs: align final merge references",
-          "repo": "jbgs-submission",
-          "date": "2026-09-04",
-          "time": "2026-09-05T06:46:21+00:00",
-          "beijing_hour": 6,
-          "is_night_owl": false,
-          "url": "https://github.com/Silver-yiyangyiyang/jbgs-submission/commit/08cd3ea12da46feee9b86aac691e56511cd691ab"
-        },
-        {
-          "message": "docs: lock final package to Silver PR 130 merge",
-          "repo": "jbgs-submission",
-          "date": "2026-09-04",
-          "time": "2026-09-05T06:33:12+00:00",
-          "beijing_hour": 6,
-          "is_night_owl": false,
-          "url": "https://github.com/Silver-yiyangyiyang/jbgs-submission/commit/7d014eb8ce605d027e53067c67c1e6f06424deaf"
         }
       ],
-      "first_commit_date": "2026-09-04T04:45:55+00:00",
+      "first_commit_date": "2026-09-04T23:44:45+00:00",
       "last_commit_date": "2026-09-05T01:15:41+00:00",
       "active_days": 2,
-      "avg_commits_per_day": 10.5
-    },
-    "kajimi16": {
-      "total_commits": 6,
-      "repos": [
-        "silver-fraud-guard"
-      ],
-      "repo_commits": {
-        "silver-fraud-guard": 6
-      },
-      "repo_count": 1,
-      "daily_commits": {
-        "2026-09-04": 6
-      },
-      "hourly_distribution": {
-        "19": 1,
-        "8": 5
-      },
-      "beijing_hourly_distribution": {
-        "3": 1,
-        "16": 5
-      },
-      "night_owl_commits": 1,
-      "night_owl_percentage": 16.7,
-      "commit_messages": [
-        {
-          "message": "fix(docker-stack): home 服务挂 tmpfs /app/hls-live,使只读根加固栈可启动",
-          "repo": "silver-fraud-guard",
-          "date": "2026-09-04",
-          "time": "2026-09-05T03:29:09+00:00",
-          "beijing_hour": 3,
-          "is_night_owl": true,
-          "url": "https://github.com/Silver-yiyangyiyang/silver-fraud-guard/commit/537b4b6cffedd9ebfdeafa52d1c55da4806f47a8"
-        },
-        {
-          "message": "docs(docker-stack): 移除 compose 头残留 symlink 旧注释(交付物注释对齐 ops 形态)",
-          "repo": "silver-fraud-guard",
-          "date": "2026-09-04",
-          "time": "2026-09-04T16:30:24+00:00",
-          "beijing_hour": 16,
-          "is_night_owl": false,
-          "url": "https://github.com/Silver-yiyangyiyang/silver-fraud-guard/commit/c6a29aef95fff5d7a3e3322b7c7e65bea3fade87"
-        },
-        {
-          "message": "docs(docker-stack): README 清理重复区段并补文件表标题",
-          "repo": "silver-fraud-guard",
-          "date": "2026-09-04",
-          "time": "2026-09-04T16:30:04+00:00",
-          "beijing_hour": 16,
-          "is_night_owl": false,
-          "url": "https://github.com/Silver-yiyangyiyang/silver-fraud-guard/commit/11f38c00ffc4ccbe7b93c6b3bd541b6a64dbc6f6"
-        },
-        {
-          "message": "refactor(deploy/docker-stack): 交付形态定为 ops 脚本聚合,修复可复现性",
-          "repo": "silver-fraud-guard",
-          "date": "2026-09-04",
-          "time": "2026-09-04T16:29:50+00:00",
-          "beijing_hour": 16,
-          "is_night_owl": false,
-          "url": "https://github.com/Silver-yiyangyiyang/silver-fraud-guard/commit/f8b80c6353e98d2754a4d2f718eeef832f5684e5"
-        },
-        {
-          "message": "feat(deploy): docker compose 全套部署方案并完成本机可用性校验",
-          "repo": "silver-fraud-guard",
-          "date": "2026-09-04",
-          "time": "2026-09-04T16:29:00+00:00",
-          "beijing_hour": 16,
-          "is_night_owl": false,
-          "url": "https://github.com/Silver-yiyangyiyang/silver-fraud-guard/commit/21d1fe74b14b98ec411ecd0488d6fe02225a3061"
-        },
-        {
-          "message": "docs: 全项目部署指南(从零部署)",
-          "repo": "silver-fraud-guard",
-          "date": "2026-09-04",
-          "time": "2026-09-04T16:00:58+00:00",
-          "beijing_hour": 16,
-          "is_night_owl": false,
-          "url": "https://github.com/Silver-yiyangyiyang/silver-fraud-guard/commit/caee2aaae0a80e2b4a24fb9ec170f505b00a81b4"
-        }
-      ],
-      "first_commit_date": "2026-09-04T08:00:58+00:00",
-      "last_commit_date": "2026-09-04T19:29:09+00:00",
-      "active_days": 1,
-      "avg_commits_per_day": 6.0
+      "avg_commits_per_day": 3.5
     }
   },
   "optimization_stats": {
@@ -237,7 +109,7 @@
       "user_repos": 5,
       "total": 39
     },
-    "execution_time": "13.7s",
+    "execution_time": "14.8s",
     "optimization_enabled": true
   }
 }
