@@ -1,0 +1,637 @@
+{
+  "meta": {
+    "year": 2026,
+    "start_month": 9,
+    "end_month": 9,
+    "org_name": "Silver-yiyangyiyang",
+    "period_label": "2026年9月",
+    "period_type": "monthly_range",
+    "generated_at": "2026-09-13T00:08:54.387659",
+    "total_contributors": 4,
+    "outstanding_count": 1,
+    "excellent_count": 2,
+    "active_count": 1,
+    "total_additions": 47522,
+    "total_deletions": 5414,
+    "total_changes": 52936,
+    "thresholds": {
+      "outstanding": 50,
+      "excellent": 10,
+      "valid_commit_threshold": 10
+    }
+  },
+  "contributors": {
+    "outstanding": [
+      {
+        "username": "komariChikaA",
+        "verified": true,
+        "valid_commits": 96,
+        "total_commits": 96,
+        "additions": 36218,
+        "deletions": 4777,
+        "changes": 40995,
+        "repos_count": 11,
+        "repos": [
+          ".github",
+          "community-fraud-guard",
+          "elderly-fraud-risk-system",
+          "fraud-guard-clients",
+          "fraud-guard-shared",
+          "fraud-guard-showcase",
+          "fraud-intervention-agent",
+          "home-visit-fraud-guard",
+          "jbgs-proposal",
+          "jbgs-submission",
+          "silver-fraud-guard"
+        ],
+        "recent_commits": [
+          {
+            "repo": "jbgs-submission",
+            "sha": "f738fc46",
+            "message": "Merge pull request #20 from Silver-yiyangyiyang/agent/issue-2-post-merge-doc-fixes",
+            "date": "2026-09-05T01:15:41Z",
+            "files_count": 16,
+            "total_additions": 1315,
+            "total_deletions": 121,
+            "total_changes": 1436
+          },
+          {
+            "repo": "jbgs-submission",
+            "sha": "3b5d6335",
+            "message": "docs(01): add bibliography for data sources and privacy norms",
+            "date": "2026-09-05T01:14:02Z",
+            "files_count": 2,
+            "total_additions": 89,
+            "total_deletions": 8,
+            "total_changes": 97
+          },
+          {
+            "repo": "jbgs-submission",
+            "sha": "0c93c816",
+            "message": "docs(04): trim AI-tone flips and dense顿号 lists",
+            "date": "2026-09-05T01:08:48Z",
+            "files_count": 2,
+            "total_additions": 22,
+            "total_deletions": 22,
+            "total_changes": 44
+          },
+          {
+            "repo": "jbgs-submission",
+            "sha": "774241e1",
+            "message": "docs(04): soften deployment handbook tone for contest readers",
+            "date": "2026-09-05T01:04:04Z",
+            "files_count": 2,
+            "total_additions": 59,
+            "total_deletions": 59,
+            "total_changes": 118
+          },
+          {
+            "repo": "jbgs-submission",
+            "sha": "04f0ec44",
+            "message": "fix(deployment): make controlled Docker bundle directly runnable",
+            "date": "2026-09-05T00:39:18Z",
+            "files_count": 8,
+            "total_additions": 204,
+            "total_deletions": 42,
+            "total_changes": 246
+          },
+          {
+            "repo": "jbgs-submission",
+            "sha": "7cce60d0",
+            "message": "docs: render deployment guide with XeLaTeX",
+            "date": "2026-09-04T23:44:45Z",
+            "files_count": 4,
+            "total_additions": 696,
+            "total_deletions": 4,
+            "total_changes": 700
+          },
+          {
+            "repo": "jbgs-submission",
+            "sha": "2367cf7f",
+            "message": "test: cover final package safety gates",
+            "date": "2026-09-04T22:16:02Z",
+            "files_count": 1,
+            "total_additions": 68,
+            "total_deletions": 0,
+            "total_changes": 68
+          },
+          {
+            "repo": "jbgs-submission",
+            "sha": "5fc7152f",
+            "message": "docs: align freeze evidence and add fail-closed guards",
+            "date": "2026-09-04T21:46:51Z",
+            "files_count": 6,
+            "total_additions": 159,
+            "total_deletions": 20,
+            "total_changes": 179
+          },
+          {
+            "repo": "jbgs-submission",
+            "sha": "2fc9a3e5",
+            "message": "docs: convert leftover markdown automation table in test report",
+            "date": "2026-09-04T19:13:56Z",
+            "files_count": 1,
+            "total_additions": 28,
+            "total_deletions": 11,
+            "total_changes": 39
+          },
+          {
+            "repo": "jbgs-submission",
+            "sha": "829ac156",
+            "message": "docs: foreground elderly four-dimension profile innovation",
+            "date": "2026-09-04T19:08:36Z",
+            "files_count": 3,
+            "total_additions": 51,
+            "total_deletions": 16,
+            "total_changes": 67
+          }
+        ]
+      }
+    ],
+    "excellent": [
+      {
+        "username": "kajimi16",
+        "verified": true,
+        "valid_commits": 26,
+        "total_commits": 26,
+        "additions": 6292,
+        "deletions": 412,
+        "changes": 6704,
+        "repos_count": 5,
+        "repos": [
+          "elderly-fraud-risk-system",
+          "fraud-guard-clients",
+          "fraud-guard-shared",
+          "home-visit-fraud-guard",
+          "silver-fraud-guard"
+        ],
+        "recent_commits": [
+          {
+            "repo": "silver-fraud-guard",
+            "sha": "f8b80c63",
+            "message": "refactor(deploy/docker-stack): 交付形态定为 ops 脚本聚合,修复可复现性",
+            "date": "2026-09-04T08:29:50Z",
+            "files_count": 3,
+            "total_additions": 78,
+            "total_deletions": 4,
+            "total_changes": 82
+          },
+          {
+            "repo": "silver-fraud-guard",
+            "sha": "21d1fe74",
+            "message": "feat(deploy): docker compose 全套部署方案并完成本机可用性校验",
+            "date": "2026-09-04T08:29:00Z",
+            "files_count": 8,
+            "total_additions": 224,
+            "total_deletions": 1,
+            "total_changes": 225
+          },
+          {
+            "repo": "silver-fraud-guard",
+            "sha": "caee2aaa",
+            "message": "docs: 全项目部署指南(从零部署)",
+            "date": "2026-09-04T08:00:58Z",
+            "files_count": 1,
+            "total_additions": 308,
+            "total_deletions": 0,
+            "total_changes": 308
+          },
+          {
+            "repo": "silver-fraud-guard",
+            "sha": "b3b174c3",
+            "message": "fix(showcase): dataframe 渲染改显式 if/else,避免表达式副作用与 width 参数兼容问题",
+            "date": "2026-09-03T14:50:25Z",
+            "files_count": 1,
+            "total_additions": 11,
+            "total_deletions": 4,
+            "total_changes": 15
+          },
+          {
+            "repo": "silver-fraud-guard",
+            "sha": "d56b3b5b",
+            "message": "feat(showcase): 走查台时间显示改为中国时区(UTC+8)",
+            "date": "2026-09-03T14:01:19Z",
+            "files_count": 1,
+            "total_additions": 18,
+            "total_deletions": 1,
+            "total_changes": 19
+          },
+          {
+            "repo": "silver-fraud-guard",
+            "sha": "ce1838ed",
+            "message": "Merge remote-tracking branch 'origin/main'",
+            "date": "2026-09-02T23:44:28Z",
+            "files_count": 4,
+            "total_additions": 459,
+            "total_deletions": 40,
+            "total_changes": 499
+          },
+          {
+            "repo": "silver-fraud-guard",
+            "sha": "60154b7e",
+            "message": "Merge remote-tracking branch 'origin/feat/backend-showcase'",
+            "date": "2026-09-02T23:42:03Z",
+            "files_count": 26,
+            "total_additions": 3105,
+            "total_deletions": 38,
+            "total_changes": 3143
+          },
+          {
+            "repo": "fraud-guard-shared",
+            "sha": "e898b82e",
+            "message": "fix(asr): 抑制 whisper 把 initial_prompt 回声成转写文本 (#44)",
+            "date": "2026-09-02T23:31:57Z",
+            "files_count": 2,
+            "total_additions": 87,
+            "total_deletions": 1,
+            "total_changes": 88
+          },
+          {
+            "repo": "fraud-guard-clients",
+            "sha": "6616ebb1",
+            "message": "feat(miniprogram): door 页视觉 + 底部导航改名「门口画面」",
+            "date": "2026-09-02T19:16:02Z",
+            "files_count": 10,
+            "total_additions": 56,
+            "total_deletions": 34,
+            "total_changes": 90
+          },
+          {
+            "repo": "fraud-guard-clients",
+            "sha": "b0e07347",
+            "message": "feat(miniprogram): 守护首页入口图标换 p9 系列",
+            "date": "2026-09-02T19:08:03Z",
+            "files_count": 10,
+            "total_additions": 24,
+            "total_deletions": 5,
+            "total_changes": 29
+          }
+        ]
+      },
+      {
+        "username": "KuonjiPloy",
+        "verified": true,
+        "valid_commits": 13,
+        "total_commits": 13,
+        "additions": 4931,
+        "deletions": 224,
+        "changes": 5155,
+        "repos_count": 2,
+        "repos": [
+          "fraud-guard-showcase",
+          "silver-fraud-guard"
+        ],
+        "recent_commits": [
+          {
+            "repo": "fraud-guard-showcase",
+            "sha": "2d1d34a3",
+            "message": "fix(showcase): stabilize walkthrough navigation",
+            "date": "2026-09-03T08:58:10Z",
+            "files_count": 4,
+            "total_additions": 58,
+            "total_deletions": 7,
+            "total_changes": 65
+          },
+          {
+            "repo": "fraud-guard-showcase",
+            "sha": "ae00f93e",
+            "message": "feat(showcase): visualize multi-source operations",
+            "date": "2026-09-02T20:02:33Z",
+            "files_count": 4,
+            "total_additions": 30,
+            "total_deletions": 15,
+            "total_changes": 45
+          },
+          {
+            "repo": "silver-fraud-guard",
+            "sha": "fb770831",
+            "message": "feat(showcase): add multi-source controlled runs",
+            "date": "2026-09-02T20:02:11Z",
+            "files_count": 3,
+            "total_additions": 105,
+            "total_deletions": 5,
+            "total_changes": 110
+          },
+          {
+            "repo": "fraud-guard-showcase",
+            "sha": "f0ff86b6",
+            "message": "feat(showcase): add authorized demo preview panel",
+            "date": "2026-09-02T17:50:21Z",
+            "files_count": 4,
+            "total_additions": 120,
+            "total_deletions": 8,
+            "total_changes": 128
+          },
+          {
+            "repo": "silver-fraud-guard",
+            "sha": "0e0ea093",
+            "message": "feat(showcase): add authorized local preview runs",
+            "date": "2026-09-02T17:49:58Z",
+            "files_count": 5,
+            "total_additions": 312,
+            "total_deletions": 2,
+            "total_changes": 314
+          },
+          {
+            "repo": "fraud-guard-showcase",
+            "sha": "03b2ab2f",
+            "message": "feat(showcase): align routes and original logs",
+            "date": "2026-09-02T16:01:48Z",
+            "files_count": 2,
+            "total_additions": 71,
+            "total_deletions": 47,
+            "total_changes": 118
+          },
+          {
+            "repo": "silver-fraud-guard",
+            "sha": "a967f4c7",
+            "message": "feat(showcase): expose aligned original audit events",
+            "date": "2026-09-02T16:01:41Z",
+            "files_count": 3,
+            "total_additions": 200,
+            "total_deletions": 1,
+            "total_changes": 201
+          },
+          {
+            "repo": "fraud-guard-showcase",
+            "sha": "42e91886",
+            "message": "feat(showcase): clarify data route and audit logs",
+            "date": "2026-09-02T15:31:21Z",
+            "files_count": 1,
+            "total_additions": 77,
+            "total_deletions": 6,
+            "total_changes": 83
+          },
+          {
+            "repo": "fraud-guard-showcase",
+            "sha": "cc524a05",
+            "message": "fix(showcase): clarify model and stage views",
+            "date": "2026-09-02T14:49:33Z",
+            "files_count": 2,
+            "total_additions": 137,
+            "total_deletions": 33,
+            "total_changes": 170
+          },
+          {
+            "repo": "fraud-guard-showcase",
+            "sha": "cbe3572d",
+            "message": "feat(showcase): upgrade control room walkthrough",
+            "date": "2026-09-02T12:18:47Z",
+            "files_count": 6,
+            "total_additions": 409,
+            "total_deletions": 57,
+            "total_changes": 466
+          }
+        ]
+      }
+    ],
+    "active": [
+      {
+        "username": "snowling514",
+        "verified": true,
+        "valid_commits": 1,
+        "total_commits": 1,
+        "additions": 81,
+        "deletions": 1,
+        "changes": 82,
+        "repos_count": 1,
+        "repos": [
+          "elderly-fraud-risk-system"
+        ],
+        "recent_commits": [
+          {
+            "repo": "elderly-fraud-risk-system",
+            "sha": "ae752c0e",
+            "message": "feat: map Silver subjects to elderly risk profiles",
+            "date": "2026-09-03T08:53:55Z",
+            "files_count": 3,
+            "total_additions": 81,
+            "total_deletions": 1,
+            "total_changes": 82
+          }
+        ]
+      }
+    ]
+  },
+  "ranking": {
+    "by_commits": [
+      {
+        "username": "komariChikaA",
+        "verified": true,
+        "valid_commits": 96,
+        "total_commits": 96,
+        "additions": 36218,
+        "deletions": 4777,
+        "changes": 40995,
+        "repos_count": 11,
+        "commit_rank": 1,
+        "code_rank": 1
+      },
+      {
+        "username": "kajimi16",
+        "verified": true,
+        "valid_commits": 26,
+        "total_commits": 26,
+        "additions": 6292,
+        "deletions": 412,
+        "changes": 6704,
+        "repos_count": 5,
+        "commit_rank": 2,
+        "code_rank": 2
+      },
+      {
+        "username": "KuonjiPloy",
+        "verified": true,
+        "valid_commits": 13,
+        "total_commits": 13,
+        "additions": 4931,
+        "deletions": 224,
+        "changes": 5155,
+        "repos_count": 2,
+        "commit_rank": 3,
+        "code_rank": 3
+      },
+      {
+        "username": "snowling514",
+        "verified": true,
+        "valid_commits": 1,
+        "total_commits": 1,
+        "additions": 81,
+        "deletions": 1,
+        "changes": 82,
+        "repos_count": 1,
+        "commit_rank": 4,
+        "code_rank": 4
+      }
+    ],
+    "by_code": [
+      {
+        "username": "komariChikaA",
+        "verified": true,
+        "valid_commits": 96,
+        "total_commits": 96,
+        "additions": 36218,
+        "deletions": 4777,
+        "changes": 40995,
+        "repos_count": 11,
+        "commit_rank": 1,
+        "code_rank": 1
+      },
+      {
+        "username": "kajimi16",
+        "verified": true,
+        "valid_commits": 26,
+        "total_commits": 26,
+        "additions": 6292,
+        "deletions": 412,
+        "changes": 6704,
+        "repos_count": 5,
+        "commit_rank": 2,
+        "code_rank": 2
+      },
+      {
+        "username": "KuonjiPloy",
+        "verified": true,
+        "valid_commits": 13,
+        "total_commits": 13,
+        "additions": 4931,
+        "deletions": 224,
+        "changes": 5155,
+        "repos_count": 2,
+        "commit_rank": 3,
+        "code_rank": 3
+      },
+      {
+        "username": "snowling514",
+        "verified": true,
+        "valid_commits": 1,
+        "total_commits": 1,
+        "additions": 81,
+        "deletions": 1,
+        "changes": 82,
+        "repos_count": 1,
+        "commit_rank": 4,
+        "code_rank": 4
+      }
+    ]
+  },
+  "repo_matrix": {
+    "jbgs-submission": {
+      "komariChikaA": {
+        "commits": 21,
+        "additions": 13111,
+        "deletions": 2048
+      }
+    },
+    "silver-fraud-guard": {
+      "komariChikaA": {
+        "commits": 16,
+        "additions": 9486,
+        "deletions": 505
+      },
+      "kajimi16": {
+        "commits": 11,
+        "additions": 4664,
+        "deletions": 160
+      },
+      "KuonjiPloy": {
+        "commits": 5,
+        "additions": 3115,
+        "deletions": 51
+      }
+    },
+    "community-fraud-guard": {
+      "komariChikaA": {
+        "commits": 2,
+        "additions": 129,
+        "deletions": 11
+      }
+    },
+    "home-visit-fraud-guard": {
+      "komariChikaA": {
+        "commits": 14,
+        "additions": 3533,
+        "deletions": 539
+      },
+      "kajimi16": {
+        "commits": 1,
+        "additions": 116,
+        "deletions": 3
+      }
+    },
+    "fraud-guard-clients": {
+      "komariChikaA": {
+        "commits": 32,
+        "additions": 7451,
+        "deletions": 1178
+      },
+      "kajimi16": {
+        "commits": 11,
+        "additions": 1164,
+        "deletions": 215
+      }
+    },
+    "fraud-guard-showcase": {
+      "komariChikaA": {
+        "commits": 4,
+        "additions": 1325,
+        "deletions": 172
+      },
+      "KuonjiPloy": {
+        "commits": 8,
+        "additions": 1816,
+        "deletions": 173
+      }
+    },
+    ".github": {
+      "komariChikaA": {
+        "commits": 1,
+        "additions": 103,
+        "deletions": 109
+      }
+    },
+    "jbgs-proposal": {
+      "komariChikaA": {
+        "commits": 1,
+        "additions": 85,
+        "deletions": 109
+      }
+    },
+    "elderly-fraud-risk-system": {
+      "komariChikaA": {
+        "commits": 1,
+        "additions": 336,
+        "deletions": 3
+      },
+      "kajimi16": {
+        "commits": 1,
+        "additions": 115,
+        "deletions": 1
+      },
+      "snowling514": {
+        "commits": 1,
+        "additions": 81,
+        "deletions": 1
+      }
+    },
+    "fraud-guard-shared": {
+      "komariChikaA": {
+        "commits": 3,
+        "additions": 516,
+        "deletions": 99
+      },
+      "kajimi16": {
+        "commits": 2,
+        "additions": 233,
+        "deletions": 33
+      }
+    },
+    "fraud-intervention-agent": {
+      "komariChikaA": {
+        "commits": 1,
+        "additions": 143,
+        "deletions": 4
+      }
+    }
+  }
+}
