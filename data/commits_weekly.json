@@ -1,0 +1,115 @@
+{
+  "update_time": "2026-09-11T23:42:22.244567",
+  "days_range": 7,
+  "total_commits": 7,
+  "total_repos": 1,
+  "user_commits": {
+    "komariChikaA": {
+      "total_commits": 7,
+      "repos": [
+        "jbgs-submission"
+      ],
+      "repo_commits": {
+        "jbgs-submission": 7
+      },
+      "repo_count": 1,
+      "daily_commits": {
+        "2026-09-05": 6,
+        "2026-09-04": 1
+      },
+      "hourly_distribution": {
+        "1": 4,
+        "0": 2,
+        "23": 1
+      },
+      "beijing_hourly_distribution": {
+        "9": 4,
+        "8": 2,
+        "7": 1
+      },
+      "night_owl_commits": 0,
+      "night_owl_percentage": 0.0,
+      "commit_messages": [
+        {
+          "message": "Merge pull request #20 from Silver-yiyangyiyang/agent/issue-2-post-merge-doc-fixes",
+          "repo": "jbgs-submission",
+          "date": "2026-09-05",
+          "time": "2026-09-05T09:15:41+00:00",
+          "beijing_hour": 9,
+          "is_night_owl": false,
+          "url": "https://github.com/Silver-yiyangyiyang/jbgs-submission/commit/f738fc467528eb314fc72ec211fd07d0d2c4c805"
+        },
+        {
+          "message": "docs(01): add bibliography for data sources and privacy norms",
+          "repo": "jbgs-submission",
+          "date": "2026-09-05",
+          "time": "2026-09-05T09:14:02+00:00",
+          "beijing_hour": 9,
+          "is_night_owl": false,
+          "url": "https://github.com/Silver-yiyangyiyang/jbgs-submission/commit/3b5d63358385b02e11691b31909e5f126c4acc5b"
+        },
+        {
+          "message": "docs(04): trim AI-tone flips and dense顿号 lists",
+          "repo": "jbgs-submission",
+          "date": "2026-09-05",
+          "time": "2026-09-05T09:08:48+00:00",
+          "beijing_hour": 9,
+          "is_night_owl": false,
+          "url": "https://github.com/Silver-yiyangyiyang/jbgs-submission/commit/0c93c816d5dad318e8745134ab4ecf9d2b197fa5"
+        },
+        {
+          "message": "docs(04): soften deployment handbook tone for contest readers",
+          "repo": "jbgs-submission",
+          "date": "2026-09-05",
+          "time": "2026-09-05T09:04:04+00:00",
+          "beijing_hour": 9,
+          "is_night_owl": false,
+          "url": "https://github.com/Silver-yiyangyiyang/jbgs-submission/commit/774241e1ed4bb9210280166a96da404631492605"
+        },
+        {
+          "message": "fix(deployment): keep production gate report precise",
+          "repo": "jbgs-submission",
+          "date": "2026-09-05",
+          "time": "2026-09-05T08:48:06+00:00",
+          "beijing_hour": 8,
+          "is_night_owl": false,
+          "url": "https://github.com/Silver-yiyangyiyang/jbgs-submission/commit/25e28ce4304d0e1bed902a95d5c8a0694dcd7866"
+        },
+        {
+          "message": "fix(deployment): make controlled Docker bundle directly runnable",
+          "repo": "jbgs-submission",
+          "date": "2026-09-05",
+          "time": "2026-09-05T08:39:18+00:00",
+          "beijing_hour": 8,
+          "is_night_owl": false,
+          "url": "https://github.com/Silver-yiyangyiyang/jbgs-submission/commit/04f0ec44d6c299905a6f628dd9793144d983370e"
+        },
+        {
+          "message": "docs: render deployment guide with XeLaTeX",
+          "repo": "jbgs-submission",
+          "date": "2026-09-04",
+          "time": "2026-09-05T07:44:45+00:00",
+          "beijing_hour": 7,
+          "is_night_owl": false,
+          "url": "https://github.com/Silver-yiyangyiyang/jbgs-submission/commit/7cce60d04fc107c3981a891f1e504aaf0f54511a"
+        }
+      ],
+      "first_commit_date": "2026-09-04T23:44:45+00:00",
+      "last_commit_date": "2026-09-05T01:15:41+00:00",
+      "active_days": 2,
+      "avg_commits_per_day": 3.5
+    }
+  },
+  "optimization_stats": {
+    "api_calls": {
+      "repos_list": 1,
+      "contributors": 14,
+      "commits": 14,
+      "users": 5,
+      "user_repos": 5,
+      "total": 39
+    },
+    "execution_time": "14.8s",
+    "optimization_enabled": true
+  }
+}
